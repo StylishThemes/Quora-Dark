@@ -1,0 +1,116 @@
+@-moz-document domain("quora.com") {
+/* Quora Theme v1.0 (8/26/2014)
+ * https://github.com/StylishThemes/Quora-Dark
+ * http://userstyles.org/styles/37035
+ * License: http://sam.zoy.org/wtfpl/
+ */
+  * {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  body:not(.logged_out_page_big_signup) {
+    background-color: #222 !important;
+    background-image: /*[[bg-choice]]*/ url(http://i62.tinypic.com/2a2eir.png) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    /*[[bg-options]]*/
+    /*[[bg-options2]]*/
+  }
+
+  /* action buttons */
+  .AddQuestionFromHeaderDialogButton, .submit_button, .primary_button, .MoreStoriesIndicator {
+    background-color: /*[[base-color]]*/ #b50 !important;
+    border-color: /*[[base-color]]*/ #b50 !important;
+    color: #eee !important;
+  }
+  .AddQuestionFromHeaderDialogButton:hover, .submit_button:hover, .primary_button:hover, .MoreStoriesIndicator:hover {
+    opacity: 0.8 !important;
+  }
+
+  /* text selection */
+  ::selection {
+    background: /*[[base-color]]*/ #b50 !important;
+    color: #fff !important;
+  }
+  ::-moz-selection {
+    background: /*[[base-color]]*/ #b50 !important;
+    color: #fff !important;
+  }
+
+  /*** background ***/
+  .ActionBar, .grid_page_right_col .ObjectCard, .grid_page_right_col .ObjectCard-footer,
+  .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp {
+    background: transparent !important;
+  }
+
+  input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .add_upvote, .write_answer,
+  .inline_login_profile_box {
+    background: #181818 !important;
+  }
+
+  .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
+  .hover_menu_contents, .ObjectCard, .name_text, .notifications_header_bar, .dialog_wrapper,
+  .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator {
+    background: #222 !important;
+  }
+  .read_more_link, .unseen, .action_button {
+    background: #242424 !important;
+  }
+  .nav_item_link .badge, .count, a:hover .name_text, .add_upvote .count, .ContentPageFeedStoryItem,
+  .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
+  .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton, .ObjectCard-footer,
+  .LegalNavLinks, .hover_menu_item:hover {
+    background-color: #282828 !important;
+  }
+
+  /* overlay */
+  .ContentPageFeedStoryItem:hover .feed_item_overlay, .dialog:not(.dialog_nux):not(.modal_signup_dialog):after {
+    background: rgba(0,0,0,0.5) !important;
+  }
+
+  /*** text color ***/
+  a, a span {
+    color: /*[[base-color]]*/ #b50 !important;
+  }
+  h1,h2,h3,h4,h5,h6,blockquote,div,span,li,input,textarea,
+  a.submit_button span, a.primary_button span, interval_timestamp {
+    color: #ddd !important;
+  }
+  .faded {
+    color: #999 !important;
+  }
+
+  /*** borders ***/
+  .dialog .close_modal, .pagedlist_item.pagedlist_invisible {
+    border-color: transparent !important;
+  }
+
+  h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a, .hover_menu_contents,
+  .question_box {
+    border-color: #444 !important;
+  }
+
+  /* arrow */
+  ul.hover_menu_contents > li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
+  .hover_menu:before, .hover_menu:after, .header_hover_menu:after {
+    border-bottom-color: #444 !important;
+  }
+
+  /*** Green ***/
+  .follow_button {
+    background: #041 !important;
+    border-color: #062 !important;
+    color: #0a3 !important;
+  }
+  .follow_button .count {
+    background: #062 !important;
+    color: #aaa !important;
+  }
+
+  /*** hide text selection popup ***/
+  .quote_hover_menu {
+    /*[[hide-popup]]*/ display: none !important;
+  }
+
+}
