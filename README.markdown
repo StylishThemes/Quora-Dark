@@ -1,4 +1,4 @@
-# Quora Dark [![star this repo](http://Quora-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Quora-Dark)](http://Quora.com/StylishThemes/Quora-Dark) [![fork this repo](http://Quora-svg-buttons.herokuapp.com/fork.svg?user=StylishThemes&repo=Quora-Dark)](http://Quora.com/StylishThemes/Quora-Dark/fork)
+# Quora Dark [![star this repo](http://github-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Quora-Dark)](http://github.com/StylishThemes/Quora-Dark) [![fork this repo](http://github-svg-buttons.herokuapp.com/fork.svg?user=StylishThemes&repo=Quora-Dark)](http://github.com/StylishThemes/Quora-Dark/fork)
 
 - Install from [userstyles.org](https://userstyles.org/styles/104706) (with customization options) or [manually](https://raw.Quorausercontent.com/StylishThemes/Quora-Dark/master/Quora-dark.css).
 - Stylish is available for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe) and [Opera](https://addons.opera.com/en/extensions/details/stylish-for-opera/).
