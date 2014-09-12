@@ -1,5 +1,5 @@
 @-moz-document domain("quora.com") {
-/* Quora Theme v1.0 (8/26/2014)
+/* Quora Theme v1.0.1 (9/12/2014)
  * https://github.com/StylishThemes/Quora-Dark
  * https://userstyles.org/styles/104706
  * License: http://sam.zoy.org/wtfpl/
@@ -45,19 +45,20 @@
   }
 
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .add_upvote, .write_answer,
-  .inline_login_profile_box {
-    background: #181818 !important;
+  .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents {
+    background-color: #181818 !important;
   }
 
   .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
   .hover_menu_contents, .ObjectCard, .name_text, .notifications_header_bar, .dialog_wrapper,
-  .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator {
+  .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator, .threaded_comments,
+  .ActionBar.sticky {
     background: #222 !important;
   }
   .read_more_link, .unseen, .action_button {
     background: #242424 !important;
   }
-  .nav_item_link .badge, .count, a:hover .name_text, .add_upvote .count, .ContentPageFeedStoryItem,
+  .count, a:hover .name_text, .add_upvote .count, .ContentPageFeedStoryItem,
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
   .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton, .ObjectCard-footer,
   .LegalNavLinks, .hover_menu_item:hover {
@@ -74,7 +75,8 @@
     color: /*[[base-color]]*/ #b50 !important;
   }
   h1,h2,h3,h4,h5,h6,blockquote,div,span,li,input,textarea,
-  a.submit_button span, a.primary_button span, interval_timestamp {
+  a.submit_button span, a.primary_button span, interval_timestamp, .tooltip_contents span,
+  .nav_item_link .badge {
     color: #ddd !important;
   }
   .faded {
@@ -82,12 +84,12 @@
   }
 
   /*** borders ***/
-  .dialog .close_modal, .pagedlist_item.pagedlist_invisible {
+  .dialog .close_modal, .pagedlist_item.pagedlist_invisible, .comment_highlight_wrapper {
     border-color: transparent !important;
   }
 
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a, .hover_menu_contents,
-  .question_box {
+  .question_box, .show_reply_box_link {
     border-color: #444 !important;
   }
 

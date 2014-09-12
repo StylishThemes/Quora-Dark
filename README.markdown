@@ -18,6 +18,15 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.0.1 (9/12/2014)
+
+* Fixed sticky actionbar at bottom background color
+* Comments:
+  * Added style
+  * Fix insert image button
+  * Tooltip text color corrected
+* Restored notification count styling
+
 #### Version 1.0 (8/26/2014)
 
 * Created style
