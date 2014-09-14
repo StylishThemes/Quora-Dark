@@ -18,6 +18,14 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.0.2 (9/14/2014)
+
+* Code
+  * Darken background
+  * Fix text color to maintain syntax highlighting
+* Added background style to `html` to reduce unstyled background flash
+* Added style to Moved answer notification block
+
 #### Version 1.0.1 (9/12/2014)
 
 * Fixed sticky actionbar at bottom background color
