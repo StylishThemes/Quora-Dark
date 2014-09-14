@@ -9,7 +9,7 @@
     box-shadow: none !important;
   }
 
-  body:not(.logged_out_page_big_signup) {
+  html, body:not(.logged_out_page_big_signup) {
     background-color: #222 !important;
     background-image: /*[[bg-choice]]*/ url(http://i62.tinypic.com/2a2eir.png) !important;
     background-clip: border-box !important;
@@ -45,7 +45,7 @@
   }
 
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .add_upvote, .write_answer,
-  .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents {
+  .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock {
     background-color: #181818 !important;
   }
 
@@ -61,7 +61,7 @@
   .count, a:hover .name_text, .add_upvote .count, .ContentPageFeedStoryItem,
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
   .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton, .ObjectCard-footer,
-  .LegalNavLinks, .hover_menu_item:hover {
+  .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner {
     background-color: #282828 !important;
   }
 
@@ -74,7 +74,7 @@
   a, a span {
     color: /*[[base-color]]*/ #b50 !important;
   }
-  h1,h2,h3,h4,h5,h6,blockquote,div,span,li,input,textarea,
+  h1,h2,h3,h4,h5,h6,blockquote,div,div > span, span > span, li,input,textarea,
   a.submit_button span, a.primary_button span, interval_timestamp, .tooltip_contents span,
   .nav_item_link .badge {
     color: #ddd !important;
