@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.0.3 (9/14/2014)
+
+* Added Notification dark blue style
+
 #### Version 1.0.2 (9/14/2014)
 
 * Code
@@ -34,7 +38,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
   * Fix insert image button
   * Tooltip text color corrected
 * Restored notification count styling
-
-#### Version 1.0 (8/26/2014)
-
-* Created style
