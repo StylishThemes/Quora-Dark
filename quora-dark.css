@@ -110,6 +110,12 @@
     color: #aaa !important;
   }
 
+  /*** Blue ***/
+  .notifications_banner {
+    background: #182030 !important;
+    border: 1px solid #246 !important;
+  }
+
   /*** hide text selection popup ***/
   .quote_hover_menu {
     /*[[hide-popup]]*/ display: none !important;
