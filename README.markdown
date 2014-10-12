@@ -18,6 +18,15 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.0.4 (11/12/2014)
+
+* Update notification feed styling.
+* Add blue styling to the upvote buttons; grey to upvoted buttons.
+* Fix flash of white when opening a feed via email.
+* Popup menu styling with arrow.
+* Add style to edited content; added & removed.
+* Add brown style to warning messages.
+
 #### Version 1.0.3 (9/14/2014)
 
 * Added Notification dark blue style
@@ -29,12 +38,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
   * Fix text color to maintain syntax highlighting
 * Added background style to `html` to reduce unstyled background flash
 * Added style to Moved answer notification block
-
-#### Version 1.0.1 (9/12/2014)
-
-* Fixed sticky actionbar at bottom background color
-* Comments:
-  * Added style
-  * Fix insert image button
-  * Tooltip text color corrected
-* Restored notification count styling

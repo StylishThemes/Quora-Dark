@@ -1,5 +1,5 @@
 @-moz-document domain("quora.com") {
-/* Quora Theme v1.0.3 (9/14/2014)
+/* Quora Theme v1.0.4 (11/12/2014)
  * https://github.com/StylishThemes/Quora-Dark
  * https://userstyles.org/styles/104706
  * License: http://sam.zoy.org/wtfpl/
@@ -30,39 +30,45 @@
 
   /* text selection */
   ::selection {
-    background: /*[[base-color]]*/ #b50 !important;
+    background-color: /*[[base-color]]*/ #b50 !important;
     color: #fff !important;
   }
   ::-moz-selection {
-    background: /*[[base-color]]*/ #b50 !important;
+    background-color: /*[[base-color]]*/ #b50 !important;
     color: #fff !important;
   }
 
   /*** background ***/
   .ActionBar, .grid_page_right_col .ObjectCard, .grid_page_right_col .ObjectCard-footer,
-  .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp {
+  .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item, .NotificationItem.seen {
     background: transparent !important;
   }
 
-  input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .add_upvote, .write_answer,
-  .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock {
+  input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .write_answer,
+  .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
+  .ExistingUserNuxProgressBar {
     background-color: #181818 !important;
   }
 
   .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
   .hover_menu_contents, .ObjectCard, .name_text, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator, .threaded_comments,
-  .ActionBar.sticky {
+  .ActionBar.sticky, .ExistingUserNuxSidebar {
     background: #222 !important;
   }
   .read_more_link, .unseen, .action_button {
     background: #242424 !important;
   }
-  .count, a:hover .name_text, .add_upvote .count, .ContentPageFeedStoryItem,
+  .count, a:hover .name_text, .ContentPageFeedStoryItem,
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
   .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton, .ObjectCard-footer,
   .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner {
     background-color: #282828 !important;
+  }
+
+  .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
+  .EditableList a:hover {
+    background-color: #333 !important;
   }
 
   /* overlay */
@@ -79,12 +85,13 @@
   .nav_item_link .badge {
     color: #ddd !important;
   }
-  .faded {
+  .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count {
     color: #999 !important;
   }
 
   /*** borders ***/
-  .dialog .close_modal, .pagedlist_item.pagedlist_invisible, .comment_highlight_wrapper {
+  .dialog .close_modal, .pagedlist_item.pagedlist_invisible, .comment_highlight_wrapper,
+  .hover_menu_above li:first-child:after {
     border-color: transparent !important;
   }
 
@@ -94,9 +101,23 @@
   }
 
   /* arrow */
-  ul.hover_menu_contents > li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
+  .hover_menu_contents li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
   .hover_menu:before, .hover_menu:after, .header_hover_menu:after {
     border-bottom-color: #444 !important;
+  }
+
+  .hover_menu_above:before, .hover_menu_above:after, .hover_menu_above li:last-child:before {
+    border-top-color: #444 !important;
+    border-bottom-color: transparent !important;
+  }
+  .hover_menu_above li:last-child:after {
+    border-top-color: #222 !important;
+    border-bottom-color: transparent !important;
+  }
+
+  /*** Red ***/
+  .diffdelete {
+    background-color: #300 !important;
   }
 
   /*** Green ***/
@@ -109,11 +130,24 @@
     background: #062 !important;
     color: #aaa !important;
   }
+  .diffinsert {
+    background: #020 !important;
+  }
 
   /*** Blue ***/
-  .notifications_banner {
+  .notifications_banner, .add_upvote {
     background: #182030 !important;
     border: 1px solid #246 !important;
+  }
+  .add_upvote .count {
+   background-color: #246 !important
+  }
+
+  /*** Brown ***/
+  .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div {
+    background: #321 !important;
+    border-color: #542 !important;
+    color: #b74 !important;
   }
 
   /*** hide text selection popup ***/
