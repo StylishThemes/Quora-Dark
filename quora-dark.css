@@ -53,7 +53,7 @@
   .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
   .hover_menu_contents, .ObjectCard, .name_text, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator, .threaded_comments,
-  .ActionBar.sticky, .ExistingUserNuxSidebar {
+  .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer {
     background: #222 !important;
   }
   .read_more_link, .unseen, .action_button {
@@ -61,14 +61,18 @@
   }
   .count, a:hover .name_text, .ContentPageFeedStoryItem,
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
-  .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton, .ObjectCard-footer,
+  .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton a, .ObjectCard-footer,
   .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner {
     background-color: #282828 !important;
   }
 
   .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
-  .EditableList a:hover {
+  .EditableList a:hover, .AnswerEditorHeader {
     background-color: #333 !important;
+  }
+
+  .count:before {
+    background-color: #444 !important;
   }
 
   /* overlay */
@@ -82,7 +86,7 @@
   }
   h1,h2,h3,h4,h5,h6,blockquote,div,div > span, span > span, li,input,textarea,
   a.submit_button span, a.primary_button span, interval_timestamp, .tooltip_contents span,
-  .nav_item_link .badge {
+  .nav_item_link .badge, .hover_menu_header_link {
     color: #ddd !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count {
@@ -97,17 +101,17 @@
 
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a, .hover_menu_contents,
   .question_box, .show_reply_box_link {
-    border-color: #444 !important;
+    border-color: #333 !important;
   }
 
   /* arrow */
   .hover_menu_contents li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
   .hover_menu:before, .hover_menu:after, .header_hover_menu:after {
-    border-bottom-color: #444 !important;
+    border-bottom-color: #333 !important;
   }
 
   .hover_menu_above:before, .hover_menu_above:after, .hover_menu_above li:last-child:before {
-    border-top-color: #444 !important;
+    border-top-color: #333 !important;
     border-bottom-color: transparent !important;
   }
   .hover_menu_above li:last-child:after {
@@ -127,7 +131,7 @@
     color: #0a3 !important;
   }
   .follow_button .count {
-    background: #062 !important;
+    background: #041 !important;
     color: #aaa !important;
   }
   .diffinsert {
@@ -140,7 +144,7 @@
     border: 1px solid #246 !important;
   }
   .add_upvote .count {
-   background-color: #246 !important
+   background-color: #182030 !important;
   }
 
   /*** Brown ***/
