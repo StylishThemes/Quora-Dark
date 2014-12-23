@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.0.5 (12/22/2014)
+
+* Fix notification popup & answer box styling
+
 #### Version 1.0.4 (11/12/2014)
 
 * Update notification feed styling.
@@ -30,11 +34,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 #### Version 1.0.3 (9/14/2014)
 
 * Added Notification dark blue style
-
-#### Version 1.0.2 (9/14/2014)
-
-* Code
-  * Darken background
-  * Fix text color to maintain syntax highlighting
-* Added background style to `html` to reduce unstyled background flash
-* Added style to Moved answer notification block
