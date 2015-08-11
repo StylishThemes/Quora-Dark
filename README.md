@@ -18,9 +18,13 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.0.6 (8/11/2015)
+
+* Fix numerous white backgrounds.
+
 #### Version 1.0.5 (12/22/2014)
 
-* Fix notification popup & answer box styling
+* Fix notification popup & answer box styling.
 
 #### Version 1.0.4 (11/12/2014)
 
@@ -30,7 +34,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 * Popup menu styling with arrow.
 * Add style to edited content; added & removed.
 * Add brown style to warning messages.
-
-#### Version 1.0.3 (9/14/2014)
-
-* Added Notification dark blue style
