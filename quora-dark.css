@@ -173,10 +173,13 @@
   }
 
   /*** Brown ***/
-  .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div {
+  .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div, .ReAskPrompt {
     background: #321 !important;
     border-color: #542 !important;
     color: #b74 !important;
+  }
+  .ReAskPrompt::before, .ReAskPrompt::after {
+    border-bottom-color: #542 !important;
   }
 
   /*** hide text selection popup ***/
