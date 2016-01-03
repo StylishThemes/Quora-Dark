@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.1.0 (1/2/2016)
+
+* Lots of style updates. Fixes [issue #1](https://github.com/StylishThemes/Quora-Dark/issues/1).
+
 #### Version 1.0.6 (8/11/2015)
 
 * Fix numerous white backgrounds.
@@ -25,12 +29,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 #### Version 1.0.5 (12/22/2014)
 
 * Fix notification popup & answer box styling.
-
-#### Version 1.0.4 (11/12/2014)
-
-* Update notification feed styling.
-* Add blue styling to the upvote buttons; grey to upvoted buttons.
-* Fix flash of white when opening a feed via email.
-* Popup menu styling with arrow.
-* Add style to edited content; added & removed.
-* Add brown style to warning messages.
