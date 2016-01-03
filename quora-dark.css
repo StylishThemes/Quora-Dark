@@ -41,13 +41,15 @@
   /*** background ***/
   .ActionBar, .grid_page_right_col .ObjectCard, .grid_page_right_col .ObjectCard-footer,
   .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item, .NotificationItem.seen,
-  .edit_faq_link, .title a {
+  .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
+  .editor_toolbar .modifier.overflow_hide:before {
     background: transparent !important;
   }
 
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .write_answer,
   .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
-  .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux {
+  .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
+  pre.prettyprint, .Editor .doc {
     background-color: #181818 !important;
   }
 
@@ -55,8 +57,13 @@
   .hover_menu_contents, .ObjectCard, .name_text, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator, .threaded_comments,
   .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer,
-  .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected {
+  .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
+  .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
+  .NewGridQuestionPage .header .shared_form {
     background: #222 !important;
+  }
+  .topic_pill {
+    background-color: #222 !important;
   }
   .read_more_link, .unseen, .action_button, .NextButton {
     background: #242424 !important;
@@ -65,7 +72,8 @@
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
   .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton a, .ObjectCard-footer,
   .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
-  .AskToAnswerModalLink, .MostWantedBadge {
+  .AskToAnswerModalLink, .MostWantedBadge,
+  .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content {
     background-color: #282828 !important;
   }
 
@@ -101,9 +109,12 @@
   .hover_menu_above li:first-child:after {
     border-color: transparent !important;
   }
+  .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea {
+    border-color: /*[[base-color]]*/ #b50 !important;
+  }
 
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a, .hover_menu_contents,
-  .question_box, .show_reply_box_link, .QuestionActionBarA2APrompt {
+  .question_box, .show_reply_box_link, .QuestionActionBarA2APrompt, input {
     border-color: #333 !important;
   }
 
@@ -113,7 +124,8 @@
 
   /* arrow */
   .hover_menu_contents li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
-  .hover_menu:before, .hover_menu:after, .header_hover_menu:after {
+  .hover_menu:before, .hover_menu:after, .header_hover_menu:after, .results_wrapper:before,
+  .resistance_wrapper:after {
     border-bottom-color: #333 !important;
   }
 
@@ -146,12 +158,16 @@
   }
 
   /*** Blue ***/
-  .notifications_banner, .add_upvote {
+  .notifications_banner, .add_upvote, .User.Button {
     background: #182030 !important;
     border: 1px solid #246 !important;
   }
-  .add_upvote .count {
+  .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
+  .ReAsk.Button:not(.link) {
    background-color: #182030 !important;
+  }
+  .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link) {
+    border-color: #246 !important;
   }
 
   /*** Brown ***/
