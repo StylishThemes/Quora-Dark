@@ -42,7 +42,8 @@
   .ActionBar, .grid_page_right_col .ObjectCard, .grid_page_right_col .ObjectCard-footer,
   .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item, .NotificationItem.seen,
   .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
-  .editor_toolbar .modifier.overflow_hide:before {
+  .editor_toolbar .modifier.overflow_hide:before, .FollowSuggestionCard.InlineFollowSuggestionCard,
+  .FollowSuggestionCard.InlineFollowSuggestionCard .ObjectCard-footer {
     background: transparent !important;
   }
 
@@ -54,7 +55,7 @@
   }
 
   .SiteHeader, .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
-  .hover_menu_contents, .ObjectCard, .name_text, .notifications_header_bar, .dialog_wrapper,
+  .hover_menu_contents, .ObjectCard, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator, .threaded_comments,
   .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer,
   .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
@@ -68,7 +69,7 @@
   .read_more_link, .unseen, .action_button, .NextButton {
     background: #242424 !important;
   }
-  .count, a:hover .name_text, .ContentPageFeedStoryItem,
+  .count, .ContentPageFeedStoryItem,
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
   .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton a, .ObjectCard-footer,
   .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
@@ -78,7 +79,7 @@
   }
 
   .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
-  .EditableList a:hover, .AnswerEditorHeader {
+  .AnswerEditorHeader {
     background-color: #333 !important;
   }
 
@@ -92,7 +93,7 @@
   }
 
   /*** text color ***/
-  a, a span {
+  a, a span, a:hover .TopicName {
     color: /*[[base-color]]*/ #b50 !important;
   }
   h1,h2,h3,h4,h5,h6,blockquote,div,div > span, span > span, li,input,textarea,
@@ -163,10 +164,11 @@
     border: 1px solid #246 !important;
   }
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
-  .ReAsk.Button:not(.link) {
+  .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer, .Topic.Button .count, .RequestAnswer .count {
    background-color: #182030 !important;
   }
-  .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link) {
+  .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
+  .Topic.Button, .RequestAnswer {
     border-color: #246 !important;
   }
 
