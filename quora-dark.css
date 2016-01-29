@@ -50,22 +50,26 @@
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .write_answer,
   .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
   .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
-  pre.prettyprint, .Editor .doc {
+  pre.prettyprint, .Editor .doc, .Editor.Comment {
     background-color: #181818 !important;
   }
 
   .SiteHeader, .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
   .hover_menu_contents, .ObjectCard, .notifications_header_bar, .dialog_wrapper,
-  .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator, .threaded_comments,
+  .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
   .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer,
   .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
   .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
-  .NewGridQuestionPage .header .shared_form {
+  .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection {
     background: #222 !important;
   }
-  .topic_pill {
+  .topic_pill, .ViewMoreLink a  {
     background-color: #222 !important;
   }
+  .threaded_comments, .comment_replies_show_child_link, .AnswerBase.undesirable_answer {
+    background-color: rgba(34, 34, 34, 0.6) !important;
+  }
+
   .read_more_link, .unseen, .action_button, .NextButton {
     background: #242424 !important;
   }
@@ -83,7 +87,7 @@
     background-color: #333 !important;
   }
 
-  .count:before {
+  .count:before, .qtext_hr {
     background-color: #444 !important;
   }
 
@@ -98,7 +102,7 @@
   }
   h1,h2,h3,h4,h5,h6,blockquote,div,div > span, span > span, li,input,textarea,
   a.submit_button span, a.primary_button span, interval_timestamp, .tooltip_contents span,
-  .nav_item_link .badge, .hover_menu_header_link {
+  .nav_item_link .badge, .hover_menu_header_link, .topic_pill a, .ViewMoreLink a {
     color: #ddd !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count {
@@ -126,7 +130,8 @@
   /* arrow */
   .hover_menu_contents li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
   .hover_menu:before, .hover_menu:after, .header_hover_menu:after, .results_wrapper:before,
-  .resistance_wrapper:after {
+  .resistance_wrapper:after, .comment_replies_show_child_link:before,
+  .comment_replies_show_child_link:after {
     border-bottom-color: #333 !important;
   }
 
