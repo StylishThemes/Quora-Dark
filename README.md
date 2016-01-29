@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.1.3 (1/28/2016)
+
+* Add missing styles. Fixes [issue #2](https://github.com/StylishThemes/Quora-Dark/issues/2).
+
 #### Version 1.1.2 (1/2/2016)
 
 * Fix re-ask popup. See [issue #1](https://github.com/StylishThemes/Quora-Dark/issues/1).
@@ -25,7 +29,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 #### Version 1.1.1 (1/2/2016)
 
 * More style tweaks.
-
-#### Version 1.1.0 (1/2/2016)
-
-* Lots of style updates. Fixes [issue #1](https://github.com/StylishThemes/Quora-Dark/issues/1).
