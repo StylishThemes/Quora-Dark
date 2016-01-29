@@ -61,7 +61,8 @@
   .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
   .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
-  .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover {
+  .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
+  .banner_answer {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
