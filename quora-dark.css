@@ -43,7 +43,7 @@
   .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item, .NotificationItem.seen,
   .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
   .editor_toolbar .modifier.overflow_hide:before, .FollowSuggestionCard.InlineFollowSuggestionCard,
-  .FollowSuggestionCard.InlineFollowSuggestionCard .ObjectCard-footer {
+  .FollowSuggestionCard.InlineFollowSuggestionCard .ObjectCard-footer, .seen {
     background: transparent !important;
   }
 
@@ -60,13 +60,15 @@
   .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer,
   .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
   .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
-  .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection {
+  .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
+  .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
     background-color: #222 !important;
   }
-  .threaded_comments, .comment_replies_show_child_link, .AnswerBase.undesirable_answer {
+  .threaded_comments, .comment_replies_show_child_link, .AnswerBase.undesirable_answer,
+  .CompleteProfileBanner {
     background-color: rgba(34, 34, 34, 0.6) !important;
   }
 
@@ -119,7 +121,7 @@
   }
 
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a, .hover_menu_contents,
-  .question_box, .show_reply_box_link, .QuestionActionBarA2APrompt, input {
+  .question_box, .show_reply_box_link, .QuestionActionBarA2APrompt, input, .seen {
     border-color: #333 !important;
   }
 
@@ -169,7 +171,8 @@
     border: 1px solid #246 !important;
   }
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
-  .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer, .Topic.Button .count, .RequestAnswer .count {
+  .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer, .Topic.Button .count,
+  .RequestAnswer .count, .link:hover {
    background-color: #182030 !important;
   }
   .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
