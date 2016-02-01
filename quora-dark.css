@@ -39,46 +39,45 @@
   }
 
   /*** background ***/
-  .ActionBar, .grid_page_right_col .ObjectCard, .grid_page_right_col .ObjectCard-footer,
-  .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item, .NotificationItem.seen,
-  .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
+  .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item,
+  .NotificationItem.seen, .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
   .editor_toolbar .modifier.overflow_hide:before, .FollowSuggestionCard.InlineFollowSuggestionCard,
-  .FollowSuggestionCard.InlineFollowSuggestionCard .ObjectCard-footer, .seen {
+  .seen, .Message, .ObjectCard, .ObjectCard-footer, .ContentFeedTabs li.active a {
     background: transparent !important;
   }
 
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .write_answer,
   .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
   .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
-  pre.prettyprint, .Editor .doc, .Editor.Comment {
+  pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision, .ContentFeedTabs li a {
     background-color: #181818 !important;
   }
 
   .SiteHeader, .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
-  .hover_menu_contents, .ObjectCard, .notifications_header_bar, .dialog_wrapper,
+  .hover_menu_contents, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
   .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer,
   .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
   .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
   .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
-  .banner_answer {
+  .banner_answer, .prettyprint .linenums li:before {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
     background-color: #222 !important;
   }
   .threaded_comments, .comment_replies_show_child_link, .AnswerBase.undesirable_answer,
-  .CompleteProfileBanner {
+  .CompleteProfileBanner, .topic_expert_application_form {
     background-color: rgba(34, 34, 34, 0.6) !important;
   }
 
-  .read_more_link, .unseen, .action_button, .NextButton {
+  .read_more_link, .unseen, .action_button, .NextButton, .modal_footer {
     background: #242424 !important;
   }
   .count, .ContentPageFeedStoryItem,
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
-  .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton a, .ObjectCard-footer,
+  .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton a,
   .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
   .AskToAnswerModalLink, .MostWantedBadge,
   .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content {
@@ -114,7 +113,7 @@
 
   /*** borders ***/
   .dialog .close_modal, .pagedlist_item.pagedlist_invisible, .comment_highlight_wrapper,
-  .hover_menu_above li:first-child:after {
+  .hover_menu_above li:first-child:after, .ContentFeedTabs li.active a {
     border-color: transparent !important;
   }
   .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea {
@@ -173,7 +172,7 @@
   }
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
   .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer, .Topic.Button .count,
-  .RequestAnswer .count, .link:hover {
+  .RequestAnswer .count, .link:hover, .filter_option_link:hover, .filter_option_link.selected {
    background-color: #182030 !important;
   }
   .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
