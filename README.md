@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.1.5 (1/31/2016)
+
+*  Add style to user profiles & other fixes
+
 #### Version 1.1.4 (1/29/2016)
 
 * Add styles to profile page.
@@ -26,7 +30,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 #### Version 1.1.3 (1/28/2016)
 
 * Add missing styles. Fixes [issue #2](https://github.com/StylishThemes/Quora-Dark/issues/2).
-
-#### Version 1.1.2 (1/2/2016)
-
-* Fix re-ask popup. See [issue #1](https://github.com/StylishThemes/Quora-Dark/issues/1).
