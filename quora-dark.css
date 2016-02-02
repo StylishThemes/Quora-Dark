@@ -53,7 +53,7 @@
     background-color: #181818 !important;
   }
 
-  .SiteHeader, .header_inner, .answer_header_and_editor, .ContentPageFeed, .LoggedOutContentPageFeed,
+  .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
   .hover_menu_contents, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
   .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer,
@@ -61,7 +61,7 @@
   .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
   .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
-  .banner_answer, .prettyprint .linenums li:before {
+  .banner_answer, .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
@@ -70,6 +70,9 @@
   .threaded_comments, .comment_replies_show_child_link, .AnswerBase.undesirable_answer,
   .CompleteProfileBanner, .topic_expert_application_form {
     background-color: rgba(34, 34, 34, 0.6) !important;
+  }
+  .ContentPageFeed {
+    background-color: rgba(34, 34, 34, 0.3) !important;
   }
 
   .read_more_link, .unseen, .action_button, .NextButton, .modal_footer {
