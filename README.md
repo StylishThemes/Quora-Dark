@@ -18,6 +18,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.1.6 (2/27/2016)
+
+* Add missing class & other tweaks. See [issue #4](https://github.com/StylishThemes/Quora-Dark/issues/4).
+* Add style to Request Answers Drawer & toggle.
+
 #### Version 1.1.5 (1/31/2016)
 
 *  Add style to user profiles & other fixes
@@ -26,7 +31,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 * Add styles to profile page.
 * Style "Top Answers" sections. Fixes [issue #3](https://github.com/StylishThemes/Quora-Dark/issues/3).
-
-#### Version 1.1.3 (1/28/2016)
-
-* Add missing styles. Fixes [issue #2](https://github.com/StylishThemes/Quora-Dark/issues/2).
