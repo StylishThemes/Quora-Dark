@@ -80,7 +80,7 @@
   }
   .count, .ContentPageFeedStoryItem,
   .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
-  .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton a,
+  .follow_state_badge, .NotificationsClearLink,
   .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
   .AskToAnswerModalLink, .MostWantedBadge,
   .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content,
@@ -176,7 +176,8 @@
   }
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
   .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer, .Topic.Button .count,
-  .RequestAnswer .count, .link:hover, .filter_option_link:hover, .filter_option_link.selected, .RADToggle {
+  .RequestAnswer .count, .link:hover, .filter_option_link:hover, .filter_option_link.selected, .RADToggle,
+  .NotificationsClearButton, .link.selected {
    background-color: #182030 !important;
   }
   .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
