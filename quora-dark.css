@@ -83,7 +83,8 @@
   .follow_state_badge, .NotificationsClearLink, .NotificationsClearButton a,
   .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
   .AskToAnswerModalLink, .MostWantedBadge,
-  .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content {
+  .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content,
+  .RequestAnswersDrawer .inner, .RADToggle.is_active {
     background-color: #282828 !important;
   }
 
@@ -175,11 +176,11 @@
   }
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
   .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer, .Topic.Button .count,
-  .RequestAnswer .count, .link:hover, .filter_option_link:hover, .filter_option_link.selected {
+  .RequestAnswer .count, .link:hover, .filter_option_link:hover, .filter_option_link.selected, .RADToggle {
    background-color: #182030 !important;
   }
   .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
-  .Topic.Button, .RequestAnswer {
+  .Topic.Button, .RequestAnswer, .RADToggle {
     border-color: #246 !important;
   }
 
