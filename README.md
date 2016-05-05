@@ -18,6 +18,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.1.7 (5/5/2016)
+
+* Style clear notifications button.
+* Various UI style fixes.
+
 #### Version 1.1.6 (2/27/2016)
 
 * Add missing class & other tweaks. See [issue #4](https://github.com/StylishThemes/Quora-Dark/issues/4).
@@ -26,8 +31,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 #### Version 1.1.5 (1/31/2016)
 
 *  Add style to user profiles & other fixes
-
-#### Version 1.1.4 (1/29/2016)
-
-* Add styles to profile page.
-* Style "Top Answers" sections. Fixes [issue #3](https://github.com/StylishThemes/Quora-Dark/issues/3).
