@@ -42,14 +42,19 @@
   .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item,
   .NotificationItem.seen, .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
   .editor_toolbar .modifier.overflow_hide:before, .FollowSuggestionCard.InlineFollowSuggestionCard,
-  .seen, .Message, .ObjectCard, .ObjectCard-footer, .ContentFeedTabs li.active a {
+  .seen, .Message, .ObjectCard, .ObjectCard-footer, .ContentFeedTabs li.active a,
+  .SiteHeader .dropdown {
     background: transparent !important;
+  }
+  .is_removable .remove_link {
+    background-image: none !important;
   }
 
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .write_answer,
   .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
   .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
-  pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision, .ContentFeedTabs li a {
+  pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision, .ContentFeedTabs li a,
+  .quiet_notifs_banner {
     background-color: #181818 !important;
   }
 
@@ -89,7 +94,7 @@
   }
 
   .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
-  .AnswerEditorHeader {
+  .AnswerEditorHeader, .AddQuestionLookupBarButton {
     background-color: #333 !important;
   }
 
@@ -103,15 +108,17 @@
   }
 
   /*** text color ***/
-  a, a span, a:hover .TopicName {
+  a, a span, a:hover .TopicName, .is_removable .remove_link:hover {
     color: /*[[base-color]]*/ #b50 !important;
   }
   h1,h2,h3,h4,h5,h6,blockquote,div,div > span, span > span, li,input,textarea,
   a.submit_button span, a.primary_button span, interval_timestamp, .tooltip_contents span,
-  .nav_item_link .badge, .hover_menu_header_link, .topic_pill a, .ViewMoreLink a {
+  .nav_item_link .badge, .hover_menu_header_link, .topic_pill a, .ViewMoreLink a,
+  .is_removable .remove_link {
     color: #ddd !important;
   }
-  .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count {
+  .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
+  .table_cell_wrapper a span {
     color: #999 !important;
   }
 
@@ -129,7 +136,7 @@
     border-color: #333 !important;
   }
 
-  .ActionBar .primary_action:hover, .primary_item a:hover {
+  .ActionBar .primary_action:hover, .primary_item a:hover, .AddQuestionLookupBarButton:hover {
     border-color: #555 !important;
   }
 
@@ -148,6 +155,9 @@
   .hover_menu_above li:last-child:after {
     border-top-color: #222 !important;
     border-bottom-color: transparent !important;
+  }
+  .HomeNavListHoverMenu:before {
+    border-right-color: #222 !important;
   }
 
   /*** Red ***/
