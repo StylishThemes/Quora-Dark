@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.1.8 (6/26/2016)
+
+* Fix white modals on answers. See [pull #5](https://github.com/StylishThemes/Quora-Dark/pull/5); thanks [@hashhar](https://github.com/hashhar)!
+
 #### Version 1.1.7 (5/5/2016)
 
 * Style clear notifications button.
@@ -27,7 +31,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 * Add missing class & other tweaks. See [issue #4](https://github.com/StylishThemes/Quora-Dark/issues/4).
 * Add style to Request Answers Drawer & toggle.
-
-#### Version 1.1.5 (1/31/2016)
-
-*  Add style to user profiles & other fixes
