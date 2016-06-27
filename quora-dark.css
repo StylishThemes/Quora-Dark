@@ -219,5 +219,13 @@
   .toggle_modal_inline.inline_modal_highlight:hover {
     background-color: #050505;
   }
-
+  
+  /*** Make the messages black instead of white. ***/
+  .MessagesThreadItem:hover, .MessagesThreadItem.active {
+    background: rgba(0,0,0,0.9);
+  }
+  
+  .MessagesMain .header, .MessagesMain .threads_and_messages .threads, .MessagesThreadItem, .NewInboxThreadComposeMessageBox {
+    background: rgba(0,0,0,0);
+  }
 }
