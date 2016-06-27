@@ -209,5 +209,15 @@
   .quote_hover_menu {
     /*[[hide-popup]]*/ display: none !important;
   }
+  
+  /*** Make the popup answer's background transparent black. ***/
+  .modal_overlay.feed_desktop_modal {
+   background: rgba(0,0,0,0.9);
+  }
+  
+  /*** Make the answer hover colour a dark black one. ***/
+  .toggle_modal_inline.inline_modal_highlight:hover {
+   background-color: #050505;
+  }
 
 }
