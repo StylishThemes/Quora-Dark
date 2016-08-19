@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+#### Version 1.1.10 (8/18/2016)
+
+* Make hover highlight transparent. Fixes [issue #7](https://github.com/StylishThemes/Quora-Dark/issues/7).
+
 #### Version 1.1.9 (6/27/2016)
 
 * Fix bright menus/overlays. See [pull #6](https://github.com/StylishThemes/Quora-Dark/pull/6); thanks [@hashhar](https://github.com/hashhar)!
@@ -25,8 +29,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 #### Version 1.1.8 (6/26/2016)
 
 * Fix white modals on answers. See [pull #5](https://github.com/StylishThemes/Quora-Dark/pull/5); thanks [@hashhar](https://github.com/hashhar)!
-
-#### Version 1.1.7 (5/5/2016)
-
-* Style clear notifications button.
-* Various UI style fixes.
