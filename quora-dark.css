@@ -54,7 +54,7 @@
   .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
   .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
   pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision, .ContentFeedTabs li a,
-  .quiet_notifs_banner {
+  .quiet_notifs_banner, .LookupBarSelector .instruction {
     background-color: #181818 !important;
   }
 
@@ -66,7 +66,8 @@
   .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
   .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
-  .banner_answer, .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason {
+  .banner_answer, .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason,
+  .Selector .SelectorResults {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
@@ -94,7 +95,8 @@
   }
 
   .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
-  .AnswerEditorHeader, .AddQuestionLookupBarButton {
+  .AnswerEditorHeader, .AddQuestionLookupBarButton,
+  .SelectorResults .selector_highlighted:not(.unselectable) {
     background-color: #333 !important;
   }
 
@@ -144,7 +146,7 @@
   .hover_menu_contents li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
   .hover_menu:before, .hover_menu:after, .header_hover_menu:after, .results_wrapper:before,
   .resistance_wrapper:after, .comment_replies_show_child_link:before,
-  .comment_replies_show_child_link:after {
+  .comment_replies_show_child_link:after, .results_wrapper:after {
     border-bottom-color: #333 !important;
   }
 
