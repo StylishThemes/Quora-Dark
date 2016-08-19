@@ -43,7 +43,7 @@
   .NotificationItem.seen, .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
   .editor_toolbar .modifier.overflow_hide:before, .FollowSuggestionCard.InlineFollowSuggestionCard,
   .seen, .Message, .ObjectCard, .ObjectCard-footer, .ContentFeedTabs li.active a,
-  .SiteHeader .dropdown {
+  .SiteHeader .dropdown, .hover_highlight:hover {
     background: transparent !important;
   }
   .is_removable .remove_link {
