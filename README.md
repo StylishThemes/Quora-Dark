@@ -18,14 +18,14 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
-#### Version 1.1.10 (8/18/2016)
+### Version 1.1.11 (8/19/2016)
+
+* Darken search suggestion dropdown. Fixes [issue #8](https://github.com/StylishThemes/Quora-Dark/issues/8).
+
+### Version 1.1.10 (8/18/2016)
 
 * Make hover highlight transparent. Fixes [issue #7](https://github.com/StylishThemes/Quora-Dark/issues/7).
 
-#### Version 1.1.9 (6/27/2016)
+### Version 1.1.9 (6/27/2016)
 
 * Fix bright menus/overlays. See [pull #6](https://github.com/StylishThemes/Quora-Dark/pull/6); thanks [@hashhar](https://github.com/hashhar)!
-
-#### Version 1.1.8 (6/26/2016)
-
-* Fix white modals on answers. See [pull #5](https://github.com/StylishThemes/Quora-Dark/pull/5); thanks [@hashhar](https://github.com/hashhar)!
