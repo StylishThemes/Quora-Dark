@@ -46,6 +46,9 @@
   .SiteHeader .dropdown, .hover_highlight:hover, .question_related.list {
     background: transparent !important;
   }
+  .check_wrapper.complete .check {
+    background-color: transparent !important;
+  }
   .is_removable .remove_link {
     background-image: none !important;
   }
@@ -54,7 +57,8 @@
   .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
   .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
   pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision, .ContentFeedTabs li a,
-  .quiet_notifs_banner, .LookupBarSelector .instruction {
+  .quiet_notifs_banner, .LookupBarSelector .instruction, .new_user_checklist .title,
+  .Carousel .left, .Carousel .right, .StoryItemToggleModal.read_item {
     background-color: #181818 !important;
   }
 
@@ -67,7 +71,7 @@
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
   .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
   .banner_answer, .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason,
-  .Selector .SelectorResults {
+  .Selector .SelectorResults, .Carousel .left:hover, .Carousel .right:hover {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
@@ -81,7 +85,8 @@
     background-color: rgba(34, 34, 34, 0.3) !important;
   }
 
-  .read_more_link, .unseen, .action_button, .NextButton, .modal_footer {
+  .read_more_link, .unseen, .action_button, .NextButton, .modal_footer,
+  .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more {
     background: #242424 !important;
   }
   .count, .ContentPageFeedStoryItem,
@@ -96,7 +101,9 @@
 
   .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
   .AnswerEditorHeader, .AddQuestionLookupBarButton,
-  .SelectorResults .selector_highlighted:not(.unselectable) {
+  .SelectorResults .selector_highlighted:not(.unselectable),
+  .AnswerPageViewMoreLink .view_more_link:hover,
+  .multifeed_header .modal_related_answers .view_more .view_more_link:hover {
     background-color: #333 !important;
   }
 
@@ -134,12 +141,18 @@
   }
 
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a, .hover_menu_contents,
-  .question_box, .show_reply_box_link, .QuestionActionBarA2APrompt, input, .seen {
+  .question_box, .show_reply_box_link, .QuestionActionBarA2APrompt, input, .seen,
+  .Carousel .left, .Carousel .right {
     border-color: #333 !important;
   }
 
   .ActionBar .primary_action:hover, .primary_item a:hover, .AddQuestionLookupBarButton:hover {
     border-color: #555 !important;
+  }
+
+  /* outline */
+  .Carousel .left, .Carousel .right {
+    outline-color: #333 !important;
   }
 
   /* arrow */
