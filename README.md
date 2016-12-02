@@ -18,6 +18,10 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.1.13 (12/1/2016)
+
+* Various fixes. See https://forum.userstyles.org/discussion/51751/x.
+
 ### Version 1.1.12.(8/25/2016)
 
 * Make "Related Questions" background transparent.
@@ -25,7 +29,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 ### Version 1.1.11 (8/19/2016)
 
 * Darken search suggestion dropdown. Fixes [issue #8](https://github.com/StylishThemes/Quora-Dark/issues/8).
-
-### Version 1.1.10 (8/18/2016)
-
-* Make hover highlight transparent. Fixes [issue #7](https://github.com/StylishThemes/Quora-Dark/issues/7).
