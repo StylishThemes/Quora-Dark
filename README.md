@@ -18,6 +18,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.1.14 (1/24/2017)
+
+* Remove modal background. Fixes [issue #9](https://github.com/StylishThemes/Quora-Dark/issues/9).
+* Clean up selectors.
+
 ### Version 1.1.13 (12/1/2016)
 
 * Various fixes. See https://forum.userstyles.org/discussion/51751/x.
@@ -25,7 +30,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 ### Version 1.1.12.(8/25/2016)
 
 * Make "Related Questions" background transparent.
-
-### Version 1.1.11 (8/19/2016)
-
-* Darken search suggestion dropdown. Fixes [issue #8](https://github.com/StylishThemes/Quora-Dark/issues/8).
