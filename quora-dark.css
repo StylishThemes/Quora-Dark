@@ -11,7 +11,7 @@
 
   html, body:not(.logged_out_page_big_signup) {
     background-color: #222 !important;
-    background-image: /*[[bg-choice]]*/ url(http://i62.tinypic.com/2a2eir.png) !important;
+    background-image: /*[[bg-choice]]*/ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
     /*[[bg-options]]*/
@@ -19,12 +19,14 @@
   }
 
   /* action buttons */
-  .AddQuestionFromHeaderDialogButton, .submit_button, .primary_button, .MoreStoriesIndicator {
+  .AddQuestionFromHeaderDialogButton, .submit_button, .primary_button,
+  .MoreStoriesIndicator {
     background-color: /*[[base-color]]*/ #b50 !important;
     border-color: /*[[base-color]]*/ #b50 !important;
     color: #eee !important;
   }
-  .AddQuestionFromHeaderDialogButton:hover, .submit_button:hover, .primary_button:hover, .MoreStoriesIndicator:hover {
+  .AddQuestionFromHeaderDialogButton:hover, .submit_button:hover,
+  .primary_button:hover, .MoreStoriesIndicator:hover {
     opacity: 0.8 !important;
   }
 
@@ -39,13 +41,18 @@
   }
 
   /*** background ***/
-  .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp, .feed_item,
-  .NotificationItem.seen, .edit_faq_link, .title a, .editor_toolbar .modifier.overflow_show:before,
-  .editor_toolbar .modifier.overflow_hide:before, .FollowSuggestionCard.InlineFollowSuggestionCard,
-  .seen, .Message, .ObjectCard, .ObjectCard-footer, .ContentFeedTabs li.active a,
-  .SiteHeader .dropdown, .hover_highlight:hover, .question_related.list, .Modal .modal_header,
-  .Modal .modal_content .modal_non_exp, .Modal .modal_content,
-  .answer_editor.on_draft_page .AnswerEditorHeader, .answer_editor.on_draft_page .form_buttons {
+  .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp,
+  .feed_item, .NotificationItem.seen, .edit_faq_link, .title a,
+  .editor_toolbar .modifier.overflow_show:before,
+  .editor_toolbar .modifier.overflow_hide:before,
+  .FollowSuggestionCard.InlineFollowSuggestionCard, .seen, .Message,
+  .ObjectCard, .ObjectCard-footer, .ContentFeedTabs li.active a,
+  .SiteHeader .dropdown, .hover_highlight:hover, .question_related.list,
+  .Modal .modal_header, .Modal .modal_content .modal_non_exp,
+  .Modal .modal_content, .answer_editor.on_draft_page .AnswerEditorHeader,
+  .answer_editor.on_draft_page .form_buttons, .MessagesMain .header,
+  .MessagesMain .threads_and_messages .threads, .MessagesThreadItem,
+  .NewInboxThreadComposeMessageBox {
     background: transparent !important;
   }
   .check_wrapper.complete .check {
@@ -55,32 +62,37 @@
     background-image: none !important;
   }
 
-  input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content, .write_answer,
-  .inline_login_profile_box, .qtext_button_qimg a, .tooltip_contents, .codeblock, .remove_upvote,
-  .ExistingUserNuxProgressBar, .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
-  pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision, .ContentFeedTabs li a,
-  .quiet_notifs_banner, .LookupBarSelector .instruction, .new_user_checklist .title,
-  .Carousel .left, .Carousel .right, .StoryItemToggleModal.read_item {
+  input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content,
+  .write_answer, .inline_login_profile_box, .qtext_button_qimg a,
+  .tooltip_contents, .codeblock, .remove_upvote, .ExistingUserNuxProgressBar,
+  .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
+  pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision,
+  .ContentFeedTabs li a, .quiet_notifs_banner, .LookupBarSelector .instruction,
+  .new_user_checklist .title, .Carousel .left, .Carousel .right,
+  .StoryItemToggleModal.read_item {
     background-color: #181818 !important;
   }
 
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
   .hover_menu_contents, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
-  .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item, .Announcement .footer,
-  .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
-  .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
+  .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item,
+  .Announcement .footer, .EditableList .nav_item_selected a,
+  .EditableList .StaticListItem > .selected, .ask_interstitial,
+  .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
   .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
-  .banner_answer, .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason,
-  .Selector .SelectorResults, .Carousel .left:hover, .Carousel .right:hover {
+  .banner_answer, .prettyprint .linenums li:before, .heads_up_item,
+  .QuestionBannerReason, .Selector .SelectorResults, .Carousel .left:hover,
+  .Carousel .right:hover {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
     background-color: #222 !important;
   }
-  .threaded_comments, .comment_replies_show_child_link, .AnswerBase.undesirable_answer,
-  .CompleteProfileBanner, .topic_expert_application_form {
+  .threaded_comments, .comment_replies_show_child_link,
+  .AnswerBase.undesirable_answer, .CompleteProfileBanner,
+  .topic_expert_application_form {
     background-color: rgba(34, 34, 34, 0.6) !important;
   }
   .ContentPageFeed {
@@ -91,18 +103,19 @@
   .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more {
     background: #242424 !important;
   }
-  .count, .ContentPageFeedStoryItem,
-  .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active, li.selected,
-  .follow_state_badge, .NotificationsClearLink,
-  .LegalNavLinks, .hover_menu_item:hover, .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
+  .count, .ContentPageFeedStoryItem, .nav_item_link.hover, .nav_item_link:hover,
+  .nav_item_link:active, li.selected, .follow_state_badge,
+  .NotificationsClearLink, .LegalNavLinks, .hover_menu_item:hover,
+  .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
   .AskToAnswerModalLink, .MostWantedBadge,
   .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content,
   .RequestAnswersDrawer .inner, .RADToggle.is_active {
     background-color: #282828 !important;
   }
 
-  .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
-  .AnswerEditorHeader, .AddQuestionLookupBarButton,
+  .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover,
+  .completed:hover, .menu_list_header:hover, .AnswerEditorHeader,
+  .AddQuestionLookupBarButton,
   .SelectorResults .selector_highlighted:not(.unselectable),
   .AnswerPageViewMoreLink .view_more_link:hover,
   .multifeed_header .modal_related_answers .view_more .view_more_link:hover {
@@ -114,7 +127,8 @@
   }
 
   /* overlay */
-  .ContentPageFeedStoryItem:hover .feed_item_overlay, .dialog:not(.dialog_nux):not(.modal_signup_dialog):after {
+  .ContentPageFeedStoryItem:hover .feed_item_overlay,
+  .dialog:not(.dialog_nux):not(.modal_signup_dialog):after {
     background: rgba(0,0,0,0.5) !important;
   }
 
@@ -122,33 +136,35 @@
   a, a span, a:hover .TopicName, .is_removable .remove_link:hover {
     color: /*[[base-color]]*/ #b50 !important;
   }
-  h1,h2,h3,h4,h5,h6,blockquote,div,div > span, span > span, li,input,textarea,
-  a.submit_button span, a.primary_button span, interval_timestamp, .tooltip_contents span,
-  .nav_item_link .badge, .hover_menu_header_link, .topic_pill a, .ViewMoreLink a,
-  .is_removable .remove_link {
+  h1, h2, h3, h4, h5, h6, blockquote, div, div > span, span > span, li, input,
+  textarea, a.submit_button span, a.primary_button span, interval_timestamp,
+  .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
+  .topic_pill a, .ViewMoreLink a, .is_removable .remove_link {
     color: #ddd !important;
   }
-  .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
-  .table_cell_wrapper a span {
+  .faded, .add_upvote, .add_upvote .count, .remove_upvote,
+  .remove_upvote .count, .table_cell_wrapper a span {
     color: #999 !important;
   }
 
   /*** borders ***/
-  .dialog .close_modal, .pagedlist_item.pagedlist_invisible, .comment_highlight_wrapper,
-  .hover_menu_above li:first-child:after, .ContentFeedTabs li.active a {
+  .dialog .close_modal, .pagedlist_item.pagedlist_invisible,
+  .comment_highlight_wrapper, .hover_menu_above li:first-child:after,
+  .ContentFeedTabs li.active a {
     border-color: transparent !important;
   }
   .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea {
     border-color: /*[[base-color]]*/ #b50 !important;
   }
 
-  h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a, .hover_menu_contents,
-  .question_box, .show_reply_box_link, .QuestionActionBarA2APrompt, input, .seen,
-  .Carousel .left, .Carousel .right {
+  h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a,
+  .hover_menu_contents, .question_box, .show_reply_box_link,
+  .QuestionActionBarA2APrompt, input, .seen, .Carousel .left, .Carousel .right {
     border-color: #333 !important;
   }
 
-  .ActionBar .primary_action:hover, .primary_item a:hover, .AddQuestionLookupBarButton:hover {
+  .ActionBar .primary_action:hover, .primary_item a:hover,
+  .AddQuestionLookupBarButton:hover {
     border-color: #555 !important;
   }
 
@@ -158,14 +174,16 @@
   }
 
   /* arrow */
-  .hover_menu_contents li:first-child:after, .MoreHoverMenuContents > ul > li:first-child:after,
-  .hover_menu:before, .hover_menu:after, .header_hover_menu:after, .results_wrapper:before,
+  .hover_menu_contents li:first-child:after,
+  .MoreHoverMenuContents > ul > li:first-child:after, .hover_menu:before,
+  .hover_menu:after, .header_hover_menu:after, .results_wrapper:before,
   .resistance_wrapper:after, .comment_replies_show_child_link:before,
   .comment_replies_show_child_link:after, .results_wrapper:after {
     border-bottom-color: #333 !important;
   }
 
-  .hover_menu_above:before, .hover_menu_above:after, .hover_menu_above li:last-child:before {
+  .hover_menu_above:before, .hover_menu_above:after,
+  .hover_menu_above li:last-child:before {
     border-top-color: #333 !important;
     border-bottom-color: transparent !important;
   }
@@ -201,19 +219,22 @@
     background: #182030 !important;
     border: 1px solid #246 !important;
   }
-  .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
-  .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer, .Topic.Button .count,
-  .RequestAnswer .count, .link:hover, .filter_option_link:hover, .filter_option_link.selected, .RADToggle,
-  .NotificationsClearButton, .link.selected {
+  .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer,
+  .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
+  .Topic.Button, .RequestAnswer, .Topic.Button .count, .RequestAnswer .count,
+  .link:hover, .filter_option_link:hover, .filter_option_link.selected,
+  .RADToggle, .NotificationsClearButton, .link.selected {
    background-color: #182030 !important;
   }
-  .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
-  .Topic.Button, .RequestAnswer, .RADToggle {
+  .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
+  .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer,
+  .RADToggle {
     border-color: #246 !important;
   }
 
   /*** Brown ***/
-  .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div, .ReAskPrompt {
+  .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div,
+  .ReAskPrompt {
     background: #321 !important;
     border-color: #542 !important;
     color: #b74 !important;
@@ -242,7 +263,4 @@
     background: rgba(0,0,0,0.9);
   }
 
-  .MessagesMain .header, .MessagesMain .threads_and_messages .threads, .MessagesThreadItem, .NewInboxThreadComposeMessageBox {
-    background: rgba(0,0,0,0);
-  }
 }
