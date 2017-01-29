@@ -8,16 +8,14 @@
     text-shadow: none !important;
     box-shadow: none !important;
   }
-
   html, body:not(.logged_out_page_big_signup) {
     background-color: #222 !important;
-    background-image: /*[[bg-choice]]*/ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+    background-image: /*[[bg-choice]]*/ url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==") !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
     background-attachment: /*[[bg-attachment]]*/ fixed !important;
     /*[[bg-options]]*/
   }
-
   /* action buttons */
   .AddQuestionFromHeaderDialogButton, .submit_button, .primary_button,
   .MoreStoriesIndicator {
@@ -27,9 +25,8 @@
   }
   .AddQuestionFromHeaderDialogButton:hover, .submit_button:hover,
   .primary_button:hover, .MoreStoriesIndicator:hover {
-    opacity: 0.8 !important;
+    opacity: .8 !important;
   }
-
   /* text selection */
   ::selection {
     background-color: /*[[base-color]]*/ #b50 !important;
@@ -39,7 +36,6 @@
     background-color: /*[[base-color]]*/ #b50 !important;
     color: #fff !important;
   }
-
   /*** background ***/
   .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp,
   .feed_item, .NotificationItem.seen, .edit_faq_link, .title a,
@@ -61,7 +57,6 @@
   .is_removable .remove_link {
     background-image: none !important;
   }
-
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content,
   .write_answer, .inline_login_profile_box, .qtext_button_qimg a,
   .tooltip_contents, .codeblock, .remove_upvote, .ExistingUserNuxProgressBar,
@@ -72,7 +67,6 @@
   .StoryItemToggleModal.read_item {
     background-color: #181818 !important;
   }
-
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
   .hover_menu_contents, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
@@ -84,7 +78,9 @@
   .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
   .banner_answer, .prettyprint .linenums li:before, .heads_up_item,
   .QuestionBannerReason, .Selector .SelectorResults, .Carousel .left:hover,
-  .Carousel .right:hover {
+  .Carousel .right:hover,
+  /*** Pinned topic header ***/
+  div.fixable_clone .PinnedTopicHeader.fixable_fixed {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
@@ -93,12 +89,11 @@
   .threaded_comments, .comment_replies_show_child_link,
   .AnswerBase.undesirable_answer, .CompleteProfileBanner,
   .topic_expert_application_form {
-    background-color: rgba(34, 34, 34, 0.6) !important;
+    background-color: rgba(34, 34, 34, .6) !important;
   }
   .ContentPageFeed {
-    background-color: rgba(34, 34, 34, 0.3) !important;
+    background-color: rgba(34, 34, 34, .3) !important;
   }
-
   .read_more_link, .unseen, .action_button, .NextButton, .modal_footer,
   .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more {
     background: #242424 !important;
@@ -112,7 +107,6 @@
   .RequestAnswersDrawer .inner, .RADToggle.is_active {
     background-color: #282828 !important;
   }
-
   .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover,
   .completed:hover, .menu_list_header:hover, .AnswerEditorHeader,
   .AddQuestionLookupBarButton,
@@ -121,17 +115,14 @@
   .multifeed_header .modal_related_answers .view_more .view_more_link:hover {
     background-color: #333 !important;
   }
-
   .count:before, .qtext_hr {
     background-color: #444 !important;
   }
-
   /* overlay */
   .ContentPageFeedStoryItem:hover .feed_item_overlay,
   .dialog:not(.dialog_nux):not(.modal_signup_dialog):after {
-    background: rgba(0,0,0,0.5) !important;
+    background: rgba(0, 0, 0, .5) !important;
   }
-
   /*** text color ***/
   a, a span, a:hover .TopicName, .is_removable .remove_link:hover {
     color: /*[[base-color]]*/ #b50 !important;
@@ -146,7 +137,6 @@
   .remove_upvote .count, .table_cell_wrapper a span {
     color: #999 !important;
   }
-
   /*** borders ***/
   .dialog .close_modal, .pagedlist_item.pagedlist_invisible,
   .comment_highlight_wrapper, .hover_menu_above li:first-child:after,
@@ -156,23 +146,19 @@
   .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea {
     border-color: /*[[base-color]]*/ #b50 !important;
   }
-
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a,
   .hover_menu_contents, .question_box, .show_reply_box_link,
   .QuestionActionBarA2APrompt, input, .seen, .Carousel .left, .Carousel .right {
     border-color: #333 !important;
   }
-
   .ActionBar .primary_action:hover, .primary_item a:hover,
   .AddQuestionLookupBarButton:hover {
     border-color: #555 !important;
   }
-
   /* outline */
   .Carousel .left, .Carousel .right {
     outline-color: #333 !important;
   }
-
   /* arrow */
   .hover_menu_contents li:first-child:after,
   .MoreHoverMenuContents > ul > li:first-child:after, .hover_menu:before,
@@ -181,7 +167,6 @@
   .comment_replies_show_child_link:after, .results_wrapper:after {
     border-bottom-color: #333 !important;
   }
-
   .hover_menu_above:before, .hover_menu_above:after,
   .hover_menu_above li:last-child:before {
     border-top-color: #333 !important;
@@ -194,12 +179,10 @@
   .HomeNavListHoverMenu:before {
     border-right-color: #222 !important;
   }
-
   /*** Red ***/
   .diffdelete {
     background-color: #300 !important;
   }
-
   /*** Green ***/
   .follow_button {
     background: #041 !important;
@@ -213,7 +196,6 @@
   .diffinsert {
     background: #020 !important;
   }
-
   /*** Blue ***/
   .notifications_banner, .add_upvote, .User.Button {
     background: #182030 !important;
@@ -231,7 +213,6 @@
   .RADToggle {
     border-color: #246 !important;
   }
-
   /*** Brown ***/
   .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div,
   .ReAskPrompt {
@@ -239,32 +220,23 @@
     border-color: #542 !important;
     color: #b74 !important;
   }
-  .ReAskPrompt::before, .ReAskPrompt::after {
+  .ReAskPrompt:before, .ReAskPrompt:after {
     border-bottom-color: #542 !important;
   }
-
   /*** hide text selection popup ***/
   .quote_hover_menu {
-    /*[[hide-popup]]*/ display: none !important;
+    /*[[hide-popup]]*/
+    display: none !important;
   }
-
   /*** Make the popup answer's background transparent black. ***/
-  .modal_overlay.feed_desktop_modal {
-    background: rgba(0,0,0,0.9);
+  .modal_overlay.feed_desktop_modal,
+  /*** Make the messages black instead of white. ***/
+  .MessagesThreadItem:hover, .MessagesThreadItem.active {
+    background: rgba(0, 0, 0, .9);
   }
-
   /*** Make the answer hover colour a dark black one. ***/
   .toggle_modal_inline.inline_modal_highlight:hover {
     background-color: #050505;
   }
-
-  /*** Make the messages black instead of white. ***/
-  .MessagesThreadItem:hover, .MessagesThreadItem.active {
-    background: rgba(0,0,0,0.9);
-  }
-
-  /*** Pinned topic header ***/
-  div.fixable_clone .PinnedTopicHeader.fixable_fixed {
-    background: #222 !important;
-  }
+  /* grunt build - remove to end of file */
 }

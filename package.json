@@ -1,0 +1,27 @@
+{
+  "name": "quora-dark",
+  "version": "1.2.0",
+  "description": "Dark Quora",
+  "license": "CC-BY-SA-4.0",
+  "repository": "StylishThemes/Quora-Dark",
+  "homepage": "https://userstyles.org/styles/104706/quora-dark",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^1.0.1",
+    "grunt-string-replace": "^1.3.1",
+    "grunt-wrap": "^0.3.0",
+    "perfectionist": "^2.4.0",
+    "postcss": "^5.2.11",
+    "pre-commit": "^1.2.2",
+    "semver": "^5.3.0",
+    "stylelint": "^7.7.1",
+    "stylelint-config-standard": "^15.0.1"
+  },
+  "scripts": {
+    "authors": "bash tools/authors",
+    "stylelint": "stylelint",
+    "test": "stylelint quora-dark.css"
+  }
+}

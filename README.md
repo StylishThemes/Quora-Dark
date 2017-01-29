@@ -18,6 +18,15 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.2.0 (1/29/2017)
+
+* Fix pinned topic header. See [pull #10](https://github.com/StylishThemes/Quora-Dark/pull/10); thanks [@Xanaxiel](https://github.com/Xanaxiel)!
+* Meta:
+  * Rename bg-options2 to bg-attachment placeholder.
+  * Add authors file.
+  * Add license file.
+  * Add a build process; see the updated [contributing file](https://github.com/StylishThemes/Quora-Dark/blob/master/CONTRIBUTING.md).
+
 ### Version 1.1.14 (1/24/2017)
 
 * Remove modal background. Fixes [issue #9](https://github.com/StylishThemes/Quora-Dark/issues/9).
@@ -26,7 +35,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 ### Version 1.1.13 (12/1/2016)
 
 * Various fixes. See https://forum.userstyles.org/discussion/51751/x.
-
-### Version 1.1.12.(8/25/2016)
-
-* Make "Related Questions" background transparent.

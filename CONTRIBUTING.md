@@ -3,6 +3,7 @@
 1. [Getting Involved](#getting-involved)
 2. [How To Report style issues](#how-to-report-style-issues)
 3. [Core Style Guide](#quora-dark-style-guide)
+4. [Getting Started](#getting-started)
 
 ## Getting Involved
 
@@ -15,7 +16,7 @@ If you don't know CSS very well and have found a missing style, please include a
 
 * Screenshot of the problem; include the element(s) in the console if at all possible
   * To select an element, target it with your mouse then right-click and choose "Inspect Element"
-  * Please include both the HTML view and the element with the problem in the screenshot (see [issue #119](https://github.com/StylishThemes/GitHub-Dark/issues/119) for an example)
+  * Please include both the HTML view and the element with the problem in the screenshot (see [issue #119](https://github.com/StylishThemes/GitHub-Dark/issues/119) for an example from the GitHub-Dark repository)
 * A URL to the page (if public).
 
 ### I rock at CSS & GitHub!
@@ -50,7 +51,7 @@ If you don't know CSS very well and have found a missing style, please include a
     /* bad */
     element[attr='value']{ }
     ```
-  
+
   * 2 Space indentation
     ```css
     /* good */
@@ -71,3 +72,19 @@ If you don't know CSS very well and have found a missing style, please include a
   * If your css definition already exists within the style, do not add it again! Add your selector to the existing definition.
 * Insert any new css selectors in any available slot before the style definition, or on a new line as needed.
 * If you want to add a new userstyle variable, please open an issue and discuss it with us first.
+
+## Getting Started
+
+* Download, fork or clone this repository.
+* Use [node.js](http://nodejs.org/) to run `npm install`.
+* Make any changes to the `quora-dark.css` file and save.
+
+### Build & test
+
+* Create or edit your `build.json` file to include any customizations to the style, see the [build wiki page](https://github.com/StylishThemes/Quora-Dark/wiki/Build) for more details.
+* Run `grunt` to create your custom theme.
+* Copy & paste the css from the newly created `quora-dark-{color}.build.css` file into the Stylish editor to test your changes.
+* Once you are satisfied with the changes, run `npm test` to test the css changes.
+* Now you can push the changes of the `quora-dark.css` file to your fork and submit a pull request.
+* If you haven't already contributed, then also run `npm run authors` to add your name to our list of contributors :smile:
+* And thanks again for contributing!
