@@ -265,6 +265,6 @@
  
   /*** Pinned topic header ***/ 
   div.fixable_clone .PinnedTopicHeader.fixable_fixed {
-    background: rgba(0,0,0,0.9) !important;                    
+    background: #222 !important;                    
   }
 }
