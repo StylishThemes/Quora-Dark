@@ -21,7 +21,7 @@
   .MoreStoriesIndicator {
     background-color: /*[[base-color]]*/ #b50 !important;
     border-color: /*[[base-color]]*/ #b50 !important;
-    color: #eee !important;
+    color: #e2e2e2 !important;
   }
   .AddQuestionFromHeaderDialogButton:hover, .submit_button:hover,
   .primary_button:hover, .MoreStoriesIndicator:hover {
@@ -30,11 +30,11 @@
   /* text selection */
   ::selection {
     background-color: /*[[base-color]]*/ #b50 !important;
-    color: #fff !important;
+    color: #efefef !important;
   }
   ::-moz-selection {
     background-color: /*[[base-color]]*/ #b50 !important;
-    color: #fff !important;
+    color: #efefef !important;
   }
   /*** background ***/
   .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp,
@@ -131,11 +131,11 @@
   textarea, a.submit_button span, a.primary_button span, interval_timestamp,
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
   .topic_pill a, .ViewMoreLink a, .is_removable .remove_link {
-    color: #ddd !important;
+    color: #c0c0c0 !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote,
   .remove_upvote .count, .table_cell_wrapper a span {
-    color: #999 !important;
+    color: #949494 !important;
   }
   /*** borders ***/
   .dialog .close_modal, .pagedlist_item.pagedlist_invisible,
