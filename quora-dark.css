@@ -112,7 +112,8 @@
   .AddQuestionLookupBarButton,
   .SelectorResults .selector_highlighted:not(.unselectable),
   .AnswerPageViewMoreLink .view_more_link:hover,
-  .multifeed_header .modal_related_answers .view_more .view_more_link:hover {
+  .multifeed_header .modal_related_answers .view_more .view_more_link:hover,
+  .content_white_button {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr {
@@ -130,7 +131,8 @@
   h1, h2, h3, h4, h5, h6, blockquote, div, div > span, span > span, li, input,
   textarea, a.submit_button span, a.primary_button span, interval_timestamp,
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
-  .topic_pill a, .ViewMoreLink a, .is_removable .remove_link {
+  .topic_pill a, .ViewMoreLink a, .is_removable .remove_link,
+  .NotifsNavItem .NotifsNavBadge {
     color: #c0c0c0 !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote,
