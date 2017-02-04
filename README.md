@@ -36,6 +36,16 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.2.1 (2/4/2017)
+
+* Readme:
+  * Add logo & tags.
+* Meta:
+  * Update dependencies.
+* Darken white text. See [issue #11](https://github.com/StylishThemes/Quora-Dark/issues/11).
+* Various tweaks.
+* Change default background image.
+
 ### Version 1.2.0 (1/29/2017)
 
 * Fix pinned topic header. See [pull #10](https://github.com/StylishThemes/Quora-Dark/pull/10); thanks [@Xanaxiel](https://github.com/Xanaxiel)!
@@ -49,7 +59,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 * Remove modal background. Fixes [issue #9](https://github.com/StylishThemes/Quora-Dark/issues/9).
 * Clean up selectors.
-
-### Version 1.1.13 (12/1/2016)
-
-* Various fixes. See https://forum.userstyles.org/discussion/51751/x.
