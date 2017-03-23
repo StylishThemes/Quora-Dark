@@ -37,6 +37,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.2.2 (3/23/2017)
+
+* Readme: Add Stylus link.
+* Remove background on related questions. Fixes [issue #12](https://github.com/StylishThemes/Quora-Dark/issues/12).
+
 ### Version 1.2.1 (2/4/2017)
 
 * Readme:
@@ -55,8 +60,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
   * Add authors file.
   * Add license file.
   * Add a build process; see the updated [contributing file](https://github.com/StylishThemes/Quora-Dark/blob/master/CONTRIBUTING.md).
-
-### Version 1.1.14 (1/24/2017)
-
-* Remove modal background. Fixes [issue #9](https://github.com/StylishThemes/Quora-Dark/issues/9).
-* Clean up selectors.
