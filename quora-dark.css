@@ -51,7 +51,8 @@
   .NewInboxThreadComposeMessageBox {
     background: transparent !important;
   }
-  .check_wrapper.complete .check {
+  .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
+  .RelatedQuestions, .RelatedQuestionsAdWrapper {
     background-color: transparent !important;
   }
   .is_removable .remove_link {
