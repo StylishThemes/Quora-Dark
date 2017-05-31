@@ -52,7 +52,8 @@
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
-  .RelatedQuestions, .RelatedQuestionsAdWrapper {
+  .RelatedQuestions, .RelatedQuestionsAdWrapper, .AddQuestionPrompt,
+  .StoryItemToggleModal {
     background-color: transparent !important;
   }
   .is_removable .remove_link {
@@ -65,7 +66,7 @@
   pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision,
   .ContentFeedTabs li a, .quiet_notifs_banner, .LookupBarSelector .instruction,
   .new_user_checklist .title, .Carousel .left, .Carousel .right,
-  .StoryItemToggleModal.read_item {
+  .StoryItemToggleModal.read_item, .notif_dropdown_empty_state {
     background-color: #181818 !important;
   }
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
