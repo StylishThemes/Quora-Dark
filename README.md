@@ -37,6 +37,11 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.2.3 (5/30/2017)
+
+* Make feed cards transparent. Fixes [issue #13](https://github.com/StylishThemes/Quora-Dark/issues/13).
+* Meta: update dependencies.
+
 ### Version 1.2.2 (3/23/2017)
 
 * Readme: Add Stylus link.
@@ -51,12 +56,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 * Darken white text. See [issue #11](https://github.com/StylishThemes/Quora-Dark/issues/11).
 * Various tweaks.
 * Change default background image.
-
-### Version 1.2.0 (1/29/2017)
-
-* Fix pinned topic header. See [pull #10](https://github.com/StylishThemes/Quora-Dark/pull/10); thanks [@Xanaxiel](https://github.com/Xanaxiel)!
-* Meta:
-  * Rename bg-options2 to bg-attachment placeholder.
-  * Add authors file.
-  * Add license file.
-  * Add a build process; see the updated [contributing file](https://github.com/StylishThemes/Quora-Dark/blob/master/CONTRIBUTING.md).
