@@ -219,7 +219,7 @@
   }
   /*** Brown ***/
   .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div,
-  .ReAskPrompt {
+  .ReAskPrompt, .PMsg .contents {
     background: #321 !important;
     border-color: #542 !important;
     color: #b74 !important;
