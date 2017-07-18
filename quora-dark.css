@@ -48,7 +48,8 @@
   .Modal .modal_content, .answer_editor.on_draft_page .AnswerEditorHeader,
   .answer_editor.on_draft_page .form_buttons, .MessagesMain .header,
   .MessagesMain .threads_and_messages .threads, .MessagesThreadItem,
-  .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle {
+  .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
+  .AnswerReadLaterListItem {
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
