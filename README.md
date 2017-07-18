@@ -37,6 +37,17 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.2.4 (7/18/2017)
+
+* Readme:
+  * Add Stylus Firefox addon link.
+  * Add Stylus for Opera.
+* Make panel header background transparent. Fixes [issue #14](https://github.com/StylishThemes/Quora-Dark/issues/14).
+* Add background to folded replies. Fixes [issue #15](https://github.com/StylishThemes/Quora-Dark/issues/15).
+* Remove carousel background. Fixes [issue #16](https://github.com/StylishThemes/Quora-Dark/issues/16).
+* Remove background from bookmarked answers. Fixes [issue #17](https://github.com/StylishThemes/Quora-Dark/issues/17).
+* Style message popup.
+
 ### Version 1.2.3 (5/30/2017)
 
 * Make feed cards transparent. Fixes [issue #13](https://github.com/StylishThemes/Quora-Dark/issues/13).
