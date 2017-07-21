@@ -91,7 +91,8 @@
   }
   .threaded_comments, .comment_replies_show_child_link,
   .AnswerBase.undesirable_answer, .CompleteProfileBanner,
-  .topic_expert_application_form, .comments_preview_toggle, .show_child_link {
+  .topic_expert_application_form, .comments_preview_toggle, .show_child_link,
+  .modal_nux_background, .modal_signup_background {
     background-color: rgba(34, 34, 34, .6) !important;
   }
   .ContentPageFeed {
