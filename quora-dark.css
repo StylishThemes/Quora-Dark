@@ -49,7 +49,8 @@
   .answer_editor.on_draft_page .form_buttons, .MessagesMain .header,
   .MessagesMain .threads_and_messages .threads, .MessagesThreadItem,
   .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
-  .AnswerReadLaterListItem {
+  .AnswerReadLaterListItem, .StatsMain .ContentListWrapper,
+  .ContentListItem, .AllContentLink {
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
@@ -81,7 +82,7 @@
   .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
   .banner_answer, .prettyprint .linenums li:before, .heads_up_item,
   .QuestionBannerReason, .Selector .SelectorResults, .Carousel .left:hover,
-  .Carousel .right:hover,
+  .Carousel .right:hover, .graphs .detail .x_label, .graphs .detail .item,
   /*** Pinned topic header ***/
   div.fixable_clone .PinnedTopicHeader.fixable_fixed {
     background: #222 !important;
@@ -142,6 +143,12 @@
   .faded, .add_upvote, .add_upvote .count, .remove_upvote,
   .remove_upvote .count, .table_cell_wrapper a span {
     color: #949494 !important;
+  }
+  .graphs text {
+    fill: #eee !important;
+  }
+  .graphs rect:hover {
+    fill: #357 !important;
   }
   /*** borders ***/
   .dialog .close_modal, .pagedlist_item.pagedlist_invisible,
@@ -218,6 +225,9 @@
   .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer,
   .RADToggle {
     border-color: #246 !important;
+  }
+  .graphs rect {
+    fill: #246 !important;
   }
   /*** Brown ***/
   .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div,
