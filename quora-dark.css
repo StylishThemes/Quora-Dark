@@ -50,7 +50,7 @@
   .MessagesMain .threads_and_messages .threads, .MessagesThreadItem,
   .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
   .AnswerReadLaterListItem, .StatsMain .ContentListWrapper,
-  .ContentListItem, .AllContentLink {
+  .ContentListItem, .AllContentLink, AskQuestionPromptBundle {
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
