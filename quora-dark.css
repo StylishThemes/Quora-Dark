@@ -256,6 +256,7 @@
   }
   .matched_term {
     background-color: rgba(187, 85, 0, .4) !important;
+    background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
   }
   /* grunt build - remove to end of file */
 }
