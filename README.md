@@ -37,6 +37,15 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
+### Version 1.2.5 (11/19/2017)
+
+* Darken overlay. Fixes [issue #18](https://github.com/StylishThemes/Quora-Dark/issues/18).
+* Update Stats page styling. Fixes [issue #21](https://github.com/StylishThemes/Quora-Dark/issues/21).
+* Fix background of "What is your question?" box. See [PR #23](https://github.com/StylishThemes/Quora-Dark/pull/23); thanks [@vallovic](https://github.com/vallovic)!
+* Add style for matched_term. See [PR #24](https://github.com/StylishThemes/Quora-Dark/pull/24); thanks [@caisah](https://github.com/caisah)!
+* Profile: Remove background color of pager. Fixes [issue #22](https://github.com/StylishThemes/Quora-Dark/issues/22).
+* Session: Fix background styles.
+
 ### Version 1.2.4 (7/18/2017)
 
 * Readme:
@@ -52,18 +61,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 * Make feed cards transparent. Fixes [issue #13](https://github.com/StylishThemes/Quora-Dark/issues/13).
 * Meta: update dependencies.
-
-### Version 1.2.2 (3/23/2017)
-
-* Readme: Add Stylus link.
-* Remove background on related questions. Fixes [issue #12](https://github.com/StylishThemes/Quora-Dark/issues/12).
-
-### Version 1.2.1 (2/4/2017)
-
-* Readme:
-  * Add logo & tags.
-* Meta:
-  * Update dependencies.
-* Darken white text. See [issue #11](https://github.com/StylishThemes/Quora-Dark/issues/11).
-* Various tweaks.
-* Change default background image.
