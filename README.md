@@ -2,7 +2,7 @@
   <img alt="githubdark-logo" src="https://rawgit.com/StylishThemes/logos/master/quora.dark/quoradark.svg" width="580">
   <br>
   <a href="https://github.com/StylishThemes/Quora-Dark/tags">
-    <img src="https://img.shields.io/github/tag/StylishThemes/Quora-Dark.svg?label=%20tag%20" alt="Tag">
+    <img src="https://img.shields.io/github/tag/StylishThemes/Quora-Dark.svg?label=tag" alt="Tag">
   </a>
   <a href="https://github.com/StylishThemes/Quora-Dark/stargazers">
     <img src="http://github-svg-buttons.herokuapp.com/star.svg?user=StylishThemes&repo=Quora-Dark&style=flat&background=007ec6" alt="Star">
