@@ -50,12 +50,13 @@
   .MessagesMain .threads_and_messages .threads, .MessagesThreadItem,
   .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
   .AnswerReadLaterListItem, .StatsMain .ContentListWrapper,
-  .ContentListItem, .AllContentLink, .AskQuestionPromptBundle, .LoggedOutFooter {
+  .ContentListItem, .AllContentLink, .AskQuestionPromptBundle, .LoggedOutFooter,
+  .AMAFeedDividerItem h3 {
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
   .RelatedQuestions, .RelatedQuestionsAdWrapper, .AddQuestionPrompt,
-  .StoryItemToggleModal {
+  .StoryItemToggleModal, .AMACoverPhoto, .landing_photo {
     background-color: transparent !important;
   }
   .is_removable .remove_link {
@@ -68,7 +69,8 @@
   pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision,
   .ContentFeedTabs li a, .quiet_notifs_banner, .LookupBarSelector .instruction,
   .new_user_checklist .title, .Carousel .left, .Carousel .right,
-  .StoryItemToggleModal.read_item, .notif_dropdown_empty_state {
+  .StoryItemToggleModal.read_item, .notif_dropdown_empty_state, .individual_bio,
+  .AMACoverBar {
     background-color: #181818 !important;
   }
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
@@ -161,7 +163,8 @@
   }
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a,
   .hover_menu_contents, .question_box, .show_reply_box_link,
-  .QuestionActionBarA2APrompt, input, .seen, .Carousel .left, .Carousel .right {
+  .QuestionActionBarA2APrompt, input, .seen, .Carousel .left, .Carousel .right,
+  .AMAFeedDividerItem:before {
     border-color: #333 !important;
   }
   .ActionBar .primary_action:hover, .primary_item a:hover,
@@ -210,7 +213,8 @@
     background: #020 !important;
   }
   /*** Blue ***/
-  .notifications_banner, .add_upvote, .User.Button {
+  .notifications_banner, .add_upvote, .User.Button, .follow_button,
+  .ama_a2a_question, .Topic.Button, .Session.Button, .PileOnRequest.Button {
     background: #182030 !important;
     border: 1px solid #246 !important;
   }
