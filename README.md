@@ -37,7 +37,15 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 
 ## Changelog
 
-### Version 1.2.5 (11/19/2017)
+### Version 1.2.6 (2018-02-02)
+
+* Add survey styling.
+* Meta:
+  * Update dependencies (x2).
+  * Update authors.
+
+
+### Version 1.2.5 (2017-11-19)
 
 * Darken overlay. Fixes [issue #18](https://github.com/StylishThemes/Quora-Dark/issues/18).
 * Update Stats page styling. Fixes [issue #21](https://github.com/StylishThemes/Quora-Dark/issues/21).
@@ -46,7 +54,7 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 * Profile: Remove background color of pager. Fixes [issue #22](https://github.com/StylishThemes/Quora-Dark/issues/22).
 * Session: Fix background styles.
 
-### Version 1.2.4 (7/18/2017)
+### Version 1.2.4 (2017-07-18)
 
 * Readme:
   * Add Stylus Firefox addon link.
@@ -56,8 +64,3 @@ Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dar
 * Remove carousel background. Fixes [issue #16](https://github.com/StylishThemes/Quora-Dark/issues/16).
 * Remove background from bookmarked answers. Fixes [issue #17](https://github.com/StylishThemes/Quora-Dark/issues/17).
 * Style message popup.
-
-### Version 1.2.3 (5/30/2017)
-
-* Make feed cards transparent. Fixes [issue #13](https://github.com/StylishThemes/Quora-Dark/issues/13).
-* Meta: update dependencies.
