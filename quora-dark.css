@@ -86,7 +86,8 @@
   .QuestionBannerReason, .Selector .SelectorResults, .Carousel .left:hover,
   .Carousel .right:hover, .graphs .detail .x_label, .graphs .detail .item,
   /*** Pinned topic header ***/
-  div.fixable_clone .PinnedTopicHeader.fixable_fixed {
+  div.fixable_clone .PinnedTopicHeader.fixable_fixed,
+  .AnswerSurvey {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a  {
@@ -120,7 +121,7 @@
   .SelectorResults .selector_highlighted:not(.unselectable),
   .AnswerPageViewMoreLink .view_more_link:hover,
   .multifeed_header .modal_related_answers .view_more .view_more_link:hover,
-  .content_white_button {
+  .content_white_button, .survey_button {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr {
