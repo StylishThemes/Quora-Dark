@@ -51,7 +51,7 @@
   .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
   .AnswerReadLaterListItem, .StatsMain .ContentListWrapper,
   .ContentListItem, .AllContentLink, .AskQuestionPromptBundle, .LoggedOutFooter,
-  .AMAFeedDividerItem h3 {
+  .AMAFeedDividerItem h3, .layout_1col_main_card {
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
