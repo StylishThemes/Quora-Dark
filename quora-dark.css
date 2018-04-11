@@ -116,13 +116,13 @@
   .RequestAnswersDrawer .inner, .RADToggle.is_active {
     background-color: #282828 !important;
   }
-  .overflow_link.hover, .overflow_link:hover, .menu_list_item a:hover,
-  .completed:hover, .menu_list_header:hover, .AnswerEditorHeader,
-  .AddQuestionLookupBarButton,
+  .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
+  .AnswerEditorHeader, .AddQuestionLookupBarButton,
   .SelectorResults .selector_highlighted:not(.unselectable),
   .AnswerPageViewMoreLink .view_more_link:hover,
   .multifeed_header .modal_related_answers .view_more .view_more_link:hover,
-  .content_white_button, .survey_button {
+  .content_white_button, .survey_button, .icon_action_bar-button:hover,
+  .outer_content .new_actionbar_content_button:hover {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr {
@@ -141,7 +141,7 @@
   textarea, a.submit_button span, a.primary_button span, interval_timestamp,
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
   .topic_pill a, .ViewMoreLink a, .is_removable .remove_link,
-  .NotifsNavItem .NotifsNavBadge {
+  .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text {
     color: #c0c0c0 !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote,
@@ -182,20 +182,25 @@
   .MoreHoverMenuContents > ul > li:first-child:after, .hover_menu:before,
   .hover_menu:after, .header_hover_menu:after, .results_wrapper:before,
   .resistance_wrapper:after, .comment_replies_show_child_link:before,
-  .comment_replies_show_child_link:after, .results_wrapper:after {
+  .comment_replies_show_child_link:after, .results_wrapper:after,
+  .action_bar_button_nub:before {
     border-bottom-color: #333 !important;
   }
-  .hover_menu_above:before, .hover_menu_above:after,
-  .hover_menu_above li:last-child:before {
+  .hover_menu_above:before, .hover_menu_above:after, .hover_menu.show_nub:after,
+  .hover_menu_above li:last-child:before, .hover_menu .menu_list_item:hover:before {
     border-top-color: #333 !important;
     border-bottom-color: transparent !important;
   }
-  .hover_menu_above li:last-child:after {
+  .hover_menu_above li:last-child:after,.tooltip .tooltip_contents.nub_bottom:after {
     border-top-color: #222 !important;
     border-bottom-color: transparent !important;
   }
   .HomeNavListHoverMenu:before {
     border-right-color: #222 !important;
+  }
+  .action_bar_button_nub:after, .hover_menu.show_nub:before,
+  .menu .menu_list_item:before, .hover_menu .menu_list_item:before {
+    border-bottom-color: #282828 !important;
   }
   /*** Red ***/
   .diffdelete {
