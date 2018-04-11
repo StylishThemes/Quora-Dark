@@ -70,7 +70,8 @@
   .ContentFeedTabs li a, .quiet_notifs_banner, .LookupBarSelector .instruction,
   .new_user_checklist .title, .Carousel .left, .Carousel .right,
   .StoryItemToggleModal.read_item, .notif_dropdown_empty_state, .individual_bio,
-  .AMACoverBar {
+  .AMACoverBar, .selector_result.ask_new_question .AskQuestionButton,
+  .icon_action_bar.sticky {
     background-color: #181818 !important;
   }
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
