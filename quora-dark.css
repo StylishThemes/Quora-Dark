@@ -1,5 +1,5 @@
 @-moz-document domain("quora.com") {
-/* Quora Theme v1.2.6 (2018-02-03)
+  /* Quora Theme v1.2.7 (2018-04-12)
  * https://github.com/StylishThemes/Quora-Dark
  * https://userstyles.org/styles/104706
  * License: http://sam.zoy.org/wtfpl/
@@ -41,16 +41,16 @@
   .feed_item, .NotificationItem.seen, .edit_faq_link, .title a,
   .editor_toolbar .modifier.overflow_show:before,
   .editor_toolbar .modifier.overflow_hide:before,
-  .FollowSuggestionCard.InlineFollowSuggestionCard, .seen, .Message,
-  .ObjectCard, .ObjectCard-footer, .ContentFeedTabs li.active a,
-  .SiteHeader .dropdown, .hover_highlight:hover, .question_related.list,
-  .Modal .modal_header, .Modal .modal_content .modal_non_exp,
-  .Modal .modal_content, .answer_editor.on_draft_page .AnswerEditorHeader,
+  .FollowSuggestionCard.InlineFollowSuggestionCard, .seen, .Message, .ObjectCard,
+  .ObjectCard-footer, .ContentFeedTabs li.active a, .SiteHeader .dropdown,
+  .hover_highlight:hover, .question_related.list, .Modal .modal_header,
+  .Modal .modal_content .modal_non_exp, .Modal .modal_content,
+  .answer_editor.on_draft_page .AnswerEditorHeader,
   .answer_editor.on_draft_page .form_buttons, .MessagesMain .header,
   .MessagesMain .threads_and_messages .threads, .MessagesThreadItem,
   .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
-  .AnswerReadLaterListItem, .StatsMain .ContentListWrapper,
-  .ContentListItem, .AllContentLink, .AskQuestionPromptBundle, .LoggedOutFooter,
+  .AnswerReadLaterListItem, .StatsMain .ContentListWrapper, .ContentListItem,
+  .AllContentLink, .AskQuestionPromptBundle, .LoggedOutFooter,
   .AMAFeedDividerItem h3, .layout_1col_main_card {
     background: transparent !important;
   }
@@ -91,7 +91,7 @@
   .AnswerSurvey {
     background: #222 !important;
   }
-  .topic_pill, .ViewMoreLink a  {
+  .topic_pill, .ViewMoreLink a {
     background-color: #222 !important;
   }
   .threaded_comments, .comment_replies_show_child_link,
@@ -144,8 +144,8 @@
   .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text {
     color: #c0c0c0 !important;
   }
-  .faded, .add_upvote, .add_upvote .count, .remove_upvote,
-  .remove_upvote .count, .table_cell_wrapper a span {
+  .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
+  .table_cell_wrapper a span {
     color: #949494 !important;
   }
   .graphs text {
@@ -187,11 +187,13 @@
     border-bottom-color: #333 !important;
   }
   .hover_menu_above:before, .hover_menu_above:after, .hover_menu.show_nub:after,
-  .hover_menu_above li:last-child:before, .hover_menu .menu_list_item:hover:before {
+  .hover_menu_above li:last-child:before,
+  .hover_menu .menu_list_item:hover:before {
     border-top-color: #333 !important;
     border-bottom-color: transparent !important;
   }
-  .hover_menu_above li:last-child:after,.tooltip .tooltip_contents.nub_bottom:after {
+  .hover_menu_above li:last-child:after,
+  .tooltip .tooltip_contents.nub_bottom:after {
     border-top-color: #222 !important;
     border-bottom-color: transparent !important;
   }
@@ -230,7 +232,7 @@
   .Topic.Button, .RequestAnswer, .Topic.Button .count, .RequestAnswer .count,
   .link:hover, .filter_option_link:hover, .filter_option_link.selected,
   .RADToggle, .NotificationsClearButton, .link.selected {
-   background-color: #182030 !important;
+    background-color: #182030 !important;
   }
   .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
   .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer,
@@ -258,7 +260,8 @@
   /*** Make the popup answer's background transparent black. ***/
   .modal_overlay.feed_desktop_modal,
   /*** Make the messages black instead of white. ***/
-  .MessagesThreadItem:hover, .MessagesThreadItem.active {
+  .MessagesThreadItem:hover,
+  .MessagesThreadItem.active {
     background: rgba(0, 0, 0, .9);
   }
   /*** Make the answer hover colour a dark black one. ***/
