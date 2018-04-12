@@ -21,6 +21,7 @@
   },
   "scripts": {
     "authors": "bash tools/authors",
+    "perfectionist": "perfectionist",
     "stylelint": "stylelint",
     "test": "stylelint quora-dark.css"
   }

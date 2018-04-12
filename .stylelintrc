@@ -21,7 +21,8 @@ rules:
   font-family-no-duplicate-names: true
   function-url-quotes: always
   indentation: null
-  max-empty-lines: 0
+  max-empty-lines: 1
+  no-descending-specificity: null
   number-leading-zero: never
   number-max-precision: 3
   number-no-trailing-zeros: true
