@@ -113,7 +113,7 @@
   .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
   .AskToAnswerModalLink, .MostWantedBadge,
   .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content,
-  .RequestAnswersDrawer .inner, .RADToggle.is_active {
+  .RequestAnswersDrawer .inner, .RADToggle.is_active, .Announcement {
     background-color: #282828 !important;
   }
   .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
@@ -122,7 +122,9 @@
   .AnswerPageViewMoreLink .view_more_link:hover,
   .multifeed_header .modal_related_answers .view_more .view_more_link:hover,
   .content_white_button, .survey_button, .icon_action_bar-button:hover,
-  .outer_content .new_actionbar_content_button:hover {
+  .outer_content .new_actionbar_content_button:hover,
+  .Bundle .view_all_button:hover, .Bundle .more_button:hover,
+  a[target="_blank"]:hover {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr {
