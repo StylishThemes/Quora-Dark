@@ -278,11 +278,15 @@
     background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
   }
   /*** Make ask question buttons necessarily red, and their text gray ***/
-  a.AskQuestionButton span {
+  .AskQuestionButton .button_text {
     color: #efefef !important;
   }
-  #__w2_G1XVEii_button {
+  .BelowQuestionAddPrompt .AskQuestionButton {
     background-color: rgb(185, 43, 39) !important;
+  }
+  /*** Darken related question link underline color ***/
+  .question_link:hover .ui_story_title {
+    text-decoration-color: #c0c0c0 !important;
   }
   /* grunt build - remove to end of file */
 }
