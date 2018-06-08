@@ -1,9 +1,9 @@
 @-moz-document domain("quora.com") {
   /* Quora Theme v1.2.9 (2018-05-27)
- * https://github.com/StylishThemes/Quora-Dark
- * https://userstyles.org/styles/104706
- * License: http://sam.zoy.org/wtfpl/
- */
+  * https://github.com/StylishThemes/Quora-Dark
+  * https://userstyles.org/styles/104706
+  * License: http://sam.zoy.org/wtfpl/
+  */
   * {
     text-shadow: none !important;
     box-shadow: none !important;
@@ -51,7 +51,7 @@
   .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
   .AnswerReadLaterListItem, .StatsMain .ContentListWrapper, .ContentListItem,
   .AllContentLink, .AskQuestionPromptBundle, .LoggedOutFooter,
-  .AMAFeedDividerItem h3, .layout_1col_main_card, .BelowQuestionAddPrompt {
+  .AMAFeedDividerItem h3, .layout_1col_main_card {
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
@@ -91,7 +91,10 @@
   .AnswerSurvey {
     background: #222 !important;
   }
-  .topic_pill, .ViewMoreLink a {
+  .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt,
+  /*** Make cookie banner dark ***/
+  .CookieBanner .wrapper,
+  .CookieBanner .dismiss {
     background-color: #222 !important;
   }
   .threaded_comments, .comment_replies_show_child_link,
@@ -273,6 +276,17 @@
   .matched_term {
     background-color: rgba(187, 85, 0, .4) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
+  }
+  /*** Make ask question buttons necessarily red, and their text gray ***/
+  .AskQuestionButton .button_text {
+    color: #efefef !important;
+  }
+  .BelowQuestionAddPrompt .AskQuestionButton {
+    background-color: rgb(185, 43, 39) !important;
+  }
+  /*** Darken related question link underline color ***/
+  .question_link:hover .ui_story_title {
+    text-decoration-color: #c0c0c0 !important;
   }
   /* grunt build - remove to end of file */
 }
