@@ -22,13 +22,14 @@ If you don't know CSS very well and have found a missing style, please include a
 ### I rock at CSS & GitHub!
 * Follow the style guide below
 * Make any needed changes, then send us a pull request
-* Please include a url to the page (if public)
+* Please include a URL to the page (if public)
 
 ## Quora Dark Style Guide
 
-* Limit to the [K&R Style](http://en.wikipedia.org/wiki/1_true_brace_style#K.26R_style), and **2 SPACE INDENTATION** (no tabs, and not more, and not less than 2 spaces).
+* Use the provided `.editorconfig` file with your code editor. Don't know what that is? Then check out http://editorconfig.org/.
+* Limit to the [K&R (KNF variation style)](https://en.wikipedia.org/wiki/Indentation_style#Variant:_BSD_KNF), and **2 SPACE INDENTATION** (no tabs, and not more, and not less than 2 spaces).
 
-  * K&R Example:
+  * K&R - KNF Variation Example:
     ```css
     element[attr='value'] {
     ··property: value;
@@ -66,7 +67,7 @@ If you don't know CSS very well and have found a missing style, please include a
 * Try to wrap lines at around 120 characters.
 * This style has a size limit:
   * I'm not sure if it is [64kb](https://github.com/JasonBarnabe/stylish/wiki/Embedding-images-in-styles), or [100,000 bytes](http://userstyles.org/help/coding).
-  * So don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following url: `http://stylishthemes.github.io/Quora-Dark/images/`{my-image.png}.
+  * So don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following URL: `http://stylishthemes.github.io/Quora-Dark/images/`{my-image.png}.
   * If possible, reduce any added selectors. Remember that Stylish requires an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
   * Don't add any inline comments. If you want to make a comment, add it as a note in the commit.
   * If your css definition already exists within the style, do not add it again! Add your selector to the existing definition.
@@ -75,9 +76,9 @@ If you don't know CSS very well and have found a missing style, please include a
 
 ## Getting Started
 
-* Download, fork or clone this repository.
+* [Download](https://github.com/StylishThemes/Quora-Dark/archive/master.zip), [fork](https://github.com/StylishThemes/Quora-Dark/fork) or clone this repository.
 * Use [node.js](http://nodejs.org/) to run `npm install`.
-* Make any changes to the `quora-dark.css` file and save.
+* Make any changes to the `quora-dark.user.css` file and save.
 
 ### Build & test
 
