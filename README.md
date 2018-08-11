@@ -21,7 +21,8 @@
 ## Installation
 Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) and then install the style using one of these methods:
 
-- Install from [userstyles.org](https://userstyles.org/styles/104706) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Quora-Dark/master/quora-dark.css).
+📦 [Install the usercss](https://github.com/StylishThemes/Quora-Dark/raw/master/quora-dark.user.css) which supports automatic updates.<br>
+📦 Install from [userstyles.org](https://userstyles.org/styles/104706) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Quora-Dark/master/quora-dark.css).
 
 ## Preview
 ![Quora Dark preview](images/after.png)
@@ -30,8 +31,9 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 
 If you would like to contribute to this repository, please...
 
-1. Fork
-2. Make changes (please read the [contribution guidelines](https://github.com/StylishThemes/Quora-Dark/blob/master/CONTRIBUTING.md) and abide by them)
-3. Create a pull request!
+1. 👓 Read the [contribution guidelines](CONTRIBUTING.md).
+2. ![repo-forked](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) [fork](https://github.com/StylishThemes/Quora-Dark/fork) or ![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png)
+[Download](https://github.com/StylishThemes/Quora-Dark/archive/master.zip),
+3. 👌 Create a pull request!
 
 Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dark/graphs/contributors) so far!
