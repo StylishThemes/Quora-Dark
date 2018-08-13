@@ -34,11 +34,6 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("quora.com") {
-  /* Quora Theme v1.2.10 (2018-06-08)
-   * https://github.com/StylishThemes/Quora-Dark
-   * https://userstyles.org/styles/104706
-   * License: http://sam.zoy.org/wtfpl/
-   */
   * {
     text-shadow: none !important;
     box-shadow: none !important;
