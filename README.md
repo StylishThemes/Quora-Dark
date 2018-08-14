@@ -18,14 +18,18 @@
   </a>
 </p>
 
-## Installation
-Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) and then install the style using one of these methods:
-
-📦 [Install the usercss](https://github.com/StylishThemes/Quora-Dark/raw/master/quora-dark.user.css) which supports automatic updates.<br>
-📦 Install from [userstyles.org](https://userstyles.org/styles/104706) (with customization options) or [manually](https://raw.githubusercontent.com/StylishThemes/Quora-Dark/master/quora-dark.css).
-
 ## Preview
 ![Quora Dark preview](images/after.png)
+
+## Installation
+A userstyle extension is required, common ones include:
+
+🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
+🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
+
+Then:
+
+📦 [Install the usercss](https://github.com/StylishThemes/Quora-Dark/raw/master/quora-dark.user.css). It supports automatic updates.<br>
 
 ## Contributions
 
@@ -36,4 +40,4 @@ If you would like to contribute to this repository, please...
 [Download](https://github.com/StylishThemes/Quora-Dark/archive/master.zip),
 3. 👌 Create a pull request!
 
-Thanks to all that have [contributed](https://github.com/StylishThemes/Quora-Dark/graphs/contributors) so far!
+Thanks to all that have [contributed](AUTHORS) so far!
