@@ -48,7 +48,7 @@
   }
   /* action buttons */
   .AddQuestionFromHeaderDialogButton, .submit_button, .primary_button,
-  .MoreStoriesIndicator {
+  .MoreStoriesIndicator, .NotEnoughKnowsAboutTopicsPrompt .search_link {
     background-color: /*[[base-color]]*/ !important;
     border-color: /*[[base-color]]*/ !important;
     color: #e2e2e2 !important;
@@ -65,6 +65,10 @@
   ::-moz-selection {
     background-color: /*[[base-color]]*/!important;
     color: #efefef !important;
+  }
+  .HomeNavList .unread.has_img .EditableListItem:before,
+  .EditableList .unread .EditableListItem:before {
+    background-color: /*[[base-color]]*/ !important;
   }
   /*** background ***/
   .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp,
@@ -95,13 +99,16 @@
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content,
   .write_answer, .inline_login_profile_box, .qtext_button_qimg a,
   .tooltip_contents, .codeblock, .remove_upvote, .ExistingUserNuxProgressBar,
-  .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .modal_wrapper,
+  .QuestionActionBarA2APrompt, .ViewsOnProfile .nux, .Modal .modal_content,
   pre.prettyprint, .Editor .doc, .Editor.Comment, .LogOperation .revision,
   .ContentFeedTabs li a, .quiet_notifs_banner, .LookupBarSelector .instruction,
   .new_user_checklist .title, .Carousel .left, .Carousel .right,
   .StoryItemToggleModal.read_item, .notif_dropdown_empty_state, .individual_bio,
   .AMACoverBar, .selector_result.ask_new_question .AskQuestionButton,
-  .icon_action_bar.sticky {
+  .icon_action_bar.sticky, .HomePageSignupForm,
+  .Placeholder.white_bg .animated_background, .Placeholder.white_bg .mask,
+  .feed_card_on .HomepageFeedStoryItemPlaceholder,
+  .feed_card_on .AmaSelfServeQuestionsPrompt {
     background-color: #181818 !important;
   }
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
@@ -116,12 +123,14 @@
   .banner_answer, .prettyprint .linenums li:before, .heads_up_item,
   .QuestionBannerReason, .Selector .SelectorResults, .Carousel .left:hover,
   .Carousel .right:hover, .graphs .detail .x_label, .graphs .detail .item,
+  .bar_row, .Placeholder.white_bg .svg_circular_hole,
+  .AnswerCompact .truncated_answer:hover, .Modal .tabs_header,
   /*** Pinned topic header ***/
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
   .AnswerSurvey {
     background: #222 !important;
   }
-  .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt,
+  .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt, .view_more_topics_link,
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
   .CookieBanner .dismiss {
@@ -137,7 +146,9 @@
     background-color: rgba(34, 34, 34, .3) !important;
   }
   .read_more_link, .unseen, .action_button, .NextButton, .modal_footer,
-  .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more {
+  .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more,
+  .first_question_prompt, .QuestionSourceEdit .question_source_nux,
+  .NotEnoughKnowsAboutTopicsPrompt {
     background: #242424 !important;
   }
   .count, .ContentPageFeedStoryItem, .nav_item_link.hover, .nav_item_link:hover,
@@ -146,7 +157,10 @@
   .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
   .AskToAnswerModalLink, .MostWantedBadge,
   .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content,
-  .RequestAnswersDrawer .inner, .RADToggle.is_active, .Announcement {
+  .RequestAnswersDrawer .inner, .RADToggle.is_active, .Announcement,
+  .web_page .ui_button--FlatStyle:hover, .web_page a.ui_button--StackedStyle:hover,
+  .QuoraShareFeed .author_info .icon_follow_button:hover,
+  .AnswerHeader .icon_follow_button:hover, .hyperlink_footer_link_down:hover {
     background-color: #282828 !important;
   }
   .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
@@ -157,7 +171,7 @@
   .content_white_button, .survey_button, .icon_action_bar-button:hover,
   .outer_content .new_actionbar_content_button:hover,
   .Bundle .view_all_button:hover, .Bundle .more_button:hover,
-  a[target="_blank"]:hover {
+  a[target="_blank"]:not(.link_overlay):hover {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr {
@@ -165,11 +179,13 @@
   }
   /* overlay */
   .ContentPageFeedStoryItem:hover .feed_item_overlay,
-  .dialog:not(.dialog_nux):not(.modal_signup_dialog):after {
+  .dialog:not(.dialog_nux):not(.modal_signup_dialog):after,
+  a[target="_blank"].feed_item_overlay:hover {
     background: rgba(0, 0, 0, .5) !important;
   }
   /*** text color ***/
-  a, a span, a:hover .TopicName, .is_removable .remove_link:hover {
+  a, a span, a:hover .TopicName, .is_removable .remove_link:hover,
+  .AskQuestionButton:before {
     color: /*[[base-color]]*/ !important;
   }
   h1, h2, h3, h4, h5, h6, blockquote, div, div > span, span > span, li, input,
@@ -189,14 +205,20 @@
   .graphs rect:hover {
     fill: #357 !important;
   }
+  .Placeholder.white_bg .svg_circular_hole .hole_path {
+    fill: #181818 !important;
+  }
   /*** borders ***/
   .dialog .close_modal, .pagedlist_item.pagedlist_invisible,
   .comment_highlight_wrapper, .hover_menu_above li:first-child:after,
   .ContentFeedTabs li.active a {
     border-color: transparent !important;
   }
-  .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea {
+  .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea,
+  .icon_action_bar-button.blue_icon .action_bar-inline_icon .icon_svg-stroke,
+  .icon_action_bar-stacked_button.blue_icon .action_bar-inline_icon .icon_svg-stroke {
     border-color: /*[[base-color]]*/ !important;
+    stroke: /*[[base-color]]*/ !important;
   }
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a,
   .hover_menu_contents, .question_box, .show_reply_box_link,
@@ -240,6 +262,10 @@
     border-bottom-color: #282828 !important;
   }
   /*** Red ***/
+  a.selected, a.selected span, div.tab.selected {
+    color: #b92b27 !important;
+    border-color: #b92b27 !important;
+  }
   .diffdelete {
     background-color: #300 !important;
   }
@@ -273,6 +299,9 @@
   .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer,
   .RADToggle {
     border-color: #246 !important;
+  }
+  .go_to_feed_button span, .view_answer span, .WriteAnswer span, .Topic span {
+    color: #2b6dad !important;
   }
   .graphs rect {
     fill: #246 !important;
@@ -317,5 +346,8 @@
   .question_link:hover .ui_story_title {
     text-decoration-color: #c0c0c0 !important;
   }
-  /* grunt build - remove to end of file */
+  /*** Transparent fixed side bar background doesn't look good ***/
+  div.fixable_fixed, .list.side_bar {
+    position: static !important;
+  }
 }
