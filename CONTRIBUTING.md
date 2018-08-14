@@ -82,10 +82,11 @@ If you don't know CSS very well and have found a missing style, please include a
 
 ### Build & test
 
-* Create or edit your `build.json` file to include any customizations to the style, see the [build wiki page](https://github.com/StylishThemes/Quora-Dark/wiki/Build) for more details.
-* Run `grunt` to create your custom theme.
-* Copy & paste the css from the newly created `quora-dark-{color}.build.css` file into the Stylish editor to test your changes.
-* Once you are satisfied with the changes, run `npm test` to test the css changes.
-* Now you can push the changes of the `quora-dark.css` file to your fork and submit a pull request.
-* If you haven't already contributed, then also run `npm run authors` to add your name to our list of contributors :smile:
+* Create & change into a new branch of your local Quora-Dark repository.
+* Open the style in the Stylus editor, and make sure to have "live preview" checked for testing.
+* Once you are satisfied with the changes, select all the css (<kbd>Ctrl</kbd> + <kbd>a</kbd>), copy (<kbd>Ctrl</kbd> + <kbd>c</kbd>) then paste (<kbd>Ctrl</kbd> + <kbd>v</kbd>) it into your editor.
+* Run `npm test` to test the css changes.
+* Now you can add and commit the changes of the `quora-dark.user.css` file to your fork's branch.
+* If you haven't already contributed, then run `npm run authors` to add your name to our list of contributors :smile:
+* Push the changes to your branch, then submit a pull request.
 * And thanks again for contributing!
