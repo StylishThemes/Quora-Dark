@@ -8,4 +8,8 @@ trim_trailing_whitespace = true
 end_of_line = lf
 charset = utf-8
 insert_final_newline = true
-max_line_length = 80
+
+[*.css]
+block_comment_start = /*
+block_comment = *
+block_comment_end = */

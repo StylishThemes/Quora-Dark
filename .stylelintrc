@@ -2,7 +2,6 @@
 # https://github.com/stylelint/stylelint-config-standard/blob/master/index.js
 
 extends: stylelint-config-standard
-ignoreFiles: "**/*.min.css"
 
 rules:
   at-rule-empty-line-before: null
@@ -21,8 +20,9 @@ rules:
   font-family-no-duplicate-names: true
   function-url-quotes: always
   indentation: null
-  max-empty-lines: 1
+  max-empty-lines: 0
   no-descending-specificity: null
+  no-duplicate-selectors: null
   number-leading-zero: never
   number-max-precision: 3
   number-no-trailing-zeros: true
