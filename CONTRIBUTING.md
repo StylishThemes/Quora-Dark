@@ -90,3 +90,17 @@ If you don't know CSS very well and have found a missing style, please include a
 * If you haven't already contributed, then run `npm run authors` to add your name to our list of contributors :smile:
 * Push the changes to your branch, then submit a pull request.
 * And thanks again for contributing!
+
+## Development
+
+* `npm run authors`: Runs a batch file to rebuild the `AUTHORS` file. Update the `.mailmap` file for any duplicate entries.
+* `npm run clean`: Runs the perfectionist script & cleans up after it.
+* `npm run eslint`: Lint the JavaScript code in the `tools` directory.
+* `npm run lint`: Run eslint & stylelint scripts.
+* `npm run major`: Creates a semantic major release.
+* `npm run minor`: Creates a semantic minor release.
+* `npm run patch`: Creates a semantic patch release.
+* `npm run perfectionist`: Runs perfectionist only. CSS is not cleaned!
+* `npm run stylelint`: Run stylelint on the css file.
+* `npm run test`: Same as `npm run lint`.
+* `npm run update`: Update development dependencies.
