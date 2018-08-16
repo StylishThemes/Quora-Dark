@@ -2,7 +2,7 @@
 
 1. [Getting Involved](#getting-involved)
 2. [How To Report style issues](#how-to-report-style-issues)
-3. [Core Style Guide](#quora-dark-style-guide)
+3. [Style Guide](#style-guide)
 4. [Getting Started](#getting-started)
 
 ## Getting Involved
@@ -24,7 +24,7 @@ If you don't know CSS very well and have found a missing style, please include a
 * Make any needed changes, then send us a pull request
 * Please include a URL to the page (if public)
 
-## Quora Dark Style Guide
+## Style Guide
 
 * Use the provided `.editorconfig` file with your code editor. Don't know what that is? Then check out http://editorconfig.org/.
 * Limit to the [K&R (KNF variation style)](https://en.wikipedia.org/wiki/Indentation_style#Variant:_BSD_KNF), and **2 SPACE INDENTATION** (no tabs, and not more, and not less than 2 spaces).
@@ -90,7 +90,7 @@ If you don't know CSS very well and have found a missing style, please include a
 * Push the changes to your branch, then submit a pull request.
 * And thanks again for contributing!
 
-## Development
+### Development Scripts
 
 * `npm run authors`: Runs a batch file to rebuild the `AUTHORS` file. Update the `.mailmap` file for any duplicate entries.
 * `npm run clean`: Runs the perfectionist script & cleans up after it.
