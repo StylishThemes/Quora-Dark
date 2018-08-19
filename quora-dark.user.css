@@ -33,13 +33,11 @@
 }
 @preprocessor uso
 ==/UserStyle== */
-
 @-moz-document domain("quora.com") {
   * {
     text-shadow: none !important;
     box-shadow: none !important;
   }
-
   html, body:not(.logged_out_page_big_signup) {
     background-color: #222 !important;
     background-image: /*[[bg-choice]]*/ !important;
@@ -48,7 +46,6 @@
     background-attachment: /*[[bg-attachment]]*/ !important;
     /*[[bg-options]]*/
   }
-
   /* action buttons */
   .AddQuestionFromHeaderDialogButton, .submit_button, .primary_button,
   .MoreStoriesIndicator, .NotEnoughKnowsAboutTopicsPrompt .search_link {
@@ -56,28 +53,23 @@
     border-color: /*[[base-color]]*/ !important;
     color: #e2e2e2 !important;
   }
-
   .AddQuestionFromHeaderDialogButton:hover, .submit_button:hover,
   .primary_button:hover, .MoreStoriesIndicator:hover {
     opacity: .8 !important;
   }
-
   /* text selection */
   ::selection {
     background-color: /*[[base-color]]*/ !important;
     color: #efefef !important;
   }
-
   ::-moz-selection {
     background-color: /*[[base-color]]*/!important;
     color: #efefef !important;
   }
-
   .HomeNavList .unread.has_img .EditableListItem:before,
   .EditableList .unread .EditableListItem:before {
     background-color: /*[[base-color]]*/ !important;
   }
-
   /*** background ***/
   .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp,
   .feed_item, .NotificationItem.seen, .edit_faq_link, .title a,
@@ -96,17 +88,14 @@
   .AMAFeedDividerItem h3, .layout_1col_main_card {
     background: transparent !important;
   }
-
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
   .RelatedQuestions, .RelatedQuestionsAdWrapper, .AddQuestionPrompt,
   .StoryItemToggleModal, .AMACoverPhoto, .landing_photo {
     background-color: transparent !important;
   }
-
   .is_removable .remove_link {
     background-image: none !important;
   }
-
   input, textarea, .fake_editor, .qtext_editor.pretty_q, .qtext_editor_content,
   .write_answer, .inline_login_profile_box, .qtext_button_qimg a,
   .tooltip_contents, .codeblock, .remove_upvote, .ExistingUserNuxProgressBar,
@@ -122,7 +111,6 @@
   .feed_card_on .AmaSelfServeQuestionsPrompt {
     background-color: #181818 !important;
   }
-
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
   .hover_menu_contents, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
@@ -142,32 +130,27 @@
   .AnswerSurvey {
     background: #222 !important;
   }
-
   .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt, .view_more_topics_link,
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
   .CookieBanner .dismiss {
     background-color: #222 !important;
   }
-
   .threaded_comments, .comment_replies_show_child_link,
   .AnswerBase.undesirable_answer, .CompleteProfileBanner,
   .topic_expert_application_form, .comments_preview_toggle, .show_child_link,
   .modal_nux_background, .modal_signup_background {
     background-color: rgba(34, 34, 34, .6) !important;
   }
-
   .ContentPageFeed {
     background-color: rgba(34, 34, 34, .3) !important;
   }
-
   .read_more_link, .unseen, .action_button, .NextButton, .modal_footer,
   .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more,
   .first_question_prompt, .QuestionSourceEdit .question_source_nux,
   .NotEnoughKnowsAboutTopicsPrompt {
     background: #242424 !important;
   }
-
   .count, .ContentPageFeedStoryItem, .nav_item_link.hover, .nav_item_link:hover,
   .nav_item_link:active, li.selected, .follow_state_badge,
   .NotificationsClearLink, .LegalNavLinks, .hover_menu_item:hover,
@@ -181,7 +164,6 @@
   .AnswerHeader .icon_follow_button:hover, .hyperlink_footer_link_down:hover {
     background-color: #282828 !important;
   }
-
   .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
   .AnswerEditorHeader, .AddQuestionLookupBarButton,
   .SelectorResults .selector_highlighted:not(.unselectable),
@@ -193,24 +175,20 @@
   a[target="_blank"]:not(.link_overlay):hover {
     background-color: #333 !important;
   }
-
   .count:before, .qtext_hr {
     background-color: #444 !important;
   }
-
   /* overlay */
   .ContentPageFeedStoryItem:hover .feed_item_overlay,
   .dialog:not(.dialog_nux):not(.modal_signup_dialog):after,
   a[target="_blank"].feed_item_overlay:hover {
     background: rgba(0, 0, 0, .5) !important;
   }
-
   /*** text color ***/
   a, a span, a:hover .TopicName, .is_removable .remove_link:hover,
   .AskQuestionButton:before {
     color: /*[[base-color]]*/ !important;
   }
-
   h1, h2, h3, h4, h5, h6, blockquote, div, div > span, span > span, li, input,
   textarea, a.submit_button span, a.primary_button span, interval_timestamp,
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
@@ -218,55 +196,45 @@
   .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text {
     color: #c0c0c0 !important;
   }
-
   .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
   .table_cell_wrapper a span {
     color: #949494 !important;
   }
-
   .graphs text {
     fill: #eee !important;
   }
-
   .graphs rect:hover {
     fill: #357 !important;
   }
-
   .Placeholder.white_bg .svg_circular_hole .hole_path {
     fill: #181818 !important;
   }
-
   /*** borders ***/
   .dialog .close_modal, .pagedlist_item.pagedlist_invisible,
   .comment_highlight_wrapper, .hover_menu_above li:first-child:after,
   .ContentFeedTabs li.active a {
     border-color: transparent !important;
   }
-
   .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea,
   .icon_action_bar-button.blue_icon .action_bar-inline_icon .icon_svg-stroke,
   .icon_action_bar-stacked_button.blue_icon .action_bar-inline_icon .icon_svg-stroke {
     border-color: /*[[base-color]]*/ !important;
     stroke: /*[[base-color]]*/ !important;
   }
-
   h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a,
   .hover_menu_contents, .question_box, .show_reply_box_link,
   .QuestionActionBarA2APrompt, input, .seen, .Carousel .left, .Carousel .right,
   .AMAFeedDividerItem:before {
     border-color: #333 !important;
   }
-
   .ActionBar .primary_action:hover, .primary_item a:hover,
   .AddQuestionLookupBarButton:hover {
     border-color: #555 !important;
   }
-
   /* outline */
   .Carousel .left, .Carousel .right {
     outline-color: #333 !important;
   }
-
   /* arrow */
   .hover_menu_contents li:first-child:after,
   .MoreHoverMenuContents > ul > li:first-child:after, .hover_menu:before,
@@ -276,62 +244,51 @@
   .action_bar_button_nub:before {
     border-bottom-color: #333 !important;
   }
-
   .hover_menu_above:before, .hover_menu_above:after, .hover_menu.show_nub:after,
   .hover_menu_above li:last-child:before,
   .hover_menu .menu_list_item:hover:before {
     border-top-color: #333 !important;
     border-bottom-color: transparent !important;
   }
-
   .hover_menu_above li:last-child:after,
   .tooltip .tooltip_contents.nub_bottom:after {
     border-top-color: #222 !important;
     border-bottom-color: transparent !important;
   }
-
   .HomeNavListHoverMenu:before {
     border-right-color: #222 !important;
   }
-
   .action_bar_button_nub:after, .hover_menu.show_nub:before,
   .menu .menu_list_item:before, .hover_menu .menu_list_item:before {
     border-bottom-color: #282828 !important;
   }
-
   /*** Red ***/
   a.selected, a.selected span, div.tab.selected {
     color: #b92b27 !important;
     border-color: #b92b27 !important;
   }
-
   .diffdelete {
     background-color: #300 !important;
   }
-
   /*** Green ***/
   .follow_button {
     background: #041 !important;
     border-color: #062 !important;
     color: #0a3 !important;
   }
-
   .follow_button .count {
     background: #041 !important;
     color: #aaa !important;
   }
-
   .diffinsert {
     background: #020 !important;
   }
-
   /*** Blue ***/
   .notifications_banner, .add_upvote, .User.Button, .follow_button,
   .ama_a2a_question, .Topic.Button, .Session.Button, .PileOnRequest.Button {
     background: #182030 !important;
     border: 1px solid #246 !important;
   }
-
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer,
   .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
   .Topic.Button, .RequestAnswer, .Topic.Button .count, .RequestAnswer .count,
@@ -339,21 +296,17 @@
   .RADToggle, .NotificationsClearButton, .link.selected {
     background-color: #182030 !important;
   }
-
   .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
   .ReAsk.Button:not(.link), .follow_button, .Topic.Button, .RequestAnswer,
   .RADToggle {
     border-color: #246 !important;
   }
-
   .go_to_feed_button span, .view_answer span, .WriteAnswer span, .Topic span {
     color: #2b6dad !important;
   }
-
   .graphs rect {
     fill: #246 !important;
   }
-
   /*** Brown ***/
   .InteractionModeBanner>div, .ErrorBanner>div, .BrowserWarning>div,
   .ReAskPrompt, .PMsg .contents {
@@ -361,16 +314,13 @@
     border-color: #542 !important;
     color: #b74 !important;
   }
-
   .ReAskPrompt:before, .ReAskPrompt:after {
     border-bottom-color: #542 !important;
   }
-
   /*** hide text selection popup ***/
   .quote_hover_menu {
     /*[[hide-popup]]*/
   }
-
   /*** Make the popup answer's background transparent black. ***/
   .modal_overlay.feed_desktop_modal,
   /*** Make the messages black instead of white. ***/
@@ -378,31 +328,25 @@
   .MessagesThreadItem.active {
     background: rgba(0, 0, 0, .9);
   }
-
   /*** Make the answer hover colour a dark black one. ***/
   .toggle_modal_inline.inline_modal_highlight:hover {
     background-color: #050505;
   }
-
   .matched_term {
     background-color: rgba(187, 85, 0, .4) !important;
     background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
   }
-
   /*** Make ask question buttons necessarily red, and their text gray ***/
   .AskQuestionButton .button_text {
     color: #efefef !important;
   }
-
   .BelowQuestionAddPrompt .AskQuestionButton {
     background-color: rgb(185, 43, 39) !important;
   }
-
   /*** Darken related question link underline color ***/
   .question_link:hover .ui_story_title {
     text-decoration-color: #c0c0c0 !important;
   }
-
   /*** Transparent fixed side bar background doesn't look good ***/
   div.fixable_fixed, .list.side_bar {
     position: static !important;
