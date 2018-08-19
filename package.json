@@ -1,10 +1,12 @@
 {
   "name": "quora-dark",
+  "title": "Quora Dark",
   "version": "1.3.1",
   "description": "Dark Quora",
   "license": "CC-BY-SA-4.0",
   "repository": "StylishThemes/Quora-Dark",
-  "homepage": "https://userstyles.org/styles/104706/quora-dark",
+  "homepage": "https://github.com/StylishThemes/Quora-Dark",
+  "main": "quora-dark.user.css",
   "devDependencies": {
     "eslint": "^5.3.0",
     "eslint-config-silverwind": "^2.0.2",
