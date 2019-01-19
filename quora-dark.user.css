@@ -185,7 +185,7 @@
     background: rgba(0, 0, 0, .5) !important;
   }
   /*** text color ***/
-  a, a span, a:hover .TopicName, .is_removable .remove_link:hover,
+  a:not(.LoggedOutAskQuestionButton), a span, a:hover .TopicName, .is_removable .remove_link:hover,
   .AskQuestionButton:before {
     color: /*[[base-color]]*/ !important;
   }
@@ -193,7 +193,9 @@
   textarea, a.submit_button span, a.primary_button span, interval_timestamp,
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
   .topic_pill a, .ViewMoreLink a, .is_removable .remove_link,
-  .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text {
+  .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text,
+	#__w2_wIYM0YLs33_name_link.user, #__w2_wIYM0YLs47_link.answer_permalink,
+	#__w2_wIYM0YLs49_datespan.datetime {
     color: #c0c0c0 !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
