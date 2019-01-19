@@ -133,7 +133,7 @@
   .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt, .view_more_topics_link,
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
-  .CookieBanner .dismiss {
+  .CookieBanner .dismiss, .FooterNav {
     background-color: #222 !important;
   }
   .threaded_comments, .comment_replies_show_child_link,
@@ -172,10 +172,11 @@
   .content_white_button, .survey_button, .icon_action_bar-button:hover,
   .outer_content .new_actionbar_content_button:hover,
   .Bundle .view_all_button:hover, .Bundle .more_button:hover,
-  a[target="_blank"]:not(.link_overlay):hover {
+  a[target="_blank"]:not(.link_overlay):hover, .HomepageSignupNetworkRedirectLink:hover {
     background-color: #333 !important;
   }
-  .count:before, .qtext_hr {
+  .count:before, .qtext_hr,
+	.logged_out_page_big_signup .ContentWrapper .HomePageSignupForm .signup:after {
     background-color: #444 !important;
   }
   /* overlay */
@@ -194,8 +195,7 @@
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
   .topic_pill a, .ViewMoreLink a, .is_removable .remove_link,
   .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text,
-	#__w2_wIYM0YLs33_name_link.user, #__w2_wIYM0YLs47_link.answer_permalink,
-	#__w2_wIYM0YLs49_datespan.datetime {
+	.AnswerHeader .user, .credibility_wrapper .answer_permalink {
     color: #c0c0c0 !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
