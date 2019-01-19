@@ -67,7 +67,8 @@
     color: #efefef !important;
   }
   .HomeNavList .unread.has_img .EditableListItem:before,
-  .EditableList .unread .EditableListItem:before {
+  .EditableList .unread .EditableListItem:before,
+	.SiteHeader.during_nux .progress_bar_wrapper .progress_bar {
     background-color: /*[[base-color]]*/ !important;
   }
   /*** background ***/
@@ -127,13 +128,14 @@
   .AnswerCompact .truncated_answer:hover, .Modal .tabs_header,
   /*** Pinned topic header ***/
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
-  .AnswerSurvey {
+  .AnswerSurvey, .NuxModal .Step .modal_header {
     background: #222 !important;
   }
   .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt, .view_more_topics_link,
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
-  .CookieBanner .dismiss, .FooterNav {
+  .CookieBanner .dismiss, .FooterNav, .DesktopFollowTopicStep,
+	.ui_story_card {
     background-color: #222 !important;
   }
   .threaded_comments, .comment_replies_show_child_link,
@@ -172,11 +174,13 @@
   .content_white_button, .survey_button, .icon_action_bar-button:hover,
   .outer_content .new_actionbar_content_button:hover,
   .Bundle .view_all_button:hover, .Bundle .more_button:hover,
-  a[target="_blank"]:not(.link_overlay):hover, .HomepageSignupNetworkRedirectLink:hover {
+  a[target="_blank"]:not(.link_overlay):hover, .HomepageSignupNetworkRedirectLink:hover,
+	.udvelwrlbdolfmcikjev .fftymohfzbthluhzdawz .hndhuftyidotulwenpsu:hover {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr,
-	.logged_out_page_big_signup .ContentWrapper .HomePageSignupForm .signup:after {
+	.logged_out_page_big_signup .ContentWrapper .HomePageSignupForm .signup:after,
+	.switcher_item_with_image.is_active {
     background-color: #444 !important;
   }
   /* overlay */
@@ -195,7 +199,9 @@
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
   .topic_pill a, .ViewMoreLink a, .is_removable .remove_link,
   .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text,
-	.AnswerHeader .user, .credibility_wrapper .answer_permalink {
+	.AnswerHeader .user, .credibility_wrapper .answer_permalink, a.AskQuestionButton,
+	.author_info .user, .author_info a.metadata, .QuoraShareEmbed a, .account_description p,
+	.rlaobvbvtahxdqdjbmbs span, .fftymohfzbthluhzdawz span, span .expanded {
     color: #c0c0c0 !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
@@ -339,7 +345,7 @@
     background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
   }
   /*** Make ask question buttons necessarily red, and their text gray ***/
-  .AskQuestionButton .button_text {
+  .AskQuestionButton .button_text, .modal_actions .submit_button.modal_action {
     color: #efefef !important;
   }
   .BelowQuestionAddPrompt .AskQuestionButton {
