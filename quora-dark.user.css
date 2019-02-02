@@ -188,7 +188,7 @@
   .feed_card_on .TopicPageNavBar, .Modal .modal_header {
     background: #222 !important;
   }
-  .ui_popup.ui_popup--show_nub::after {
+  .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
     border-left: 7.5px solid #333 !important;
     border-right: 7.5px solid #333 !important;
     border-bottom: 7px solid #222 !important;
