@@ -282,7 +282,8 @@
   .threaded_comments .featured_comments_header .toggle_link,
   a.question_link .ui_qtext_rendered_qtext,
   .feed_item_overlay:hover .read_more_link, .checklist_row .label a,
-  .CredentialModalLink, .EmptyUserCombinedState a, .AddCredentialDropdown {
+  .CredentialModalLink, .EmptyUserCombinedState a, .AddCredentialDropdown,
+  .hover_menu_contents .SiteHeaderHoverMenuContents .main_menu li a {
     color: /*[[base-color]]*/ !important;
   }
   h1, h2, h3, h4, h5, h6, blockquote, div, div > span, span > span, li, input,
