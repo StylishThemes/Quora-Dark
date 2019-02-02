@@ -120,7 +120,7 @@
   .AddWorkCredentialListItem .list_item_icon,
   .AddSchoolCredentialListItem .list_item_icon,
   .AddLanguageCredentialListItem .list_item_icon,
-  .AddLocationCredentialListItem .list_item_icon, .AddCredentialDropdown::before {
+  .AddLocationCredentialListItem .list_item_icon, .AddCredentialDropdown:before {
     filter: grayscale(1) brightness(130%) !important;
   }
   /*** background ***/
