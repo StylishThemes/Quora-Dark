@@ -57,10 +57,6 @@
   .primary_button:hover, .MoreStoriesIndicator:hover {
     opacity: .8 !important;
   }
-  .QuestionMain .fixable_clone .question_related.list {
-    position: fixed !important;
-    background-image: /*[[bg-choice]]*/ !important;
-  }
   /* text selection */
   ::selection {
     background-color: /*[[base-color]]*/ !important;
@@ -199,7 +195,8 @@
   .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt, .view_more_topics_link,
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
-  .CookieBanner .dismiss, .FooterNav, .DesktopFollowTopicStep, .ui_story_card {
+  .CookieBanner .dismiss, .FooterNav, .DesktopFollowTopicStep, .ui_story_card,
+  .question_main_col, .cardify_with_footer, .right_col_fixable .side_bar {
     background-color: #222 !important;
   }
   .threaded_comments, .comment_replies_show_child_link,
@@ -471,9 +468,5 @@
   /*** Darken related question link underline color ***/
   .question_link:hover .ui_story_title {
     text-decoration-color: #c0c0c0 !important;
-  }
-  /*** Transparent fixed side bar background doesn't look good ***/
-  div.fixable_fixed, .list.side_bar {
-    position: static !important;
   }
 }
