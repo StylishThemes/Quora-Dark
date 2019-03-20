@@ -272,7 +272,8 @@
   }
   .count:before, .qtext_hr,
   .logged_out_page_big_signup .ContentWrapper .HomePageSignupForm .signup:after,
-  .switcher_item_with_image.is_active {
+  .switcher_item_with_image.is_active,
+  .BoardSettingsList .BlogSettingsListItem .board_photo.no_photo {
     background-color: #444 !important;
   }
   /* overlay */
