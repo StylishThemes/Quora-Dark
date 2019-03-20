@@ -239,6 +239,9 @@
   .FollowSuggestionSectionWrapper {
     background-color: #282828 !important;
   }
+  html:not(#X) [class*="SettingsAccountMain"] [class*="linked_networks_link"] a:hover {
+    background: transparent !important;
+  }
   .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
   .AnswerEditorHeader, .AddQuestionLookupBarButton,
   .SelectorResults .selector_highlighted:not(.unselectable),
