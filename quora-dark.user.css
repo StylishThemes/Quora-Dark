@@ -72,6 +72,10 @@
   .ui_button--PillStyle--bright_blue {
     background-color: /*[[base-color]]*/ !important;
   }
+  .web_page .ui_button--PillStyle--bright_blue:hover {
+    background-color: /*[[base-color]]*/ !important;
+    filter: brightness(95%) !important;
+  }
   .ui_button_label_count_wrapper .ui_button_label {
     color: #ddd !important;
   }
