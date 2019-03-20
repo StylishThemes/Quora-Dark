@@ -385,7 +385,11 @@
   .resistance_wrapper:after, .comment_replies_show_child_link:before,
   .comment_replies_show_child_link:after, .results_wrapper:after,
   .action_bar_button_nub:before,
-  .ContentPageFeed .feed_item_overlay .read_more_link {
+  .ContentPageFeed .feed_item_overlay .read_more_link,
+  .SiteHeader .hover_menu.hover_menu_header .MoreHoverMenuContents > ul > li:first-child .hover_menu_item:hover:after,
+  .SiteHeader .hover_menu.hover_menu_header .AdsMoreHoverMenuContents > ul > li:first-child:hover:after,
+  .SiteHeader .hover_menu.hover_menu_header .LoggedInNonMemberProfileHoverMenuContents > ul > li:first-child:hover:after,
+  .SiteHeader .hover_menu.hover_menu_header .WriteHoverMenuContents > ul > li:first-child:hover:after {
     border-bottom-color: #333 !important;
   }
   .hover_menu_above:before, .hover_menu_above:after, .hover_menu.show_nub:after,
