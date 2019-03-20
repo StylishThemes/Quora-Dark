@@ -375,8 +375,12 @@
     border-right-color: #222 !important;
   }
   .action_bar_button_nub:after, .hover_menu.show_nub:before,
-  .menu .menu_list_item:before, .hover_menu .menu_list_item:before {
+  .menu .menu_list_item:before, .hover_menu .menu_list_item:before,
+  .hover_menu.show_nub:not(.hover_menu_above) .menu_list_items > div:first-child:hover:before {
     border-bottom-color: #282828 !important;
+  }
+  .hover_menu.show_nub.hover_menu_above .menu_list_items > .menu_list_item:last-child:hover:before {
+    border-top-color: #282828 !important;
   }
   /*** Red ***/
   a.selected, a.selected span, div.tab.selected,
