@@ -72,6 +72,14 @@
   .ui_button--PillStyle--bright_blue {
     background-color: /*[[base-color]]*/ !important;
   }
+  .ui_button--PillStyle--gray {
+    color: #ddd !important;
+    background-color: #333 !important;
+  }
+  .web_page .ui_button--PillStyle--gray:hover,
+  .web_page .ui_button--PillStyle--gray:focus {
+    background-color: #444 !important;
+  }
   .distro_switcher, .AskQuestionStep .url_input,
   .TribeAddHyperLinkModal .url_input, .QuoraShareModal .url_input,
   .LogOperation .revision {
