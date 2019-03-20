@@ -210,6 +210,9 @@
   .ui_icon_badge.ui_icon_badge_color--blue {
     background-color: /*[[base-color]]*/ !important;
   }
+  .topic_photo_img.topic_header_img .ui_icon_badge.ui_icon_badge_size--fluid {
+    filter: brightness(50%) contrast(150%) !important;
+  }
   .topic_pill, .ViewMoreLink a, .BelowQuestionAddPrompt, .view_more_topics_link,
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
