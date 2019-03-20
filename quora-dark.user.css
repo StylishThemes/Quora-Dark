@@ -225,7 +225,7 @@
   .read_more_link, .unseen, .action_button, .NextButton, .modal_footer,
   .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more,
   .first_question_prompt, .QuestionSourceEdit .question_source_nux,
-  .NotEnoughKnowsAboutTopicsPrompt, .TribePageNavBar {
+  .NotEnoughKnowsAboutTopicsPrompt, .TribePageNavBar, .TribePageNavBarOld {
     background: #242424 !important;
   }
   .count, .ContentPageFeedStoryItem, .nav_item_link.hover, .nav_item_link:hover,
@@ -273,7 +273,8 @@
   .RelatedTopicsListItem:hover,
   .link_overlay:not([nav_style="app_browser"]):hover,
   .web_page .nav_item_selected a, .credential_list_item .edit_wrapper,
-  .AddCredentialDropdown:hover {
+  .AddCredentialDropdown:hover, .tab.linked_list_item .link.selected,
+  .tab.linked_list_item .link:hover {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr,
