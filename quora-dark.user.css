@@ -362,7 +362,8 @@
     border-color: #333 !important;
   }
   .ActionBar .primary_action:hover, .primary_item a:hover,
-  .AddQuestionLookupBarButton:hover {
+  .AddQuestionLookupBarButton:hover,
+  ._facepile_wrapper ._facepile_photo .profile_photo_img {
     border-color: #555 !important;
   }
   /* outline */
