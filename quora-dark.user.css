@@ -354,6 +354,9 @@
   .ContentFeedTabs li.active a, .SiteHeader.new_header .nav_item_link {
     border-color: transparent !important;
   }
+  .SiteHeader.new_header .nav_item_link.selected {
+    border-color: #b92b27 !important;
+  }
   .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea,
   .icon_action_bar-button.blue_icon .action_bar-inline_icon .icon_svg-stroke,
   .icon_action_bar-stacked_button.blue_icon .action_bar-inline_icon .icon_svg-stroke {
