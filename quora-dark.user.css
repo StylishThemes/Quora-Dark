@@ -134,6 +134,9 @@
   .AddLocationCredentialListItem .list_item_icon, .AddCredentialDropdown:before {
     filter: grayscale(1) brightness(130%) !important;
   }
+  .ui_button--PillStyle.pressed {
+    box-shadow: inset 0 0 0 1px rgba(51, 85, 119, .5) !important;
+  }
   /*** background ***/
   .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp,
   .feed_item, .NotificationItem.seen, .edit_faq_link, .title a,
