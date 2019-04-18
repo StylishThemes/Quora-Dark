@@ -164,6 +164,13 @@
   .StoryItemToggleModal, .AMACoverPhoto, .landing_photo {
     background-color: transparent !important;
   }
+  .question_related.list.side_bar {
+    background: #333 !important;
+  }
+  .feed_card_on .RelatedQuestions h3 {
+    border-color: #555 !important;
+    background: #444 !important;
+  }
   .is_removable .remove_link {
     background-image: none !important;
   }
@@ -220,6 +227,10 @@
   .question_main_col, .cardify_with_footer, .right_col_fixable .side_bar {
     background-color: #222 !important;
   }
+  .CookieBanner {
+    background-color: #353535 !important;
+    border-color: #555 !important;
+  }
   .threaded_comments, .comment_replies_show_child_link,
   .AnswerBase.undesirable_answer, .CompleteProfileBanner,
   .topic_expert_application_form, .comments_preview_toggle, .show_child_link,
@@ -263,7 +274,7 @@
   .content_white_button, .survey_button, .icon_action_bar-button:hover,
   .outer_content .new_actionbar_content_button:hover,
   .Bundle .view_all_button:hover, .Bundle .more_button:hover,
-  a[target="_blank"]:not(.link_overlay):not(.TopicNameLink):not(.feed_item_overlay):hover,
+  a[target="_blank"]:not(.link_overlay):not(.TopicNameLink):not(.feed_item_overlay):not([id*="_answer_link_overlay"]):hover,
   .HomepageSignupNetworkRedirectLink:hover,
   .udvelwrlbdolfmcikjev .fftymohfzbthluhzdawz .hndhuftyidotulwenpsu:hover,
   .TopicPageHeader .TopicPageNavBar .link.selected,
@@ -275,7 +286,7 @@
   .web_page .ui_button--FlatStyle--gray:focus,
   .web_page .ui_button--StackedStyle:focus,
   .web_page .ui_button--FlatStyle--blue:hover,
-  .web_page .ui_button--FlatStyle--gray:hover,
+  .web_page .ui_button--FlatStyle--gray:not([aria-label="Dismiss"]):hover,
   .web_page .ui_button--StackedStyle:hover, .Modal .tabs_header .tab:hover,
   .RelatedTopicsListItem:hover,
   .link_overlay:not([nav_style="app_browser"]):hover,
@@ -498,7 +509,8 @@
     background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
   }
   /*** Make ask question buttons necessarily red, and their text gray ***/
-  .AskQuestionButton .button_text, .modal_actions .submit_button.modal_action {
+  .AskQuestionButton .button_text, .modal_actions .submit_button.modal_action,
+  a.submit_button .google_button_text, a.submit_button .facebook_button_text {
     color: #efefef !important;
   }
   .BelowQuestionAddPrompt .AskQuestionButton {
