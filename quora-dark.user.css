@@ -164,10 +164,11 @@
   .StoryItemToggleModal, .AMACoverPhoto, .landing_photo {
     background-color: transparent !important;
   }
-  .question_related.list.side_bar {
+  .question_related.list.side_bar, .EquivalentQuestionsInOtherNetworksWrapper {
     background: #333 !important;
   }
-  .feed_card_on .RelatedQuestions h3 {
+  .feed_card_on .RelatedQuestions h3,
+  .feed_card_on .EquivalentQuestionsInOtherNetworksWrapper h3 {
     border-color: #555 !important;
     background: #444 !important;
   }
