@@ -9,12 +9,12 @@
   "main": "quora-dark.user.css",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-silverwind": "^2.1.0",
+    "eslint-config-silverwind": "^3.0.1",
     "perfectionist": "^2.4.0",
-    "ver": "^4.2.0",
+    "ver": "^4.3.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0",
-    "updates": "^8.0.1"
+    "updates": "^8.0.3"
   },
   "scripts": {
     "authors": "bash tools/authors",
@@ -25,7 +25,7 @@
     "minor": "npx ver -p minor quora-dark.user.css",
     "patch": "npx ver -p patch quora-dark.user.css",
     "perfectionist": "npx perfectionist quora-dark.user.css quora-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --quiet --color -- quora-dark.user.css",
+    "stylelint": "npx stylelint --color -- quora-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "npx updates -cu && npm install"
   }
