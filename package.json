@@ -7,6 +7,9 @@
   "repository": "StylishThemes/Quora-Dark",
   "homepage": "https://github.com/StylishThemes/Quora-Dark",
   "main": "quora-dark.user.css",
+  "engines": {
+    "node": ">=10"
+  },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-silverwind": "^3.0.1",
