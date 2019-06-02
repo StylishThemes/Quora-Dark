@@ -406,12 +406,12 @@
   div[id*="__w2_"] div:not([class*="_button"]):not([id*="_icon"]):not(.ui_icon_badge_color--blue):not(div) {
     background-color: rgba(34, 34, 34, .7) !important;
   }
+  html:not(#X) .multifeed_bundle_story a[id*="__w2_"]:not([id*="_overflow_menu_item"]):hover {
+    background-color: transparent !important;
+  }
   /* end wth area above =) */
   .feed_item_overlay .read_more_link {
     background: #191919 !important;
-  }
-  html:not(#X) .multifeed_bundle_story a[id*="__w2_"]:hover {
-    background-color: transparent !important;
   }
   .story_title_container .ui_content_title:hover,
   .SiteHeader.new_header .right_contents .ask_wrapper .AskQuestionButton,
