@@ -38,13 +38,16 @@
     text-shadow: none !important;
     box-shadow: none !important;
   }
-  html, body:not(.logged_out_page_big_signup) {
+  html, body:not(.logged_out_page_big_signup), .NuxModal.modal_overlay {
     background-color: #222 !important;
     background-image: /*[[bg-choice]]*/ !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
     background-attachment: /*[[bg-attachment]]*/ !important;
     /*[[bg-options]]*/
+  }
+  body {
+    color: #eee !important;
   }
   /* action buttons */
   .AddQuestionFromHeaderDialogButton, .submit_button, .primary_button,
@@ -72,19 +75,32 @@
   .ui_button--PillStyle--bright_blue {
     background-color: /*[[base-color]]*/ !important;
   }
+  .web_page .ui_button--PillStyle--bright_blue:focus,
+  .web_page .ui_button--PillStyle--bright_blue:hover,
   .web_page .ui_button--PillStyle--bright_blue:hover {
     background-color: /*[[base-color]]*/ !important;
-    filter: brightness(95%) !important;
+    filter: brightness(90%) !important;
   }
-  .ui_button_label_count_wrapper .ui_button_label {
+  .action_bar_inner  a.ui_button--non_link .ui_button_label,
+  .nux_dialog_interests .topic_photo_card_wrapper .topic_photo_card .info_wrapper .info_background .info span,
+  .u-text--gray-dark, .Modal .modal_header .modal_title, .nav_item_selected,
+  .action_bar_inner .ui_button_count_inner,
+  ul li.StaticListItem .selected[href*="answer"] .list_item_text,
+  .layout_3col_center a.ui_button--non_link .ui_button_label,
+  a.ui_button--non_link .ui_button_label_count_wrapper .ui_button_label,
+  .grid_page .layout_3col_center .ui_story_card a.ui_button--non_link .ui_button_label {
     color: #ddd !important;
+  }
+  .EditableList .EditableListItem > a, .EditableList .StaticListItem > a,
+  .EditableList .list_empty > a {
+    color: #aaa;
   }
   .ui_button--PillStyle--gray {
     color: #ddd !important;
     background-color: #333 !important;
   }
   .web_page .ui_button--PillStyle--gray:hover,
-  .web_page .ui_button--PillStyle--gray:focus {
+  .web_page .ui_button--PillStyle--gray:focus, .progress_bar_wrapper {
     background-color: #444 !important;
   }
   .distro_switcher, .AskQuestionStep .url_input,
@@ -106,31 +122,49 @@
   .u-border--desktop-feed-card, .Announcement {
     border: 1px solid #ddd !important;
   }
+  .ComponentSurvey .question_wrapper .button_group .survey_button:focus,
+  .ComponentSurvey .question_wrapper .button_group .survey_button:hover,
+  .ui_story_card_body .ui_button_inner .ui_button_label {
+    border-color: #666 !important;
+    color: #ddd !important;
+  }
   /* end together */
   .ui_button--PillStyle--light_blue {
     background-color: rgba(51, 85, 119, .3) !important;
   }
-  .web_page .ui_button--PillStyle--light_blue:hover,
   .web_page .ui_button--PillStyle.pressed:focus,
   .web_page .ui_button--PillStyle.pressed:hover, .ui_button--PillStyle.pressed {
     background-color: rgba(51, 85, 119, .5) !important;
   }
+  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-stroke,
+  .ui_icon_color--gray_dark .icon_svg-stroke {
+    stroke: #eee !important;
+  }
+  .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-stroke,
+  .ui_button--StackedStyle--gray .ui_button_icon .icon_svg-stroke {
+    stroke: #aaa !important;
+  }
+  .ui_icon_color--blue_dark .icon_svg-stroke,
+  .ui_icon_color--blue .icon_svg-stroke,
   .ui_button--PillStyle--light_blue .ui_button_icon .icon_svg-stroke,
   .ui_button--FlatStyle--blue .ui_button_icon .icon_svg-stroke,
   .ui_button--StackedStyle--blue .ui_button_icon .icon_svg-stroke,
   .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-stroke,
-  .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-stroke,
-  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-stroke {
-    stroke: #eee !important;
+  .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-stroke {
+    stroke: /*[[base-color]]*/ !important;
   }
   .ui_button--PillStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
   .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill_as_stroke,
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill_as_stroke,
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
-  .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill {
     fill: #ccc !important;
+  }
+  .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill,
+  .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
+  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill {
+    fill: /*[[base-color]]*/ !important;
   }
   .AddWorkCredentialListItem .list_item_icon,
   .AddSchoolCredentialListItem .list_item_icon,
@@ -148,9 +182,8 @@
   .editor_toolbar .modifier.overflow_hide:before,
   .FollowSuggestionCard.InlineFollowSuggestionCard, .seen, .Message, .ObjectCard,
   .ObjectCard-footer, .ContentFeedTabs li.active a, .SiteHeader .dropdown,
-  .hover_highlight:hover, .question_related.list,
-  .Modal .modal_content .modal_non_exp, .Modal .modal_content,
-  .answer_editor.on_draft_page .AnswerEditorHeader,
+  .hover_highlight:hover, .Modal .modal_content .modal_non_exp,
+  .Modal .modal_content, .answer_editor.on_draft_page .AnswerEditorHeader,
   .answer_editor.on_draft_page .form_buttons, .MessagesMain .header,
   .MessagesMain .threads_and_messages .threads, .MessagesThreadItem,
   .NewInboxThreadComposeMessageBox, .PinnedTopicHeader, .full_bundle,
@@ -164,7 +197,8 @@
   .StoryItemToggleModal, .AMACoverPhoto, .landing_photo {
     background-color: transparent !important;
   }
-  .question_related.list.side_bar, .EquivalentQuestionsInOtherNetworksWrapper {
+  .EquivalentQuestionsInOtherNetworksWrapper, .u-bg--gray-ultralight,
+  ul li.StaticListItem .selected[href*="answer"] {
     background: #333 !important;
   }
   .feed_card_on .RelatedQuestions h3,
@@ -187,7 +221,8 @@
   .icon_action_bar.sticky, .HomePageSignupForm,
   .Placeholder.white_bg .animated_background, .Placeholder.white_bg .mask,
   .feed_card_on .HomepageFeedStoryItemPlaceholder,
-  .feed_card_on .AmaSelfServeQuestionsPrompt, select, .loading_overlay {
+  .feed_card_on .AmaSelfServeQuestionsPrompt, select, .loading_overlay,
+  .NuxModal .Step .modal_header, .NuxModal .Step .modal_footer {
     background-color: #181818 !important;
   }
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
@@ -198,16 +233,16 @@
   .EditableList .StaticListItem > .selected, .ask_interstitial,
   .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
-  .CompleteProfileSection, .Next, .add_experience_cta, .ViewsOnProfile:hover,
-  .banner_answer, .prettyprint .linenums li:before, .heads_up_item,
-  .QuestionBannerReason, .Selector .SelectorResults, .Carousel .left:hover,
-  .Carousel .right:hover, .graphs .detail .x_label, .graphs .detail .item,
-  .bar_row, .Placeholder.white_bg .svg_circular_hole,
+  .CompleteProfileSection, .Next, .ViewsOnProfile:hover, .banner_answer,
+  .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason,
+  .Selector .SelectorResults, .Carousel .left:hover, .Carousel .right:hover,
+  .graphs .detail .x_label, .graphs .detail .item, .bar_row,
+  .Placeholder.white_bg .svg_circular_hole,
   .AnswerCompact .truncated_answer:hover, .Modal .tabs_header,
   /*** Pinned topic header ***/
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
-  .AnswerSurvey, .NuxModal .Step .modal_header, .u-bg--white,
-  .feed_card_on .TopicPageNavBar, .Modal .modal_header {
+  .AnswerSurvey, .u-bg--white, .feed_card_on .TopicPageNavBar,
+  .Modal .modal_header, .question_related.list {
     background: #222 !important;
   }
   .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
@@ -215,6 +250,8 @@
     border-right: 7.5px solid #333 !important;
     border-bottom: 7px solid #222 !important;
   }
+  .ui_icon_badge.ui_icon_badge_color--blue, .switcher_item_image .unread_dot,
+  .ui_avatar.ui_avatar--xlarge .ui_avatar_verified_badge,
   .ui_icon_badge.ui_icon_badge_color--blue {
     background-color: /*[[base-color]]*/ !important;
   }
@@ -225,7 +262,7 @@
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
   .CookieBanner .dismiss, .FooterNav, .DesktopFollowTopicStep, .ui_story_card,
-  .question_main_col, .cardify_with_footer, .right_col_fixable .side_bar {
+  .question_main_col, .cardify_with_footer {
     background-color: #222 !important;
   }
   .CookieBanner {
@@ -238,13 +275,15 @@
   .modal_nux_background, .modal_signup_background {
     background-color: rgba(34, 34, 34, .6) !important;
   }
-  .ContentPageFeed {
+  .ContentPageFeed, .web_page .u-hover-bg--black-transparent:hover,
+  .add_experience_cta {
     background-color: rgba(34, 34, 34, .3) !important;
   }
   .read_more_link, .unseen, .action_button, .NextButton, .modal_footer,
   .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more,
   .first_question_prompt, .QuestionSourceEdit .question_source_nux,
-  .NotEnoughKnowsAboutTopicsPrompt, .TribePageNavBar, .TribePageNavBarOld {
+  .NotEnoughKnowsAboutTopicsPrompt, .TribePageNavBar, .TribePageNavBarOld,
+  .credential_list_item .edit_wrapper {
     background: #242424 !important;
   }
   .count, .ContentPageFeedStoryItem, .nav_item_link.hover, .nav_item_link:hover,
@@ -261,10 +300,12 @@
   .ui_menu_item:hover, .TribeInviteModal .modal_header,
   .AskQuestionStep .url_input_box, .TribeAddHyperLinkModal .url_input_box,
   .QuoraShareModal .url_input_box, .FollowSuggestionSection,
-  .FollowSuggestionSectionWrapper {
+  .FollowSuggestionSectionWrapper, .Notif.unseen:hover {
     background-color: #282828 !important;
   }
-  html:not(#X) [class*="SettingsAccountMain"] [class*="linked_networks_link"] a:hover {
+  html:not(#X) [class*="SettingsAccountMain"] [class*="linked_networks_link"] a:hover,
+  .answer_count,
+  span a.u-tap-highlight--white.u-hover-bg--black-transparent:hover {
     background: transparent !important;
   }
   .menu_list_item a:hover, .completed:hover, .menu_list_header:hover,
@@ -275,15 +316,13 @@
   .content_white_button, .survey_button, .icon_action_bar-button:hover,
   .outer_content .new_actionbar_content_button:hover,
   .Bundle .view_all_button:hover, .Bundle .more_button:hover,
-  a[target="_blank"]:not(.link_overlay):not(.TopicNameLink):not(.feed_item_overlay):not([id*="_answer_link_overlay"]):hover,
   .HomepageSignupNetworkRedirectLink:hover,
   .udvelwrlbdolfmcikjev .fftymohfzbthluhzdawz .hndhuftyidotulwenpsu:hover,
   .TopicPageHeader .TopicPageNavBar .link.selected,
   .TopicPageHeader .TopicPageNavBar a.link:hover,
   .TribePageNavBar .inner .Tabs .list_contents .tab .link.selected,
   .TribePageNavBar .inner .Tabs .list_contents .tab .link:hover,
-  .switcher_item_with_image a.link:hover, .HyperLinkPreviewCompact:hover,
-  .web_page .ui_button--FlatStyle--blue:focus,
+  .HyperLinkPreviewCompact:hover, .web_page .ui_button--FlatStyle--blue:focus,
   .web_page .ui_button--FlatStyle--gray:focus,
   .web_page .ui_button--StackedStyle:focus,
   .web_page .ui_button--FlatStyle--blue:hover,
@@ -291,14 +330,13 @@
   .web_page .ui_button--StackedStyle:hover, .Modal .tabs_header .tab:hover,
   .RelatedTopicsListItem:hover,
   .link_overlay:not([nav_style="app_browser"]):hover,
-  .web_page .nav_item_selected a, .credential_list_item .edit_wrapper,
-  .AddCredentialDropdown:hover, .tab.linked_list_item .link.selected,
-  .tab.linked_list_item .link:hover {
+  .web_page .nav_item_selected a, .AddCredentialDropdown:hover,
+  .tab.linked_list_item .link.selected, .tab.linked_list_item .link:hover,
+  .web_page .ui_page_tab:hover, .switcher_item_with_image.is_active {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr,
   .logged_out_page_big_signup .ContentWrapper .HomePageSignupForm .signup:after,
-  .switcher_item_with_image.is_active,
   .BoardSettingsList .BlogSettingsListItem .board_photo.no_photo {
     background-color: #444 !important;
   }
@@ -319,11 +357,18 @@
   .feed_item_overlay:hover .read_more_link, .checklist_row .label a,
   .CredentialModalLink, .EmptyUserCombinedState a, .AddCredentialDropdown,
   .hover_menu_contents .SiteHeaderHoverMenuContents .main_menu li a,
-  .hover_menu.no_body_attach .menu_list_item a {
+  .hover_menu.no_body_attach .menu_list_item a,
+  .switcher_item_with_image .link .label:hover, .u-text--blue,
+  .question_related.list .AskQuestionButton, a,
+  .ui_button--PillStyle--light_blue, .ui_button_inner .ui_button_label,
+  .grid_page .layout_3col_center a.ui_button--non_link .ui_button_label {
     color: /*[[base-color]]*/ !important;
   }
-  h1, h2, h3, h4, h5, h6, blockquote, div, div > span, span > span, li, input,
-  textarea, a.submit_button span, a.primary_button span, interval_timestamp,
+  .grid_page .layout_3col_center .ui_empty--wrapper-compact a.ui_button--non_link .ui_button_label {
+    color: #ddd !important;
+  }
+  h1, h2, h3, h4, h5, h6, blockquote, div > span, li, input, textarea,
+  a.submit_button span, a.primary_button span, interval_timestamp,
   .tooltip_contents span, .nav_item_link .badge, .hover_menu_header_link,
   .topic_pill a, .ViewMoreLink a, .is_removable .remove_link,
   .NotifsNavItem .NotifsNavBadge, .LookupBarAskQuestionModalButton .button_text,
@@ -336,23 +381,56 @@
   .form_buttons .continue .submit_button, span.caret, .TribeNameLink span,
   .QuoraShareEmbed .ui_content_title span, .ui_qtext_para, .user,
   .ui_story_card_body .ui_qtext_rendered_qtext, .name_text span,
-  .header_text_main, .ui_content_title .ui_qtext_rendered_qtext,
-  .link_overlay p span, .link_overlay span, .web_page .nav_item_selected a,
-  .web_page .nav_item_selected a:hover,
+  .header_text_main, .link_overlay p span, .link_overlay span,
+  .web_page .nav_item_selected a,
   .pass_color_to_child_links .ui_content_title span,
-  .question_qtext span.ui_qtext_rendered_qtext, .add_experience_cta, select {
+  .question_qtext span.ui_qtext_rendered_qtext, .add_experience_cta, select,
+  .HyperLinkPreview .hyperlink_title, .HyperLinkPreview .hyperlink_description,
+  .feed_item a[id*="__w2_"] div, .switcher_item_with_image .link .label,
+  .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader {
     color: #c0c0c0 !important;
   }
+  /* this area, attempts to style at longer term the dynamic generated CSS.
+	Adding a simple `div` to any of these specific styles, breaks too much elsewhere
+	its not perfect and there's minor perceptual breaks in some hovers colors. */
+  a[id*="__w2_"]:not([id*="_answer_link_overlay"]):not(.AskQuestionButton):not(.ui_qtext_more_link):not(.u-hover-bg--black-transparent):not(.ui_button--PillStyle--light_blue):not(.ui_button--PillStyle--bright_blue):not(.question_link):not([action_mousedown="NotifClickthrough"]):hover {
+    background-color: rgba(50, 50, 50, .7) !important;
+    color: #aaa !important;
+  }
+  a[id*="_toggle_link"]:hover {
+    background-color: transparent !important;
+  }
+  div[id*="__w2_"] div:not(.list_item_text), div[id*="_paged_list"] a {
+    color: #aaa !important;
+  }
+  div[id*="__w2_"] div:not([class*="_button"]):not([id*="_icon"]):not(.ui_icon_badge_color--blue):not(div) {
+    background-color: rgba(34, 34, 34, .7) !important;
+  }
+  /* end wth area above =) */
+  .feed_item_overlay .read_more_link {
+    background: #191919 !important;
+  }
+  html:not(#X) .multifeed_bundle_story a[id*="__w2_"]:hover {
+    background-color: transparent !important;
+  }
   .story_title_container .ui_content_title:hover,
-  .SiteHeader.new_header .right_contents .ask_wrapper .AskQuestionButton {
+  .SiteHeader.new_header .right_contents .ask_wrapper .AskQuestionButton,
+  .SiteHeader .SiteHeaderNavItem .nav_item_link,
+  .SiteHeader .site_header_nav_item .nav_item_link,
+  .web_page .nav_item_selected a:hover {
     color: #ddd !important;
   }
   .faded, .add_upvote, .add_upvote .count, .remove_upvote, .remove_upvote .count,
-  .table_cell_wrapper a span {
+  .table_cell_wrapper a span, .comments_preview_toggle, .list_item_text {
     color: #949494 !important;
   }
   .graphs text {
     fill: #eee !important;
+  }
+  .ui_icon_color--gray .icon_svg-fill_as_stroke,
+  .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-fill_as_stroke,
+  .ui_button--StackedStyle--gray .ui_button_icon .icon_svg-fill_as_stroke {
+    fill: #aaa !important;
   }
   .graphs rect:hover {
     fill: #357 !important;
@@ -366,7 +444,7 @@
   .ContentFeedTabs li.active a, .SiteHeader.new_header .nav_item_link {
     border-color: transparent !important;
   }
-  .SiteHeader.new_header .nav_item_link.selected {
+  .SiteHeader.new_header .nav_item_link.selected, .web_page .ui_page_tab:hover {
     border-color: #b92b27 !important;
   }
   .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea,
@@ -381,12 +459,14 @@
   .AMAFeedDividerItem:before, .u-border--desktop-feed-card,
   .Announcement:not(.WelcomeTribeAnnouncement),
   .HyperLinkPreviewCompact .link_content_with_image, .Modal .modal_header,
-  .Bundle .section_header {
+  .Bundle .section_header, .u-border-bottom, textarea, .fake_editor,
+  .qtext_editor_content {
     border-color: #333 !important;
   }
   .ActionBar .primary_action:hover, .primary_item a:hover,
   .AddQuestionLookupBarButton:hover,
-  ._facepile_wrapper ._facepile_photo .profile_photo_img {
+  ._facepile_wrapper ._facepile_photo .profile_photo_img, textarea:focus,
+  .fake_editor:focus, .qtext_editor_content:focus {
     border-color: #555 !important;
   }
   /* outline */
@@ -430,7 +510,7 @@
     border-top-color: #282828 !important;
   }
   /*** Red ***/
-  a.selected, a.selected span, div.tab.selected,
+  a.selected span, div.tab.selected,
   .TopicPageHeader .TopicPageNavBar .link.selected,
   .TopicPageHeader .TopicPageNavBar a.link:hover,
   .TribePageNavBar .inner .Tabs .list_contents .tab .link.selected {
@@ -459,11 +539,18 @@
     background: #182030 !important;
     border: 1px solid #246 !important;
   }
+  .web_page .ui_button--PillStyle--light_blue:focus,
+  .web_page .ui_button--PillStyle--light_blue:hover, .u-bg--blue-light {
+    background: #246 !important;
+  }
+  .ui_button--PillStyle--light_blue {
+    background: #136 !important;
+  }
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer,
   .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
   .Topic.Button, .RequestAnswer, .Topic.Button .count, .RequestAnswer .count,
-  .link:hover, .filter_option_link:hover, .filter_option_link.selected,
-  .RADToggle, .link.selected {
+  .filter_option_link:hover, .filter_option_link.selected, .RADToggle,
+  .link.selected {
     background-color: #182030 !important;
   }
   .Editor .drop_zone, .view_answer, .InviteToFollow, .WriteAnswer,
@@ -511,7 +598,8 @@
   }
   /*** Make ask question buttons necessarily red, and their text gray ***/
   .AskQuestionButton .button_text, .modal_actions .submit_button.modal_action,
-  a.submit_button .google_button_text, a.submit_button .facebook_button_text {
+  a.submit_button .google_button_text, a.submit_button .facebook_button_text,
+  .ui_content_title .ui_qtext_rendered_qtext {
     color: #efefef !important;
   }
   .BelowQuestionAddPrompt .AskQuestionButton {
@@ -520,5 +608,45 @@
   /*** Darken related question link underline color ***/
   .question_link:hover .ui_story_title {
     text-decoration-color: #c0c0c0 !important;
+  }
+  code.prettyprint, pre.prettyprint {
+    background: #111 !important;
+  }
+  /* lighten code/pre syntax highligh */
+  code.prettyprint .pln, pre.prettyprint .pln {
+    color: #aaa;
+  }
+  code.prettyprint .str, pre.prettyprint .str {
+    color: #4070a0;
+  }
+  code.prettyprint .kwd, pre.prettyprint .kwd {
+    color: #018226;
+  }
+  code.prettyprint .com, pre.prettyprint .com {
+    color: #6fbdd1;
+  }
+  code.prettyprint .typ, pre.prettyprint .typ {
+    color: #ad2600;
+  }
+  code.prettyprint .lit, pre.prettyprint .lit {
+    color: #4bc689;
+  }
+  code.prettyprint .pun, pre.prettyprint .pun, code.prettyprint .opn,
+  pre.prettyprint .opn, code.prettyprint .clo, pre.prettyprint .clo {
+    color: #979700;
+  }
+  code.prettyprint .tag, pre.prettyprint .tag {
+    color: #5081ec;
+  }
+  code.prettyprint .atn, pre.prettyprint .atn, code.prettyprint .atv,
+  pre.prettyprint .atv {
+    color: #5ca2e8;
+  }
+  code.prettyprint .dec, pre.prettyprint .dec, code.prettyprint .var,
+  pre.prettyprint .var {
+    color: #bb60d5;
+  }
+  code.prettyprint .fun, pre.prettyprint .fun {
+    color: #346dff;
   }
 }
