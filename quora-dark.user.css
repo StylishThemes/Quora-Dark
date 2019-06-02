@@ -81,7 +81,7 @@
     background-color: /*[[base-color]]*/ !important;
     filter: brightness(90%) !important;
   }
-  .action_bar_inner  a.ui_button--non_link .ui_button_label,
+  .action_bar_inner a.ui_button--non_link .ui_button_label,
   .nux_dialog_interests .topic_photo_card_wrapper .topic_photo_card .info_wrapper .info_background .info span,
   .u-text--gray-dark, .Modal .modal_header .modal_title, .nav_item_selected,
   .action_bar_inner .ui_button_count_inner,
