@@ -665,4 +665,17 @@
   code.prettyprint .fun, pre.prettyprint .fun {
     color: #346dff;
   }
+  /* website https://www.quora.com/business */
+  .StaticPage.AdvertisingMain .section_wrapper:nth-child(2n) {
+    background-color: #181818 !important;
+  }
+  .StaticPage.AdvertisingMain .section_wrapper .content_section.bullet_section .section_heading,
+  .StaticPage.AdvertisingMain .section_wrapper .content_section.hero_section .section_heading,
+  .StaticPage.AdvertisingMain .section_wrapper .content_section.hero_section .section_text,
+  .StaticPage.AdvertisingMain .section_wrapper .content_section.bullet_section .bullet_list .bullet .bullet_title,
+  .StaticPage.AdvertisingMain .section_wrapper .content_section.bullet_section .bullet_list .bullet .bullet_subtext,
+  .StaticPage.AdvertisingMain .section_wrapper .section_subheading,
+  .header_nav.business [id*="_link"].nav_item_link > span {
+    color: #aaa !important;
+  }
 }
