@@ -92,8 +92,9 @@
     color: #ddd !important;
   }
   .EditableList .EditableListItem > a, .EditableList .StaticListItem > a,
-  .EditableList .list_empty > a {
-    color: #aaa;
+  .EditableList .list_empty > a,
+  .hovercard_section .AboutListItem span.body_text .main_text, a.ui_page_tab {
+    color: #aaa !important;
   }
   .ui_button--PillStyle--gray {
     color: #ddd !important;
@@ -102,6 +103,18 @@
   .web_page .ui_button--PillStyle--gray:hover,
   .web_page .ui_button--PillStyle--gray:focus, .progress_bar_wrapper {
     background-color: #444 !important;
+  }
+  .web_page .ui_button--PillStyle.pressed:focus,
+  .web_page .ui_button--PillStyle.pressed:hover, .ui_button--PillStyle.pressed {
+    background: #444 !important;
+  }
+  /* exception color these bg gray on purpose */
+  .web_page .ui_button--PillStyle--light_blue:focus,
+  .web_page .ui_button--PillStyle--light_blue:hover, .u-bg--blue-light {
+    background: #444 !important;
+  }
+  .ui_button--PillStyle--light_blue {
+    background: #333 !important;
   }
   .distro_switcher, .AskQuestionStep .url_input,
   .TribeAddHyperLinkModal .url_input, .QuoraShareModal .url_input,
@@ -129,13 +142,6 @@
     color: #ddd !important;
   }
   /* end together */
-  .ui_button--PillStyle--light_blue {
-    background-color: rgba(51, 85, 119, .3) !important;
-  }
-  .web_page .ui_button--PillStyle.pressed:focus,
-  .web_page .ui_button--PillStyle.pressed:hover, .ui_button--PillStyle.pressed {
-    background-color: rgba(51, 85, 119, .5) !important;
-  }
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-stroke,
   .ui_icon_color--gray_dark .icon_svg-stroke {
     stroke: #eee !important;
@@ -143,6 +149,17 @@
   .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-stroke,
   .ui_button--StackedStyle--gray .ui_button_icon .icon_svg-stroke {
     stroke: #aaa !important;
+  }
+  .ui_button--PillStyle.pressed .ui_button_icon .icon_svg-stroke {
+    stroke: #ccc !important;
+  }
+  .ui_button--PillStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
+  .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill_as_stroke,
+  .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill_as_stroke,
+  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
+  .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
+  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill {
+    fill: #ccc !important;
   }
   .ui_icon_color--blue_dark .icon_svg-stroke,
   .ui_icon_color--blue .icon_svg-stroke,
@@ -152,14 +169,6 @@
   .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-stroke,
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-stroke {
     stroke: /*[[base-color]]*/ !important;
-  }
-  .ui_button--PillStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
-  .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill_as_stroke,
-  .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill_as_stroke,
-  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
-  .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
-  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill {
-    fill: #ccc !important;
   }
   .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
@@ -332,7 +341,8 @@
   .link_overlay:not([nav_style="app_browser"]):hover,
   .web_page .nav_item_selected a, .AddCredentialDropdown:hover,
   .tab.linked_list_item .link.selected, .tab.linked_list_item .link:hover,
-  .web_page .ui_page_tab:hover, .switcher_item_with_image.is_active {
+  .web_page .ui_page_tab:hover, .switcher_item_with_image.is_active,
+  .answer_editor .form_buttons {
     background-color: #333 !important;
   }
   .count:before, .qtext_hr,
@@ -361,10 +371,14 @@
   .switcher_item_with_image .link .label:hover, .u-text--blue,
   .question_related.list .AskQuestionButton, a,
   .ui_button--PillStyle--light_blue, .ui_button_inner .ui_button_label,
-  .grid_page .layout_3col_center a.ui_button--non_link .ui_button_label {
+  .grid_page .layout_3col_center a.ui_button--non_link .ui_button_label,
+  .list_item_text:hover {
     color: /*[[base-color]]*/ !important;
   }
-  .grid_page .layout_3col_center .ui_empty--wrapper-compact a.ui_button--non_link .ui_button_label {
+  .grid_page .layout_3col_center .ui_empty--wrapper-compact a.ui_button--non_link .ui_button_label,
+  .SettingsNavList a,
+  .ui_text_badge.ui_icon_text_badge_style--square.ui_icon_text_badge_size--regular,
+  .ui_text_badge.ui_icon_text_badge_style--circle.ui_icon_text_badge_size--regular {
     color: #ddd !important;
   }
   h1, h2, h3, h4, h5, h6, blockquote, div > span, li, input, textarea,
@@ -390,23 +404,31 @@
   .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader {
     color: #c0c0c0 !important;
   }
+  .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-stroke,
+  .ui_button--StackedStyle--gray .ui_button_icon .icon_svg-stroke {
+    stroke: #666 !important;
+  }
   /* this area, attempts to style at longer term the dynamic generated CSS.
 	Adding a simple `div` to any of these specific styles, breaks too much elsewhere
 	its not perfect and there's minor perceptual breaks in some hovers colors. */
-  a[id*="__w2_"]:not([id*="_answer_link_overlay"]):not(.AskQuestionButton):not(.ui_qtext_more_link):not(.u-hover-bg--black-transparent):not(.ui_button--PillStyle--light_blue):not(.ui_button--PillStyle--bright_blue):not(.question_link):not([action_mousedown="NotifClickthrough"]):hover {
+  a[id*="__w2_"]:not([id*="_answer_link_overlay"]):not(.AskQuestionButton):not(.ui_qtext_more_link):not(.u-hover-bg--black-transparent):not(.ui_button--PillStyle--light_blue):not(.ui_button--PillStyle--bright_blue):not(.question_link):not([action_mousedown="NotifClickthrough"]):not([id*="_submit"]):not(.more_link):not(.submit_button):not(a):hover {
     background-color: rgba(50, 50, 50, .7) !important;
     color: #aaa !important;
+  }
+  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:hover {
+    background-color: rgba(50, 50, 50, .7) !important;
   }
   a[id*="_toggle_link"]:hover {
     background-color: transparent !important;
   }
-  div[id*="__w2_"] div:not(.list_item_text), div[id*="_paged_list"] a {
+  div[id*="__w2_"] div:not(.list_item_text):not(.ui_toast),
+  div[id*="_paged_list"] a {
     color: #aaa !important;
   }
   div[id*="__w2_"] div:not([class*="_button"]):not([id*="_icon"]):not(.ui_icon_badge_color--blue):not(div) {
     background-color: rgba(34, 34, 34, .7) !important;
   }
-  html:not(#X) .multifeed_bundle_story a[id*="__w2_"]:not([id*="_overflow_menu_item"]):hover {
+  html:not(#X) .multifeed_bundle_story a[id*="__w2_"]:not([id*="_overflow_menu_item"]):not(.ui_button--PillStyle.pressed):hover {
     background-color: transparent !important;
   }
   /* end wth area above =) */
@@ -444,9 +466,6 @@
   .ContentFeedTabs li.active a, .SiteHeader.new_header .nav_item_link {
     border-color: transparent !important;
   }
-  .SiteHeader.new_header .nav_item_link.selected, .web_page .ui_page_tab:hover {
-    border-color: #b92b27 !important;
-  }
   .search_focused .selector_input.text, .ask_bar .LookupBarSelector textarea,
   .icon_action_bar-button.blue_icon .action_bar-inline_icon .icon_svg-stroke,
   .icon_action_bar-stacked_button.blue_icon .action_bar-inline_icon .icon_svg-stroke {
@@ -460,7 +479,7 @@
   .Announcement:not(.WelcomeTribeAnnouncement),
   .HyperLinkPreviewCompact .link_content_with_image, .Modal .modal_header,
   .Bundle .section_header, .u-border-bottom, textarea, .fake_editor,
-  .qtext_editor_content {
+  .qtext_editor_content, .Prompt {
     border-color: #333 !important;
   }
   .ActionBar .primary_action:hover, .primary_item a:hover,
@@ -513,7 +532,9 @@
   a.selected span, div.tab.selected,
   .TopicPageHeader .TopicPageNavBar .link.selected,
   .TopicPageHeader .TopicPageNavBar a.link:hover,
-  .TribePageNavBar .inner .Tabs .list_contents .tab .link.selected {
+  .TribePageNavBar .inner .Tabs .list_contents .tab .link.selected,
+  .web_page .ui_page_tab.selected,
+  .SiteHeader.new_header .nav_item_link.selected, .web_page .ui_page_tab:hover {
     color: #b92b27 !important;
     border-color: #b92b27 !important;
   }
@@ -539,12 +560,8 @@
     background: #182030 !important;
     border: 1px solid #246 !important;
   }
-  .web_page .ui_button--PillStyle--light_blue:focus,
-  .web_page .ui_button--PillStyle--light_blue:hover, .u-bg--blue-light {
-    background: #246 !important;
-  }
-  .ui_button--PillStyle--light_blue {
-    background: #136 !important;
+  .AnswerCompact .truncated_answer .not_linked:hover {
+    background-color: #222;
   }
   .add_upvote .count, .User.Button .count, .Editor .drop_zone, .view_answer,
   .InviteToFollow, .WriteAnswer, .ReAsk.Button:not(.link), .follow_button,
@@ -593,8 +610,9 @@
     background-color: #050505;
   }
   .matched_term {
-    background-color: rgba(187, 85, 0, .4) !important;
-    background-color: rgba(/*[[base-color-rgb]]*/, .4) !important;
+    border: 1px solid rgba(187, 85, 0, 1) !important;
+    border: 1px solid rgba(/*[[base-color-rgb]]*/, 1) !important;
+    padding: 2px;
   }
   /*** Make ask question buttons necessarily red, and their text gray ***/
   .AskQuestionButton .button_text, .modal_actions .submit_button.modal_action,
