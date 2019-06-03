@@ -186,7 +186,7 @@
   }
   /*** background ***/
   .ActionBar, .FeedStoryTimestamp, .FeedStoryTimestamp hr, .interval_timestamp,
-  .feed_item, .NotificationItem.seen, .edit_faq_link, .title a,
+  .NotificationItem.seen, .edit_faq_link, .title a,
   .editor_toolbar .modifier.overflow_show:before,
   .editor_toolbar .modifier.overflow_hide:before,
   .FollowSuggestionCard.InlineFollowSuggestionCard, .seen, .Message, .ObjectCard,
@@ -202,8 +202,8 @@
     background: transparent !important;
   }
   .check_wrapper.complete .check, .QuestionMain .right_col_fixable,
-  .RelatedQuestions, .RelatedQuestionsAdWrapper, .AddQuestionPrompt,
-  .StoryItemToggleModal, .AMACoverPhoto, .landing_photo {
+  .RelatedQuestions, .RelatedQuestionsAdWrapper, .StoryItemToggleModal,
+  .AMACoverPhoto, .landing_photo {
     background-color: transparent !important;
   }
   .EquivalentQuestionsInOtherNetworksWrapper, .u-bg--gray-ultralight,
@@ -251,7 +251,8 @@
   /*** Pinned topic header ***/
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
   .AnswerSurvey, .u-bg--white, .feed_card_on .TopicPageNavBar,
-  .Modal .modal_header, .question_related.list {
+  .Modal .modal_header, .question_related.list, .AddQuestionPrompt, .feed_item,
+  .section_header, .feed_card_on .Bundle .full_bundle {
     background: #222 !important;
   }
   .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
@@ -404,10 +405,6 @@
   .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader {
     color: #c0c0c0 !important;
   }
-  .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-stroke,
-  .ui_button--StackedStyle--gray .ui_button_icon .icon_svg-stroke {
-    stroke: #666 !important;
-  }
   /* this area, attempts to style at longer term the dynamic generated CSS.
 	Adding a simple `div` to any of these specific styles, breaks too much elsewhere
 	its not perfect and there's minor perceptual breaks in some hovers colors. */
@@ -415,7 +412,8 @@
     background-color: rgba(50, 50, 50, .7) !important;
     color: #aaa !important;
   }
-  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:hover {
+  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:hover,
+  .HyperLinkFeedStory a[id*="__w2_"]:not([id*="_link_overlay"]):hover {
     background-color: rgba(50, 50, 50, .7) !important;
   }
   a[id*="_toggle_link"]:hover {
