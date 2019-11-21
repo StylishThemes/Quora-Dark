@@ -24,12 +24,12 @@
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "npx versions -C -p major quora-dark.user.css",
-    "minor": "npx versions -C -p minor quora-dark.user.css",
-    "patch": "npx versions -C -p patch quora-dark.user.css",
-    "perfectionist": "npx perfectionist quora-dark.user.css quora-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --color -- quora-dark.user.css",
+    "major": "versions -C -p major quora-dark.user.css",
+    "minor": "versions -C -p minor quora-dark.user.css",
+    "patch": "versions -C -p patch quora-dark.user.css",
+    "perfectionist": "perfectionist quora-dark.user.css quora-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "stylelint --color -- quora-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "npx updates -cu && npm install"
+    "update": "updates -cu && npm install"
   }
 }
