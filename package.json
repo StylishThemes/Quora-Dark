@@ -11,22 +11,22 @@
     "node": ">=10"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-silverwind": "^3.0.1",
+    "eslint": "^6.6.0",
+    "eslint-config-silverwind": "^5.0.0",
     "perfectionist": "^2.4.0",
-    "ver": "^4.3.0",
-    "stylelint": "^10.0.1",
-    "stylelint-config-standard": "^18.3.0",
-    "updates": "^8.0.3"
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "updates": "^9.1.0",
+    "versions": "7.0.3"
   },
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "npx ver -p major quora-dark.user.css",
-    "minor": "npx ver -p minor quora-dark.user.css",
-    "patch": "npx ver -p patch quora-dark.user.css",
+    "major": "npx versions -C -p major quora-dark.user.css",
+    "minor": "npx versions -C -p minor quora-dark.user.css",
+    "patch": "npx versions -C -p patch quora-dark.user.css",
     "perfectionist": "npx perfectionist quora-dark.user.css quora-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "stylelint": "npx stylelint --color -- quora-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
