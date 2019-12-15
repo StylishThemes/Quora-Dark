@@ -72,14 +72,33 @@
   .HomeNavList .unread.has_img .EditableListItem:before,
   .EditableList .unread .EditableListItem:before,
   .SiteHeader.during_nux .progress_bar_wrapper .progress_bar,
-  .ui_button--PillStyle--bright_blue {
+  .ui_button--PillStyle--bright_blue,
+  [class*="ClickWrapper___StyledBox"][class*="ButtonPill___StyledButtonWrapper"],
+  [class*="ButtonPill___StyledButtonWrapper"] div,
+  [class*="ButtonPill___StyledButtonWrapper"] svg {
     background-color: /*[[base-color]]*/ !important;
   }
+  [class*="ButtonPill___StyledButtonWrapper"] svg [stroke*="#666"] {
+    stroke: #eee !important;
+  }
+  [class="Box-s"] [color="red"] div[class="Box-s"] {
+    background-color: red !important;
+  }
+  .WelcomeTribeAnnouncement .ui_button--PillStyle--bright_blue {
+    filter: invert(1) !important;
+  }
+  .web-page .WelcomeTribeAnnouncement .ui_button--PillStyle--bright_blue:hover,
+  .web_page .WelcomeTribeAnnouncement .ui_button--PillStyle--bright_blue:focus,
+  .web_page .WelcomeTribeAnnouncement .ui_button--PillStyle--bright_blue:active,
+  .web_page .WelcomeTribeAnnouncement .ui_button--PillStyle--bright_blue:hover {
+    filter: invert(1) !important;
+    opacity: .8;
+  }
   .web_page .ui_button--PillStyle--bright_blue:focus,
-  .web_page .ui_button--PillStyle--bright_blue:hover,
+  .web_page .ui_button--PillStyle--bright_blue:active,
   .web_page .ui_button--PillStyle--bright_blue:hover {
     background-color: /*[[base-color]]*/ !important;
-    filter: brightness(90%) !important;
+    opacity: .8;
   }
   .action_bar_inner a.ui_button--non_link .ui_button_label,
   .nux_dialog_interests .topic_photo_card_wrapper .topic_photo_card .info_wrapper .info_background .info span,
@@ -128,7 +147,7 @@
     background-color: #222 !important;
   }
   /* together */
-  .TribesTabGetStarted, .WelcomeTribeAnnouncement,
+  .TribesTabGetStarted, .WelcomeTribeAnnouncement:not(.footer),
   .nux_dialog_simplified_follow_friends .blurred_facepile {
     filter: invert(90%) !important;
   }
@@ -139,6 +158,9 @@
   .ComponentSurvey .question_wrapper .button_group .survey_button:hover,
   .ui_story_card_body .ui_button_inner .ui_button_label {
     border-color: #666 !important;
+    color: #ddd !important;
+  }
+  html div span[id*="__w2_"] {
     color: #ddd !important;
   }
   /* end together */
@@ -238,9 +260,8 @@
   .hover_menu_contents, .notifications_header_bar, .dialog_wrapper,
   .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
   .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item,
-  .Announcement .footer, .EditableList .nav_item_selected a,
-  .EditableList .StaticListItem > .selected, .ask_interstitial,
-  .ViewsOnHovercard, .search_input:before, .editor_toolbar,
+  .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
+  .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
   .CompleteProfileSection, .Next, .ViewsOnProfile:hover, .banner_answer,
   .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason,
@@ -373,13 +394,14 @@
   .question_related.list .AskQuestionButton, a,
   .ui_button--PillStyle--light_blue, .ui_button_inner .ui_button_label,
   .grid_page .layout_3col_center a.ui_button--non_link .ui_button_label,
-  .list_item_text:hover {
+  .list_item_text:hover, [class*="AskQuestionStepAddQuestion___StyledBanner"] {
     color: /*[[base-color]]*/ !important;
   }
   .grid_page .layout_3col_center .ui_empty--wrapper-compact a.ui_button--non_link .ui_button_label,
   .SettingsNavList a,
   .ui_text_badge.ui_icon_text_badge_style--square.ui_icon_text_badge_size--regular,
-  .ui_text_badge.ui_icon_text_badge_style--circle.ui_icon_text_badge_size--regular {
+  .ui_text_badge.ui_icon_text_badge_style--circle.ui_icon_text_badge_size--regular,
+  .grid_page .layout_3col_center a.ui_button--PillStyle--bright_blue .ui_button_label {
     color: #ddd !important;
   }
   h1, h2, h3, h4, h5, h6, blockquote, div > span, li, input, textarea,
@@ -402,7 +424,7 @@
   .question_qtext span.ui_qtext_rendered_qtext, .add_experience_cta, select,
   .HyperLinkPreview .hyperlink_title, .HyperLinkPreview .hyperlink_description,
   .feed_item a[id*="__w2_"] div, .switcher_item_with_image .link .label,
-  .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader {
+  .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader, div[color="gray"] {
     color: #c0c0c0 !important;
   }
   /* this area, attempts to style at longer term the dynamic generated CSS.
@@ -419,7 +441,7 @@
   a[id*="_toggle_link"]:hover {
     background-color: transparent !important;
   }
-  div[id*="__w2_"] div:not(.list_item_text):not(.ui_toast),
+  div[id*="__w2_"] div:not(.list_item_text):not(.ui_toast):not(.title):not(.body),
   div[id*="_paged_list"] a {
     color: #aaa !important;
   }
@@ -432,6 +454,18 @@
   /* end wth area above =) */
   .feed_item_overlay .read_more_link {
     background: #191919 !important;
+  }
+  .ui_vertical_card_group--card {
+    border-color: #555;
+    background-color: #222;
+  }
+  [class*="Box-sc"][width]:not([height="2"]),
+  [class*="Box-sc"][class*="display_"] {
+    border-color: #555 !important;
+    background-color: #222;
+  }
+  [class*="position_"]:not([class*="position__Relative"]):not([height="2"]) {
+    background-color: rgba(20, 21, 34, .4) !important;
   }
   .story_title_container .ui_content_title:hover,
   .SiteHeader.new_header .right_contents .ask_wrapper .AskQuestionButton,
