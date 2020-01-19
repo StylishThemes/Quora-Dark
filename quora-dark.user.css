@@ -123,12 +123,18 @@
   ul li.StaticListItem .selected[href*="answer"] .list_item_text,
   .layout_3col_center a.ui_button--non_link .ui_button_label,
   a.ui_button--non_link .ui_button_label_count_wrapper .ui_button_label,
-  .grid_page .layout_3col_center .ui_story_card a.ui_button--non_link .ui_button_label {
+  .grid_page .layout_3col_center .ui_story_card a.ui_button--non_link .ui_button_label,
+  div[class*="Box-"][color*="gray_dark"], .puppeteer_test_button_text,
+  .u-text--gray, .Prompt .prompt_inner .prompt_title,
+  .UserAnswersNeeded.is_prominent .prompt_wrapper, .LeaderboardHeader .title,
+  .LeaderboardMain .up_and_coming .title {
     color: #ddd !important;
   }
   .EditableList .EditableListItem > a, .EditableList .StaticListItem > a,
   .EditableList .list_empty > a,
-  .hovercard_section .AboutListItem span.body_text .main_text, a.ui_page_tab {
+  .hovercard_section .AboutListItem span.body_text .main_text, a.ui_page_tab,
+  .QueryResults .QueryListTitle .query_title .query,
+  .LeaderboardListItem .view_count .num {
     color: #aaa !important;
   }
   .ui_button--PillStyle--gray {
@@ -163,12 +169,18 @@
     background-color: #222 !important;
   }
   /* together */
-  .TribesTabGetStarted, .WelcomeTribeAnnouncement:not(.footer),
-  .nux_dialog_simplified_follow_friends .blurred_facepile {
+  .TribesTabGetStarted:not(.u-text--gray),
+  .WelcomeTribeAnnouncement:not(.footer),
+  .nux_dialog_simplified_follow_friends .blurred_facepile,
+  .TribesTabGetStarted .u-text--gray {
     filter: invert(90%) !important;
+    color: #333;
   }
   .u-border--desktop-feed-card, .Announcement {
     border: 1px solid #ddd !important;
+  }
+  .layout_3col_center .list_header {
+    color: #ddd;
   }
   .ComponentSurvey .question_wrapper .button_group .survey_button:focus,
   .ComponentSurvey .question_wrapper .button_group .survey_button:hover,
@@ -176,7 +188,7 @@
     border-color: #666 !important;
     color: #ddd !important;
   }
-  html div span[id*="__w2_"] {
+  html div span[id*="__w2_"], .Notif .notif_content {
     color: #ddd !important;
   }
   /* end together */
@@ -440,7 +452,8 @@
   .question_qtext span.ui_qtext_rendered_qtext, .add_experience_cta, select,
   .HyperLinkPreview .hyperlink_title, .HyperLinkPreview .hyperlink_description,
   .feed_item a[id*="__w2_"] div, .switcher_item_with_image .link .label,
-  .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader, div[color="gray"] {
+  .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader, div[color="gray"],
+  .ui_headers_base, .outer_content_box .content_title {
     color: #c0c0c0 !important;
   }
   /* this area, attempts to style at longer term the dynamic generated CSS.
@@ -457,9 +470,13 @@
   a[id*="_toggle_link"]:hover {
     background-color: transparent !important;
   }
-  div[id*="__w2_"] div:not(.list_item_text):not(.ui_toast):not(.title):not(.body),
-  div[id*="_paged_list"] a {
-    color: #aaa !important;
+  div[id*="_paged_list"] a, .HoverMenu .TopicNameSpan.TopicName {
+    color: #ccc !important;
+  }
+  span.bullet, .ui_button--styled .ui_button_count .bullet,
+  .ToolboxCategory .unstyled_ui_button .ui_button_count .bullet {
+    color: #ccc !important;
+    opacity: 1 !important;
   }
   div[id*="__w2_"] div:not([class*="_button"]):not([id*="_icon"]):not(.ui_icon_badge_color--blue):not(div) {
     background-color: rgba(34, 34, 34, .7) !important;
