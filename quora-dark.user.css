@@ -478,6 +478,9 @@
   a:link:hover, a > .ui_content_title {
     transition: /*[[custom-transition]]*/ !important;
   }
+  a > .ui_content_title:hover {
+    transition: color ease-in 50ms !important;
+  }
   .HyperLinkFeedStory a[id*="__w2_"]:not([id*="_link_overlay"]):hover,
   .answer_link_overlay:hover {
     background-color: rgba(40, 40, 40, .4) !important;
