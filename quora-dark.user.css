@@ -43,6 +43,7 @@
   /* Blank *\/
   EOT;
 }
+@advanced text custom-transition "Custom transition" "all ease-in 350ms"
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("quora.com") {
@@ -473,6 +474,9 @@
   a[id*="__w2_"]:not([id*="_answer_link_overlay"]):not(.AskQuestionButton):not(.ui_qtext_more_link):not(.u-hover-bg--black-transparent):not(.ui_button--PillStyle--light_blue):not(.ui_button--PillStyle--bright_blue):not(.question_link):not([action_mousedown="NotifClickthrough"]):not([id*="_submit"]):not(.more_link):not(.submit_button):not(a):hover {
     background-color: rgba(50, 50, 50, .7) !important;
     color: #aaa !important;
+  }
+  a:link:hover, a > .ui_content_title {
+    transition: /*[[custom-transition]]*/ !important;
   }
   .HyperLinkFeedStory a[id*="__w2_"]:not([id*="_link_overlay"]):hover,
   .answer_link_overlay:hover {
