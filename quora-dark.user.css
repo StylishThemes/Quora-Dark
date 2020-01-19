@@ -146,9 +146,7 @@
     background-color: #444 !important;
   }
   .web_page .ui_button--PillStyle.pressed:focus,
-  .web_page .ui_button--PillStyle.pressed:hover, .ui_button--PillStyle.pressed {
-    background: #444 !important;
-  }
+  .web_page .ui_button--PillStyle.pressed:hover, .ui_button--PillStyle.pressed,
   /* exception color these bg gray on purpose */
   .web_page .ui_button--PillStyle--light_blue:focus,
   .web_page .ui_button--PillStyle--light_blue:hover, .u-bg--blue-light {
@@ -167,6 +165,14 @@
   .TopicOrganizePageMain .system_message {
     border: 1px solid #555 !important;
     background-color: #222 !important;
+  }
+  .QueryResults .AskQuestionButton {
+    border: 1px solid #555 !important;
+    background-color: #333 !important;
+  }
+  .QueryResults .AskQuestionButton:focus, .QueryResults .AskQuestionButton:hover {
+    border: 1px solid /*[[base-color]]*/ !important;
+    color: /*[[base-color]]*/ !important;
   }
   /* together */
   .TribesTabGetStarted:not(.u-text--gray),
@@ -260,6 +266,9 @@
   ul li.StaticListItem .selected[href*="answer"] {
     background: #333 !important;
   }
+  .u-bg--gray {
+    background: #282828 !important;
+  }
   .feed_card_on .RelatedQuestions h3,
   .feed_card_on .EquivalentQuestionsInOtherNetworksWrapper h3 {
     border-color: #555 !important;
@@ -281,15 +290,16 @@
   .Placeholder.white_bg .animated_background, .Placeholder.white_bg .mask,
   .feed_card_on .HomepageFeedStoryItemPlaceholder,
   .feed_card_on .AmaSelfServeQuestionsPrompt, select, .loading_overlay,
-  .NuxModal .Step .modal_header, .NuxModal .Step .modal_footer {
+  .NuxModal .Step .modal_header, .NuxModal .Step .modal_footer,
+  .QueryResult .matched_term, .hover_menu_contents {
     background-color: #181818 !important;
   }
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
-  .hover_menu_contents, .notifications_header_bar, .dialog_wrapper,
-  .new_user_checklist, .results_frame li, .container, .FeedBottomIndicator,
-  .ActionBar.sticky, .ExistingUserNuxSidebar, .hover_menu_item,
-  .EditableList .nav_item_selected a, .EditableList .StaticListItem > .selected,
-  .ask_interstitial, .ViewsOnHovercard, .search_input:before, .editor_toolbar,
+  .notifications_header_bar, .dialog_wrapper, .new_user_checklist,
+  .results_frame li, .container, .FeedBottomIndicator, .ActionBar.sticky,
+  .ExistingUserNuxSidebar, .hover_menu_item, .EditableList .nav_item_selected a,
+  .EditableList .StaticListItem > .selected, .ask_interstitial,
+  .ViewsOnHovercard, .search_input:before, .editor_toolbar,
   .NewGridQuestionPage .header .shared_form, .ProgressBar, .AnswerTagSection,
   .CompleteProfileSection, .Next, .ViewsOnProfile:hover, .banner_answer,
   .prettyprint .linenums li:before, .heads_up_item, .QuestionBannerReason,
@@ -301,7 +311,7 @@
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
   .AnswerSurvey, .u-bg--white, .feed_card_on .TopicPageNavBar,
   .Modal .modal_header, .question_related.list, .AddQuestionPrompt, .feed_item,
-  .section_header, .feed_card_on .Bundle .full_bundle {
+  .section_header, .feed_card_on .Bundle .full_bundle, [class*="Box-"] {
     background: #222 !important;
   }
   .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
@@ -335,8 +345,9 @@
     background-color: rgba(34, 34, 34, .6) !important;
   }
   .ContentPageFeed, .web_page .u-hover-bg--black-transparent:hover,
+  .web_page .u-tap-highlight--white.u-text--gray-dark.u-hover-bg--black-transparent:hover,
   .add_experience_cta {
-    background-color: rgba(34, 34, 34, .3) !important;
+    background-color: rgba(58, 57, 57, .3) !important;
   }
   .read_more_link, .unseen, .action_button, .NextButton, .modal_footer,
   .AnswerPageViewMoreLink, .multifeed_header .modal_related_answers .view_more,
@@ -463,9 +474,23 @@
     background-color: rgba(50, 50, 50, .7) !important;
     color: #aaa !important;
   }
-  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:hover,
-  .HyperLinkFeedStory a[id*="__w2_"]:not([id*="_link_overlay"]):hover {
-    background-color: rgba(50, 50, 50, .7) !important;
+  .HyperLinkFeedStory a[id*="__w2_"]:not([id*="_link_overlay"]):hover,
+  .answer_link_overlay:hover {
+    background-color: rgba(40, 40, 40, .4) !important;
+  }
+  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:not(.answer_link_overlay):hover {
+    background-color: rgba(40, 40, 40, .8) !important;
+  }
+  .web_page .ui_horizontal_scroll_zone .left,
+  .web_page .ui_horizontal_scroll_zone .right {
+    background-color: rgba(80, 80, 80, .8);
+    border-color: #555;
+    outline-color: rgba(80, 80, 80, .8);
+  }
+  .web_page .ui_horizontal_scroll_zone .left:hover,
+  .web_page .ui_horizontal_scroll_zone .right:hover {
+    background-color: rgba(100, 100, 100, .9);
+    border-color: #555 !important;
   }
   a[id*="_toggle_link"]:hover {
     background-color: transparent !important;
@@ -496,6 +521,9 @@
   [class*="Box-sc"][class*="display_"] {
     border-color: #555 !important;
     background-color: #222;
+  }
+  [class*="Box-sc"][size="18"] {
+    background-color: #181818 !important;
   }
   [class*="position_"]:not([class*="position__Relative"]):not([height="2"]) {
     background-color: rgba(20, 21, 34, .4) !important;
@@ -550,12 +578,22 @@
   .ActionBar .primary_action:hover, .primary_item a:hover,
   .AddQuestionLookupBarButton:hover,
   ._facepile_wrapper ._facepile_photo .profile_photo_img, textarea:focus,
-  .fake_editor:focus, .qtext_editor_content:focus {
+  .fake_editor:focus, .qtext_editor_content:focus, select {
     border-color: #555 !important;
+  }
+  .expanded_q_text:hover .inline_editor_edit,
+  .truncated_q_text:hover .inline_editor_edit,
+  .suggested_edits_text:hover .inline_editor_edit,
+  .qtext_editor_content:hover .inline_editor_edit,
+  .inline_editor_content:hover .inline_editor_edit {
+    background: #222;
   }
   /* outline */
   .Carousel .left, .Carousel .right {
     outline-color: #333 !important;
+  }
+  .TopicPageHeader .TopicNameInlineEditor:hover {
+    outline: 1px dashed #666;
   }
   /* arrow */
   .hover_menu_contents li:first-child:after,
