@@ -325,7 +325,8 @@
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
   .AnswerSurvey, .u-bg--white, .feed_card_on .TopicPageNavBar,
   .Modal .modal_header, .AddQuestionPrompt, .feed_item, .section_header,
-  .feed_card_on .Bundle .full_bundle, [class*="Box-"] {
+  .feed_card_on .Bundle .full_bundle,
+  [class*="Box-"]:not([class*="BackgroundImage_"]) {
     background: #222 !important;
   }
   .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
