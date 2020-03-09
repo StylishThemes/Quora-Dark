@@ -63,6 +63,10 @@
     background-attachment: /*[[bg-attachment]]*/ !important;
     /*[[bg-options]]*/
   }
+  /* the bg none is attached to the bg image above */
+  .question_related.list, .question_main_col {
+    background: none;
+  }
   body {
     color: #eee !important;
   }
@@ -128,14 +132,17 @@
   div[class*="Box-"][color*="gray_dark"], .puppeteer_test_button_text,
   .u-text--gray, .Prompt .prompt_inner .prompt_title,
   .UserAnswersNeeded.is_prominent .prompt_wrapper, .LeaderboardHeader .title,
-  .LeaderboardMain .up_and_coming .title {
+  .LeaderboardMain .up_and_coming .title, .Notif .notif_title {
     color: #ddd !important;
+  }
+  [class*="Box-"][color="gray_light"] {
+    color: #ccc;
   }
   .EditableList .EditableListItem > a, .EditableList .StaticListItem > a,
   .EditableList .list_empty > a,
   .hovercard_section .AboutListItem span.body_text .main_text, a.ui_page_tab,
   .QueryResults .QueryListTitle .query_title .query,
-  .LeaderboardListItem .view_count .num {
+  .LeaderboardListItem .view_count .num, .Notif {
     color: #aaa !important;
   }
   .ui_button--PillStyle--gray {
@@ -227,6 +234,12 @@
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-stroke {
     stroke: /*[[base-color]]*/ !important;
   }
+  .icon_svg-stroke {
+    stroke: /*[[base-color]]*/;
+  }
+  .icon_svg-fill {
+    fill: none;
+  }
   .ui_button--FlatStyle--blue.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill {
@@ -311,8 +324,8 @@
   /*** Pinned topic header ***/
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
   .AnswerSurvey, .u-bg--white, .feed_card_on .TopicPageNavBar,
-  .Modal .modal_header, .question_related.list, .AddQuestionPrompt, .feed_item,
-  .section_header, .feed_card_on .Bundle .full_bundle, [class*="Box-"] {
+  .Modal .modal_header, .AddQuestionPrompt, .feed_item, .section_header,
+  .feed_card_on .Bundle .full_bundle, [class*="Box-"] {
     background: #222 !important;
   }
   .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
@@ -332,8 +345,12 @@
   /*** Make cookie banner dark ***/
   .CookieBanner .wrapper,
   .CookieBanner .dismiss, .FooterNav, .DesktopFollowTopicStep, .ui_story_card,
-  .question_main_col, .cardify_with_footer {
+  .cardify_with_footer, .ContentPageFeedStoryItem {
     background-color: #222 !important;
+  }
+  .SuggestedTopicsBundle .CarouselItem, .SuggestedTribesBundle .CarouselItem,
+  .CondensedTribesCarousel .CarouselItem {
+    background-color: #181818 !important;
   }
   .CookieBanner {
     background-color: #353535 !important;
@@ -357,11 +374,10 @@
   .credential_list_item .edit_wrapper {
     background: #242424 !important;
   }
-  .count, .ContentPageFeedStoryItem, .nav_item_link.hover, .nav_item_link:hover,
-  .nav_item_link:active, li.selected, .follow_state_badge,
-  .NotificationsClearLink, .LegalNavLinks, .hover_menu_item:hover,
-  .MoveAnswerBanner, .ActionBar .primary_action, .ReAskButton.button,
-  .AskToAnswerModalLink, .MostWantedBadge,
+  .count, .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active,
+  li.selected, .follow_state_badge, .NotificationsClearLink, .LegalNavLinks,
+  .hover_menu_item:hover, .MoveAnswerBanner, .ActionBar .primary_action,
+  .ReAskButton.button, .AskToAnswerModalLink, .MostWantedBadge,
   .CollapsedAnswersSectionCollapsed:not(.CollapsedAnswersSectionUncollapsed) .content,
   .RequestAnswersDrawer .inner, .RADToggle.is_active, .Announcement,
   .web_page .ui_button--FlatStyle:hover,
@@ -437,6 +453,9 @@
   .list_item_text:hover, [class*="AskQuestionStepAddQuestion___StyledBanner"] {
     color: /*[[base-color]]*/ !important;
   }
+  .qt_read_more {
+    color: /*[[base-color]]*/;
+  }
   .grid_page .layout_3col_center .ui_empty--wrapper-compact a.ui_button--non_link .ui_button_label,
   .SettingsNavList a,
   .ui_text_badge.ui_icon_text_badge_style--square.ui_icon_text_badge_size--regular,
@@ -485,7 +504,7 @@
   .answer_link_overlay:hover {
     background-color: rgba(40, 40, 40, .4) !important;
   }
-  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:not(.answer_link_overlay):hover {
+  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:not(.answer_link_overlay):not(.ui_overlay):hover {
     background-color: rgba(40, 40, 40, .8) !important;
   }
   .web_page .ui_horizontal_scroll_zone .left,
@@ -504,6 +523,10 @@
   }
   div[id*="_paged_list"] a, .HoverMenu .TopicNameSpan.TopicName {
     color: #ccc !important;
+  }
+  .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:hover {
+    color: #ddd !important;
+    opacity: 1;
   }
   span.bullet, .ui_button--styled .ui_button_count .bullet,
   .ToolboxCategory .unstyled_ui_button .ui_button_count .bullet {
