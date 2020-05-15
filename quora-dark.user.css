@@ -132,7 +132,7 @@
   div[class*="Box-"][color*="gray_dark"], .puppeteer_test_button_text,
   .u-text--gray, .Prompt .prompt_inner .prompt_title,
   .UserAnswersNeeded.is_prominent .prompt_wrapper, .LeaderboardHeader .title,
-  .LeaderboardMain .up_and_coming .title, .Notif .notif_title {
+  .LeaderboardMain .up_and_coming .title, .Notif .notif_title, .qu-color--gray {
     color: #ddd !important;
   }
   [class*="Box-"][color="gray_light"] {
@@ -148,6 +148,9 @@
   .ui_button--PillStyle--gray {
     color: #ddd !important;
     background-color: #333 !important;
+  }
+  .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight {
+    background-color: #282828;
   }
   .web_page .ui_button--PillStyle--gray:hover,
   .web_page .ui_button--PillStyle--gray:focus, .progress_bar_wrapper {
@@ -193,7 +196,8 @@
   .u-border--desktop-feed-card, .Announcement {
     border: 1px solid #ddd !important;
   }
-  .layout_3col_center .list_header {
+  .layout_3col_center .list_header, .qu-color--gray_dark,
+  .qu-color--gray_dark__ignore_dark_mode, .qu-color--gray_dark_dim {
     color: #ddd;
   }
   .ComponentSurvey .question_wrapper .button_group .survey_button:focus,
@@ -222,8 +226,12 @@
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill_as_stroke,
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill_as_stroke,
   .ui_button--FlatStyle--gray.pressed .ui_button_icon .icon_svg-fill,
-  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill {
+  .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-fill,
+  .icon_svg-fill_as_stroke {
     fill: #ccc !important;
+  }
+  .icon_svg-fill_as_stroke {
+    fill: #ccc;
   }
   .ui_icon_color--blue_dark .icon_svg-stroke,
   .ui_icon_color--blue .icon_svg-stroke,
@@ -283,6 +291,14 @@
   .u-bg--gray {
     background: #282828 !important;
   }
+  .qu-bg--blue_light {
+    background-color: #182030;
+  }
+  html:not(#noop) div.button_wrapper:hover,
+  html:not(#noop) div.button_wrapper:active,
+  html:not(#noop) div.button_wrapper:focus {
+    background-color: #26334d !important;
+  }
   .feed_card_on .RelatedQuestions h3,
   .feed_card_on .EquivalentQuestionsInOtherNetworksWrapper h3 {
     border-color: #555 !important;
@@ -325,9 +341,12 @@
   div.fixable_clone .PinnedTopicHeader.fixable_fixed,
   .AnswerSurvey, .u-bg--white, .feed_card_on .TopicPageNavBar,
   .Modal .modal_header, .AddQuestionPrompt, .feed_item, .section_header,
-  .feed_card_on .Bundle .full_bundle,
-  [class*="Box-"]:not([class*="BackgroundImage_"]) {
+  .feed_card_on .Bundle .full_bundle {
     background: #222 !important;
+  }
+  [class*="Box-"]:not([class*="BackgroundImage_"]):not([class*="ButtonPill_"]):not([class*="display"]):not(.puppeteer_test_button_text):not([class*="Text-"]) {
+    background: none !important;
+    color: #eee;
   }
   .ui_popup.ui_popup--show_nub:after, .RequestActionCaret:after {
     border-left: 7.5px solid #333 !important;
@@ -374,6 +393,12 @@
   .NotEnoughKnowsAboutTopicsPrompt, .TribePageNavBar, .TribePageNavBarOld,
   .credential_list_item .edit_wrapper {
     background: #242424 !important;
+  }
+  .qu-bg--gray {
+    background: #383838;
+  }
+  .q-platform--desktop .qu-hover--bg--gray:hover {
+    background: #383838 !important;
   }
   .count, .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active,
   li.selected, .follow_state_badge, .NotificationsClearLink, .LegalNavLinks,
@@ -522,7 +547,8 @@
   a[id*="_toggle_link"]:hover {
     background-color: transparent !important;
   }
-  div[id*="_paged_list"] a, .HoverMenu .TopicNameSpan.TopicName {
+  div[id*="_paged_list"] a, .HoverMenu .TopicNameSpan.TopicName,
+  .PrivacySettings .ts_gutter_header {
     color: #ccc !important;
   }
   .question_main_col .UnifiedAnswerPagedList a[id*="__w2_"]:hover {
@@ -596,7 +622,7 @@
     border-color: /*[[base-color]]*/ !important;
     stroke: /*[[base-color]]*/ !important;
   }
-  h1, h2, h3, table, table th, hr, ul, li, div, span, p, blockquote, a,
+  h1, h2, h3, table, table th, hr, ul, li, span, p, blockquote, a,
   .hover_menu_contents, .question_box, .show_reply_box_link,
   .QuestionActionBarA2APrompt, input, .seen, .Carousel .left, .Carousel .right,
   .AMAFeedDividerItem:before, .u-border--desktop-feed-card,
@@ -606,10 +632,19 @@
   .qtext_editor_content, .Prompt {
     border-color: #333 !important;
   }
+  [data-placement*="bottom"]::before {
+    border-color: transparent transparent #555 !important;
+  }
+  [data-placement*="bottom"]::after {
+    border-color: transparent transparent #181818 !important;
+  }
+  button[style*="outline: rgb(255, 255, 255) solid 4px"] {
+    outline: #111 !important;
+  }
   .ActionBar .primary_action:hover, .primary_item a:hover,
   .AddQuestionLookupBarButton:hover,
   ._facepile_wrapper ._facepile_photo .profile_photo_img, textarea:focus,
-  .fake_editor:focus, .qtext_editor_content:focus, select {
+  .fake_editor:focus, .qtext_editor_content:focus, select, div, .qu-borderAll {
     border-color: #555 !important;
   }
   .expanded_q_text:hover .inline_editor_edit,
