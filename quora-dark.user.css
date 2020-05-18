@@ -149,6 +149,9 @@
     color: #ddd !important;
     background-color: #333 !important;
   }
+  .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--blue_ultralight {
+    background-color: #363636;
+  }
   .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight {
     background-color: #282828;
   }
