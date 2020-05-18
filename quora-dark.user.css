@@ -333,10 +333,10 @@
   .feed_card_on .HomepageFeedStoryItemPlaceholder,
   .feed_card_on .AmaSelfServeQuestionsPrompt, select, .loading_overlay,
   .NuxModal .Step .modal_header, .NuxModal .Step .modal_footer,
-  .QueryResult .matched_term, .hover_menu_contents {
+  .QueryResult .matched_term, .hover_menu_contents, .qu-hover--zIndex--1 {
     background-color: #181818 !important;
   }
-  .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed,
+  .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed, .qu-fullX,
   .notifications_header_bar, .dialog_wrapper, .new_user_checklist,
   .results_frame li, .container, .FeedBottomIndicator, .ActionBar.sticky,
   .ExistingUserNuxSidebar, .hover_menu_item, .EditableList .nav_item_selected a,
