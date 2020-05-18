@@ -155,6 +155,12 @@
   .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight {
     background-color: #282828;
   }
+  .q-platform--desktop .qu-hover--bg--blue_light:hover {
+    background-color: #444 !important;
+  }
+  .q-platform--desktop .qu-hover--bg--gray_ultralight:hover {
+    background-color: #333 !important;
+  }
   .web_page .ui_button--PillStyle--gray:hover,
   .web_page .ui_button--PillStyle--gray:focus, .progress_bar_wrapper {
     background-color: #444 !important;
