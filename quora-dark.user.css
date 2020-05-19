@@ -155,7 +155,8 @@
   .qu-bg--blue_ultralight {
     background-color: #182030;
   }
-  .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight {
+  .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight,
+  li.tribes_nav_menu div {
     background-color: #282828;
   }
   .q-platform--desktop .qu-hover--bg--blue_light:hover {
@@ -164,6 +165,10 @@
   .q-platform--desktop .qu-hover--bg--gray_ultralight:hover {
     background-color: #333 !important;
   }
+	li.tribes_nav_menu a:hover {
+		color: #ddd;
+    background-color: rgba(50, 50, 50, .7) !important;
+	}
   .web_page .ui_button--PillStyle--gray:hover,
   .web_page .ui_button--PillStyle--gray:focus, .progress_bar_wrapper {
     background-color: #444 !important;
