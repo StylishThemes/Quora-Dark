@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "eslint": "^7.0.0",
-    "eslint-config-silverwind": "^13.3.2",
+    "eslint-config-silverwind": "^13.3.3",
     "perfectionist": "^2.4.0",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
