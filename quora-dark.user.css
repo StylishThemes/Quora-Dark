@@ -149,11 +149,12 @@
     color: #ddd !important;
     background-color: #333 !important;
   }
-  .qu-bg--white, .qu-bg--white__ignore_dark_mode {
-    background-color: #363636;
-  }
   .qu-bg--blue_ultralight {
     background-color: #182030;
+  }
+  .q-platform--desktop .qu-hover--bg--darken:hover,
+  div[style*="background-color: rgb(235, 236, 237)"] {
+    background-color: #383838 !important;
   }
   .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight,
   li.tribes_nav_menu div {
