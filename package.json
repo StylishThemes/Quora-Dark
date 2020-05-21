@@ -14,10 +14,10 @@
     "eslint": "^7.0.0",
     "eslint-config-silverwind": "^13.3.3",
     "perfectionist": "^2.4.0",
-    "stylelint": "^13.3.3",
+    "stylelint": "^13.5.0",
     "stylelint-config-standard": "^20.0.0",
-    "updates": "^10.2.11",
-    "versions": "8.2.9"
+    "updates": "^10.2.12",
+    "versions": "8.2.10"
   },
   "scripts": {
     "authors": "bash tools/authors",
