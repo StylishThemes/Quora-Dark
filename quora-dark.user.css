@@ -311,10 +311,11 @@
   .qu-bg--blue_light {
     background-color: #182030;
   }
-  html:not(#noop) div.button_wrapper:hover,
-  html:not(#noop) div.button_wrapper:active,
-  html:not(#noop) div.button_wrapper:focus {
-    background-color: #26334d !important;
+  html:not(#noop) div.button_wrapper:not([class*="qu-hover--bg--#a82723"]):hover,
+  html:not(#noop) div.button_wrapper:not([class*="qu-hover--bg--#a82723"]):active,
+  html:not(#noop) div.button_wrapper:not([class*="qu-hover--bg--#a82723"]):focus,
+  html:not(#noop) div.button_wrapper[class="qu-hover--bg--#d7e1ff"] {
+    background-color: #246 !important;
   }
   .feed_card_on .RelatedQuestions h3,
   .feed_card_on .EquivalentQuestionsInOtherNetworksWrapper h3 {
