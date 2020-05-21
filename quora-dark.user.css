@@ -230,7 +230,8 @@
   }
   /* end together */
   .ui_button--StackedStyle.pressed .ui_button_icon .icon_svg-stroke,
-  .ui_icon_color--gray_dark .icon_svg-stroke {
+  .ui_icon_color--gray_dark .icon_svg-stroke,
+  .icon_svg-stroke[stroke="#666"]:not([stroke-width="1.8"]) {
     stroke: #eee !important;
   }
   .ui_button--FlatStyle--gray .ui_button_icon .icon_svg-stroke,
