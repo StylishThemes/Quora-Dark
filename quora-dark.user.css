@@ -215,7 +215,8 @@
     border: 1px solid #ddd !important;
   }
   .layout_3col_center .list_header, .qu-color--gray_dark,
-  .qu-color--gray_dark__ignore_dark_mode, .qu-color--gray_dark_dim {
+  .qu-color--gray_dark__ignore_dark_mode, .qu-color--gray_dark_dim, .q-box,
+  .qu-color--gray_light {
     color: #ddd;
   }
   .ComponentSurvey .question_wrapper .button_group .survey_button:focus,
