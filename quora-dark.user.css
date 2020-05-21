@@ -165,10 +165,10 @@
   .q-platform--desktop .qu-hover--bg--gray_ultralight:hover {
     background-color: #333 !important;
   }
-	li.tribes_nav_menu a:hover {
-		color: #ddd;
+  li.tribes_nav_menu a:hover {
+    color: #ddd;
     background-color: rgba(50, 50, 50, .7) !important;
-	}
+  }
   .web_page .ui_button--PillStyle--gray:hover,
   .web_page .ui_button--PillStyle--gray:focus, .progress_bar_wrapper {
     background-color: #444 !important;
