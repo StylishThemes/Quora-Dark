@@ -103,7 +103,7 @@
     stroke: #eee !important;
   }
   [class="Box-s"] [color="red"] div[class="Box-s"] {
-    background-color: red !important;
+    background-color: #f00 !important;
   }
   .WelcomeTribeAnnouncement .ui_button--PillStyle--bright_blue {
     filter: invert(1) !important;
@@ -721,8 +721,11 @@
   .TribePageNavBar .inner .Tabs .list_contents .tab .link.selected,
   .web_page .ui_page_tab.selected,
   .SiteHeader.new_header .nav_item_link.selected, .web_page .ui_page_tab:hover {
-    color: #b92b27 !important;
-    border-color: #b92b27 !important;
+    color: #b00 !important;
+    border-color: #b00 !important;
+  }
+  .qu-color--red {
+    color: #f00;
   }
   .diffdelete {
     background-color: #300 !important;
