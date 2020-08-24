@@ -163,7 +163,7 @@
     background-color: #383838 !important;
   }
   .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight,
-  li.tribes_nav_menu div, .qu-bg--page--gray {
+  li.tribes_nav_menu div, .qu-bg--page--gray, .q-box.qu-bg--raised {
     background-color: #282828;
   }
   .q-platform--desktop .qu-bg--gray_ultralight:hover,
@@ -227,7 +227,9 @@
   }
   .layout_3col_center .list_header, .qu-color--gray_dark,
   .qu-color--gray_dark__ignore_dark_mode, .qu-color--gray_dark_dim, .q-box,
-  .qu-color--gray_light {
+  .qu-color--gray_light, .StaticPage.JobsMain .content_section .section_text,
+  .StaticPage.FunctionalJobsPage .content_section .section_text,
+  .StaticPage.JobListingMain .content_section .section_text {
     color: #ddd;
   }
   .ComponentSurvey .question_wrapper .button_group .survey_button:focus,
@@ -355,6 +357,9 @@
   .NuxModal .Step .modal_header, .NuxModal .Step .modal_footer,
   .QueryResult .matched_term, .hover_menu_contents, .qu-hover--zIndex--1 {
     background-color: #181818 !important;
+  }
+  .StaticPage.JobsMain .content_section:nth-child(2n) {
+    background-color: #181818;
   }
   .SiteHeader, .answer_header_and_editor, .LoggedOutContentPageFeed, .qu-fullX,
   .notifications_header_bar, .dialog_wrapper, .new_user_checklist,
@@ -511,7 +516,8 @@
   .question_related.list .AskQuestionButton, a,
   .ui_button--PillStyle--light_blue, .ui_button_inner .ui_button_label,
   .grid_page .layout_3col_center a.ui_button--non_link .ui_button_label,
-  .list_item_text:hover, [class*="AskQuestionStepAddQuestion___StyledBanner"] {
+  .list_item_text:hover, [class*="AskQuestionStepAddQuestion___StyledBanner"],
+  div > span.qu-color--blue_dark .qu-userSelect--text {
     color: /*[[base-color]]*/ !important;
   }
   .qt_read_more {
@@ -547,6 +553,40 @@
   .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader, div[color="gray"],
   .ui_headers_base, .outer_content_box .content_title {
     color: #c0c0c0 !important;
+  }
+  .StaticPage.JobsMain .employees_container .employee {
+    background-color: #181818;
+    border-color: #333 !important;
+  }
+  .StaticPage.JobsMain .content_section .job_listings .job,
+  .StaticPage.FunctionalJobsPage .content_section .job_listings .job {
+    background-color: #181818;
+    border-top: 1px solid #444 !important;
+  }
+  .StaticPage.JobsMain .content_section .job_listings .job .job_location,
+  .StaticPage.FunctionalJobsPage .content_section .job_listings .job .job_location {
+    color: #aaa;
+    border-top: 1px solid #444 !important;
+  }
+  .StaticPage.JobsMain .content_section .job_listings .job .job_title,
+  .StaticPage.FunctionalJobsPage .content_section .job_listings .job .job_title {
+    border-right-color: #555;
+  }
+  .StaticPage.JobsMain .content_section .job_listings .job .team_link:hover,
+  .StaticPage.FunctionalJobsPage .content_section .job_listings .job .team_link:hover,
+  .StaticPage.JobsMain .content_section .job_listings .job .team_link:hover,
+  .StaticPage.FunctionalJobsPage .content_section .job_listings .job .team_link:hover {
+    background-color: #282828;
+  }
+  .StaticPage.JobsMain .content_section .job_listings .job .team_link .meta,
+  .StaticPage.FunctionalJobsPage .content_section .job_listings .job .team_link .meta {
+    background-color: #182030;
+    color: #ccc;
+  }
+  .StaticPageNavigation .HorizontalTabs .linked_list_item:nth-child(2n),
+  .StaticPage.FunctionalJobsPage .content_section:nth-child(2n+1),
+  .StaticPage.JobListingMain .content_section:nth-child(2n+1) {
+    background-color: #282828;
   }
   .qu-borderColor--raised {
     border-color: #444 !important;
@@ -742,8 +782,8 @@
   .TribePageNavBar .inner .Tabs .list_contents .tab .link.selected,
   .web_page .ui_page_tab.selected,
   .SiteHeader.new_header .nav_item_link.selected, .web_page .ui_page_tab:hover {
-    color: #b00 !important;
-    border-color: #b00 !important;
+    color: #e00 !important;
+    border-color: #c00 !important;
   }
   .qu-color--red {
     color: #f00;
@@ -889,5 +929,70 @@
   .StaticPage.AdvertisingMain .section_wrapper .section_subheading,
   .header_nav.business [id*="_link"].nav_item_link > span {
     color: #aaa !important;
+  }
+}
+@-moz-document domain("boards.greenhouse.io") {
+  * {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  :root {
+    --bg-custom: /*[[bg-custom]]*/;
+    --bg-img: /*[[bg-choice]]*/;
+  }
+  html, body:not(.logged_out_page_big_signup), .NuxModal.modal_overlay {
+    background-color: #222 !important;
+    background-image: var(--bg-img) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-attachment: /*[[bg-attachment]]*/ !important;
+    /*[[bg-options]]*/
+    color: #ddd;
+  }
+  #application {
+    background-color: #202020;
+  }
+  #main_fields div.field input[type="text"], #main_fields div.field textarea,
+  #main_fields div.field .text-field,
+  #main_fields #custom_fields div.field .select2-container-multi,
+  #custom_fields #main_fields div.field .select2-container-multi,
+  #custom_fields div.field input[type="text"], #custom_fields div.field textarea,
+  #custom_fields div.field .text-field,
+  #custom_fields div.field .select2-container-multi,
+  #demographic_questions div.field input[type="text"],
+  #demographic_questions div.field textarea,
+  #demographic_questions div.field .text-field,
+  #demographic_questions #custom_fields div.field .select2-container-multi,
+  #custom_fields #demographic_questions div.field .select2-container-multi,
+  #eeoc_fields div.field input[type="text"], #eeoc_fields div.field textarea,
+  #eeoc_fields div.field .text-field,
+  #eeoc_fields #custom_fields div.field .select2-container-multi,
+  #custom_fields #eeoc_fields div.field .select2-container-multi,
+  .ui-widget-content {
+    border: solid 1px #444;
+    background-color: #111;
+    color: #fff;
+  }
+  .accessible .select2-container .select2-chosen,
+  .accessible .select2-container .select2-arrow,
+  .accessible .select2-container .select2-choice, .select2-drop-mask {
+    background: #181818;
+  }
+  .accessible .select2-container .select2-choice {
+    border-color: #444;
+  }
+  #main hr {
+    background-color: #444;
+  }
+  .select2-drop {
+    background: #181818;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  .select2-container .select2-choice {
+    color: #fff;
+  }
+  .location {
+    color: #aaa;
   }
 }
