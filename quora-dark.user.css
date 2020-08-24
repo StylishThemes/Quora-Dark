@@ -149,6 +149,12 @@
     color: #ddd !important;
     background-color: #333 !important;
   }
+  div[style*="background: rgba(0, 0, 0, 0) linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0%"] {
+    background: linear-gradient(rgba(24, 24, 24, .3) 0%, rgba(24, 24, 24, .8) 100%) repeat scroll 0% 0% !important;
+  }
+  .qu-bg--raised {
+    background-color: transparent;
+  }
   .qu-bg--blue_ultralight {
     background-color: #182030;
   }
@@ -157,8 +163,13 @@
     background-color: #383838 !important;
   }
   .qu-bg--white, .qu-bg--white__ignore_dark_mode, .qu-bg--gray_ultralight,
-  li.tribes_nav_menu div {
+  li.tribes_nav_menu div, .qu-bg--page--gray {
     background-color: #282828;
+  }
+  .q-platform--desktop .qu-bg--gray_ultralight:hover,
+  .q-platform--desktop .qu-bg--gray_ultralight:focus,
+  .q-platform--desktop .qu-bg--gray_ultralight:active {
+    background-color: #333 !important;
   }
   .q-platform--desktop .qu-hover--bg--blue_light:hover {
     background-color: #246 !important;
@@ -418,6 +429,9 @@
   .qu-bg--gray {
     background: #383838;
   }
+  .JoinPage {
+    background: #282828;
+  }
   .q-platform--desktop .qu-hover--bg--gray:hover {
     background: #383838 !important;
   }
@@ -533,6 +547,9 @@
   .QuestionPageAnswerHeader, .AnswerStandaloneActorHeader, div[color="gray"],
   .ui_headers_base, .outer_content_box .content_title {
     color: #c0c0c0 !important;
+  }
+  .qu-borderColor--raised {
+    border-color: #444 !important;
   }
   /* this area, attempts to style at longer term the dynamic generated CSS.
 	Adding a simple `div` to any of these specific styles, breaks too much elsewhere
