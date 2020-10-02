@@ -543,6 +543,12 @@
   div > span.qu-color--blue_dark .qu-userSelect--text {
     color: /*[[base-color]]*/ !important;
   }
+  a.q-box.qu-hover--textDecoration--none div:hover {
+    color: #333;
+  }
+  a.q-box.qu-hover--textDecoration--none div div:hover {
+    color: #eee;
+  }
   .qt_read_more, .qu-color--blue_dark {
     color: /*[[base-color]]*/;
   }
