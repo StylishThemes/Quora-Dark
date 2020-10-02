@@ -56,7 +56,7 @@
     --bg-img: /*[[bg-choice]]*/;
   }
   html, body:not(.logged_out_page_big_signup), .NuxModal.modal_overlay {
-    background-color: #222 !important;
+    background-color: #282828 !important;
     background-image: var(--bg-img) !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
@@ -145,6 +145,10 @@
   .LeaderboardListItem .view_count .num, .Notif {
     color: #aaa !important;
   }
+  .AMATicker .AMATickerEventItem .bubble .reason,
+  .AMATicker .AMACurrentlyAnswering .bubble .reason {
+    color: #aaa;
+  }
   .ui_button--PillStyle--gray {
     color: #ddd !important;
     background-color: #333 !important;
@@ -179,7 +183,8 @@
   }
   .q-platform--desktop .qu-bg--gray_ultralight:hover,
   .q-platform--desktop .qu-bg--gray_ultralight:focus,
-  .q-platform--desktop .qu-bg--gray_ultralight:active {
+  .q-platform--desktop .qu-bg--gray_ultralight:active,
+  .q-platform--desktop .qu-hover--bg--gray_light:hover {
     background-color: #333 !important;
   }
   .q-platform--desktop .qu-hover--bg--blue_light:hover {
@@ -451,7 +456,8 @@
   .JoinPage {
     background: #282828;
   }
-  .q-platform--desktop .qu-hover--bg--gray:hover {
+  .q-platform--desktop .qu-hover--bg--gray:hover,
+  button.qu-bg--blue_light.qu-hover--textDecoration--none:not(.focus) {
     background: #383838 !important;
   }
   .count, .nav_item_link.hover, .nav_item_link:hover, .nav_item_link:active,
@@ -505,7 +511,9 @@
   }
   .count:before, .qtext_hr,
   .logged_out_page_big_signup .ContentWrapper .HomePageSignupForm .signup:after,
-  .BoardSettingsList .BlogSettingsListItem .board_photo.no_photo {
+  .BoardSettingsList .BlogSettingsListItem .board_photo.no_photo,
+  button.qu-bg--blue_light.qu-hover--textDecoration--none:active,
+  button.qu-bg--blue_light.qu-hover--textDecoration--none:hover {
     background-color: #444 !important;
   }
   /* overlay */
@@ -515,7 +523,8 @@
     background: rgba(0, 0, 0, .5) !important;
   }
   /*** text color ***/
-  a span, .ui_content_title .ui_qtext_rendered_qtext, a:hover .TopicName,
+  a span:not[style*="background: rgba(0, 0, 0, 0)"],
+  .ui_content_title .ui_qtext_rendered_qtext, a:hover .TopicName,
   .is_removable .remove_link:hover, .AskQuestionButton:before, .TopicName,
   .ui_qtext_rendered_qtext span a, .see_top_questions_link,
   .settings_row_contents a, .connect_service_button span,
@@ -555,6 +564,18 @@
   }
   [class*="CssComponent-sc"][data-placement*="left"]::after {
     border-color: transparent transparent transparent #282828;
+  }
+  [class*="Popper_"][data-placement*="top"]::before {
+    border-color: #555 transparent transparent;
+  }
+  [class*="Popper_"][data-placement*="top"]::after {
+    border-color: #282828 transparent transparent;
+  }
+  [class*="Popper_"][data-placement*="bottom"]::before {
+    border-color: transparent transparent #555;
+  }
+  [class*="Popper_"][data-placement*="bottom"]::after {
+    border-color: transparent transparent #282828;
   }
   .grid_page .layout_3col_center .ui_empty--wrapper-compact a.ui_button--non_link .ui_button_label,
   .SettingsNavList a,
@@ -619,7 +640,7 @@
   }
   .StaticPageNavigation .HorizontalTabs .linked_list_item:nth-child(2n),
   .StaticPage.FunctionalJobsPage .content_section:nth-child(2n+1),
-  .StaticPage.JobListingMain .content_section:nth-child(2n+1) {
+  .StaticPage.JobListingMain .content_section:nth-child(2n+1), .AMATicker {
     background-color: #282828;
   }
   .qu-borderColor--raised {
@@ -747,12 +768,6 @@
   .qtext_editor_content, .Prompt {
     border-color: #333 !important;
   }
-  [data-placement*="bottom"]::before {
-    border-color: transparent transparent #555 !important;
-  }
-  [data-placement*="bottom"]::after {
-    border-color: transparent transparent #181818 !important;
-  }
   button[style*="outline: rgb(255, 255, 255) solid 4px"] {
     outline: #111 !important;
   }
@@ -761,6 +776,9 @@
   ._facepile_wrapper ._facepile_photo .profile_photo_img, textarea:focus,
   .fake_editor:focus, .qtext_editor_content:focus, select, div, .qu-borderAll {
     border-color: #555 !important;
+  }
+  .q-platform--desktop .qu-hover--borderColor--gray_medium:hover {
+    border-color: #666 !important;
   }
   .expanded_q_text:hover .inline_editor_edit,
   .truncated_q_text:hover .inline_editor_edit,
