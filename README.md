@@ -1,3 +1,5 @@
+**Retired:** Quora has a built-in dark mode now.
+
 <p align="center">
   <img alt="githubdark-logo" src="https://rawgit.com/StylishThemes/logos/master/quora.dark/quoradark.svg" width="580">
   <br>
